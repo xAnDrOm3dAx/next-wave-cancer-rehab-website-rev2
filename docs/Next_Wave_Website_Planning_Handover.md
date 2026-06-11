@@ -587,14 +587,14 @@ index.html
 about.html
 services.html
 your-next-steps.html
-referrals.html
+referrers.html
 location.html
 contact.html
 privacy-policy.html
-terms-of-use.html
+terms-and-conditions.html
 ```
 
-Note: Some previous planning used `referrers.html`. For consistency with the confirmed navigation label “Referrals”, use `referrals.html` unless the user decides otherwise.
+Note: The confirmed filename is `referrers.html`, matching the navigation label “Referrers”.
 
 ---
 
@@ -606,11 +606,11 @@ next-wave-cancer-rehab/
 ├── about.html
 ├── services.html
 ├── your-next-steps.html
-├── referrals.html
+├── referrers.html
 ├── location.html
 ├── contact.html
 ├── privacy-policy.html
-├── terms-of-use.html
+├── terms-and-conditions.html
 ├── public/
 │   ├── css/
 │   │   ├── reset.css
@@ -1131,7 +1131,7 @@ Telehealth can help improve access for people in rural and regional communities 
 File:
 
 ```text
-referrals.html
+referrers.html
 ```
 
 ## Page Goal
@@ -1323,7 +1323,7 @@ Do not treat the AI-generated privacy policy as legal advice.
 File:
 
 ```text
-terms-of-use.html
+terms-and-conditions.html
 ```
 
 ## Page Goal
@@ -1621,11 +1621,11 @@ Confirmed site pages:
 - about.html
 - services.html
 - your-next-steps.html
-- referrals.html
+- referrers.html
 - location.html
 - contact.html
 - privacy-policy.html
-- terms-of-use.html
+- terms-and-conditions.html
 
 Main navigation:
 - Home
@@ -1699,7 +1699,7 @@ Start by scaffolding the static file structure and CSS files. Do not write every
 ## Navigation
 
 6. Confirm final page label: “Referrals” or “For Referrers”.
-7. Confirm file name: `referrals.html` or `referrers.html`.
+7. ~~Confirm file name: `referrals.html` or `referrers.html`.~~ Confirmed: `referrers.html`.
 
 ## Contact and Bookings
 

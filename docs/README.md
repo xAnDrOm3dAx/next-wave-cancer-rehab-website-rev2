@@ -68,11 +68,11 @@ index.html
 about.html
 services.html
 your-next-steps.html
-referrals.html
+referrers.html
 location.html
 contact.html
 privacy-policy.html
-terms-of-use.html
+terms-and-conditions.html
 ```
 
 ## Confirmed Navigation

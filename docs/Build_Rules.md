@@ -82,11 +82,11 @@ next-wave-cancer-rehab/
 ├── about.html
 ├── services.html
 ├── your-next-steps.html
-├── referrals.html
+├── referrers.html
 ├── location.html
 ├── contact.html
 ├── privacy-policy.html
-├── terms-of-use.html
+├── terms-and-conditions.html
 ├── public/
 │   ├── css/
 │   │   ├── reset.css
@@ -315,11 +315,11 @@ Confirmed site pages:
 - about.html
 - services.html
 - your-next-steps.html
-- referrals.html
+- referrers.html
 - location.html
 - contact.html
 - privacy-policy.html
-- terms-of-use.html
+- terms-and-conditions.html
 
 Main navigation:
 - Home
