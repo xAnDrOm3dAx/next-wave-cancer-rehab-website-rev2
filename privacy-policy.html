@@ -12,7 +12,86 @@
   <link rel="stylesheet" href="public/css/components.css">
   <link rel="stylesheet" href="public/css/pages.css">
 </head>
-<body>
-  <!-- Page content to be added -->
+<body class="page">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="site-header__inner">
+        <div class="site-header__logo">
+          <a href="index.html" aria-label="Next Wave Cancer Rehab — Home">Next Wave Cancer Rehab</a>
+        </div>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul class="site-nav__list">
+            <li><a href="index.html" class="site-nav__link">Home</a></li>
+            <li><a href="about.html" class="site-nav__link">About</a></li>
+            <li><a href="services.html" class="site-nav__link">Services</a></li>
+            <li><a href="your-next-steps.html" class="site-nav__link">Your Next Steps</a></li>
+            <li><a href="referrals.html" class="site-nav__link">Referrers</a></li>
+            <li><a href="contact.html" class="site-nav__link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="sr-only">Open menu</span>
+          <span aria-hidden="true">Menu</span>
+        </button>
+      </div>
+
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <ul class="mobile-nav__list">
+          <li><a href="index.html" class="mobile-nav__link">Home</a></li>
+          <li><a href="about.html" class="mobile-nav__link">About</a></li>
+          <li><a href="services.html" class="mobile-nav__link">Services</a></li>
+          <li><a href="your-next-steps.html" class="mobile-nav__link">Your Next Steps</a></li>
+          <li><a href="referrals.html" class="mobile-nav__link">Referrers</a></li>
+          <li><a href="contact.html" class="mobile-nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="page__main">
+    <!-- Page content to be added -->
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__inner">
+        <div class="site-footer__brand">
+          <a href="index.html" aria-label="Next Wave Cancer Rehab — Home">Next Wave Cancer Rehab</a>
+          <p class="site-footer__tagline">Guided by expertise. Driven by care.</p>
+        </div>
+
+        <div>
+          <h2 class="site-footer__heading">Explore</h2>
+          <nav class="site-footer__nav" aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="your-next-steps.html">Your Next Steps</a>
+            <a href="referrals.html">Referrers</a>
+            <a href="location.html">Location</a>
+          </nav>
+        </div>
+
+        <div>
+          <h2 class="site-footer__heading">Get in touch</h2>
+          <nav class="site-footer__nav" aria-label="Footer contact and legal">
+            <a href="contact.html">Contact</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-of-use.html">Terms of Use</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p>&copy; 2026 Next Wave Cancer Rehab. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="public/js/main.js" defer></script>
 </body>
 </html>
