@@ -350,7 +350,15 @@
 
 @media (min-width: 64rem) {
   .site-footer__inner {
-    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1.5fr;
+  }
+
+  .site-footer__brand {
+    text-align: right;
+  }
+
+  .site-footer__tagline {
+    margin-left: auto;
   }
 }
 
