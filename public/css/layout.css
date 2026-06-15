@@ -49,6 +49,11 @@
   max-width: var(--container-narrow);
 }
 
+/* In-page anchor offset for sticky header — apply to all anchor jumps */
+html {
+  scroll-padding-top: var(--header-height);
+}
+
 /* Sections */
 
 .section {
