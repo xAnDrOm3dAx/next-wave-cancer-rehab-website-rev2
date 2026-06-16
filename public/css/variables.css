@@ -56,7 +56,7 @@
   --container: 72rem;
   --container-wide: 82rem;
   --container-narrow: 48rem;
-  --content-measure: 68ch;
+  /* --content-measure: 68ch; */
 
   /* Radius and shadows */
   --radius-sm: 0.5rem;
