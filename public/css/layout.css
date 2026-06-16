@@ -341,6 +341,16 @@ html {
   height: 80px;
 }
 
+@media (min-width: 64rem) {
+  .site-footer__wave {
+    margin-top: -120px;
+  }
+
+  .site-footer__wave svg {
+    height: 140px;
+  }
+}
+
 .site-footer a {
   color: var(--color-surface-warm);
 }
