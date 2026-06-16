@@ -324,7 +324,21 @@ html {
 .site-footer {
   background-color: var(--color-primary-dark);
   color: var(--color-surface-warm);
-  padding-block: var(--space-2xl);
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-2xl);
+}
+
+.site-footer__wave {
+  margin-top: -80px;
+  background-color: var(--color-background);
+  line-height: 0;
+  overflow: hidden;
+}
+
+.site-footer__wave svg {
+  display: block;
+  width: 100%;
+  height: 80px;
 }
 
 .site-footer a {
