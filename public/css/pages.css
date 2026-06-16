@@ -105,3 +105,104 @@
   margin: 0;
   line-height: var(--line-height-body);
 }
+
+/* About page — Qualifications and Memberships section */
+
+.quals__intro {
+  max-width: var(--content-measure);
+  margin-top: var(--space-md);
+}
+
+.quals-group {
+  margin-top: var(--space-2xl);
+}
+
+.quals-group__heading {
+  font-size: var(--text-lg);
+  margin-top: 0;
+  margin-bottom: var(--space-lg);
+  color: var(--color-text);
+}
+
+.quals-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quals-list--grid {
+  display: grid;
+  gap: var(--space-sm);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 48rem) {
+  .quals-list--grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.quals-pill {
+  padding: var(--space-xs) 0 var(--space-xs) var(--space-lg);
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  line-height: var(--line-height-body);
+  position: relative;
+}
+
+.quals-pill::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(var(--space-xs) + 0.55em);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-primary-sage);
+}
+
+.quals-list--plain {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.quals-list--plain li {
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  padding-left: var(--space-lg);
+  position: relative;
+}
+
+.quals-list--plain li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-primary-sage);
+}
+
+.quals-callout {
+  margin-top: var(--space-2xl);
+  padding: var(--space-md) var(--space-lg);
+  background-color: var(--color-surface-sand);
+  border-left: 3px solid var(--color-primary-sage);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.quals-callout__heading {
+  font-size: var(--text-base);
+  margin-top: 0;
+  margin-bottom: var(--space-xs);
+  color: var(--color-text);
+}
+
+.quals-callout p {
+  font-size: var(--text-sm);
+  max-width: none;
+  margin: 0;
+  color: var(--color-muted-text);
+}
