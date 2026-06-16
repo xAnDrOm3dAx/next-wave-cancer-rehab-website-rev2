@@ -18,9 +18,12 @@
   border-radius: var(--radius-md);
 }
 
-@media (max-width: 63.9rem) {
+@media (max-width: 64rem) {
   .about-portrait-placeholder {
-    min-height: 280px;
+    width: 100%;
+    max-width: clamp(16rem, 55vw, 22rem);
+    min-height: 0;
+    margin-inline: auto;
   }
 }
 
