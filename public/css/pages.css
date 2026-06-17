@@ -1,5 +1,17 @@
 /* Page-specific styles — add exceptions here only when a page needs unique layout or styling */
 
+/* About page — Hero pull-quote */
+
+.page-hero__pullquote {
+  margin: var(--space-lg) 0 0;
+  padding: 0 0 0 var(--space-lg);
+  border-left: 2px solid var(--color-primary-sage);
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: var(--text-xl);
+  color: var(--color-text);
+}
+
 /* About page — Meet Megan section */
 
 .about-portrait-placeholder {
@@ -40,12 +52,8 @@
   background-color: var(--color-surface-sand);
   border-left: 3px solid var(--color-primary-sage);
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-}
-
-.about-megan__callout p {
   font-size: var(--text-sm);
   max-width: none;
-  margin-top: 0;
 }
 
 /* About page — Career and Experience section */
