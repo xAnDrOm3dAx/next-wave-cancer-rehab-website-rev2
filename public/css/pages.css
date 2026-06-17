@@ -40,10 +40,10 @@
 }
 
 .about-megan__subheading {
-  font-weight: 500;
-  color: var(--color-muted-text);
-  margin-bottom: var(--space-lg);
-  max-width: none;
+  font-weight: 600;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-text);
 }
 
 .about-megan__callout {
