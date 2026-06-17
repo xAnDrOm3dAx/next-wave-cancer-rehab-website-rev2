@@ -10,6 +10,13 @@
   max-width: var(--content-measure);
 }
 
+.page-hero__content p:nth-child(3) {
+  font-weight: 600;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-text);
+}
+
 .page-hero__eyebrow {
   font-size: var(--text-sm);
   font-weight: 600;
