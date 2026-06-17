@@ -67,11 +67,11 @@
 @media (min-width: 64rem) {
   .career-grid {
     grid-template-columns: 3fr 2fr;
-    align-items: start;
+    align-items: center;
   }
 }
 
-.career-narrative-block + .career-narrative-block {
+.career-narrative-block+.career-narrative-block {
   margin-top: var(--space-xl);
 }
 
