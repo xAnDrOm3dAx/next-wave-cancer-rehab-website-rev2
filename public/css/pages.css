@@ -113,7 +113,6 @@
 /* About page — Qualifications and Memberships section */
 
 .quals__intro {
-  max-width: var(--content-measure);
   margin-top: var(--space-md);
 }
 
