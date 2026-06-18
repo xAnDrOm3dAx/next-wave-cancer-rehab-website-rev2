@@ -42,11 +42,7 @@ h6 {
   font-size: var(--text-md);
 }
 
-p {
-  max-width: var(--content-measure);
-}
-
-p + p {
+p+p {
   margin-top: var(--space-md);
 }
 
@@ -173,6 +169,7 @@ legend {
 /* Reduced motion */
 
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {

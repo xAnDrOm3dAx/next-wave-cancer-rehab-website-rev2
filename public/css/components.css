@@ -6,9 +6,9 @@
   padding-block: var(--space-3xl) var(--space-2xl);
 }
 
-.page-hero__content {
+/* .page-hero__content {
   max-width: var(--content-measure);
-}
+} */
 
 .page-hero__content p:nth-child(3) {
   font-weight: 600;
