@@ -274,14 +274,14 @@ The logo file currently available is:
 
 The confirmed colour palette is:
 
-| Token | Name | Hex | Intended Use |
-|---|---|---:|---|
-| `--color-primary-sage` | Soft Eucalyptus Sage | `#A8BFB3` | Main brand accents, lighter UI elements, soft highlights |
-| `--color-primary-dark` | Deep Eucalyptus | `#3F665C` | Primary buttons, structural elements, strong brand presence |
-| `--color-background` | Warm Off-White | `#F7F4EF` | Main page background |
-| `--color-warm-neutral` | Warm Sand | `#D8C3A5` | Borders, secondary containers, subtle depth |
-| `--color-text` | Deep Charcoal Green | `#24332F` | Body text, headings, high-contrast interface text |
-| `--color-accent` | Soft Clay Rose | `#C9A79C` | Special highlights, small accents, occasional CTA support |
+| Token                  | Name                 |       Hex | Intended Use                                                |
+| ---------------------- | -------------------- | --------: | ----------------------------------------------------------- |
+| `--color-primary-sage` | Soft Eucalyptus Sage | `#A8BFB3` | Main brand accents, lighter UI elements, soft highlights    |
+| `--color-primary-dark` | Deep Eucalyptus      | `#3F665C` | Primary buttons, structural elements, strong brand presence |
+| `--color-background`   | Warm Off-White       | `#F7F4EF` | Main page background                                        |
+| `--color-warm-neutral` | Warm Sand            | `#D8C3A5` | Borders, secondary containers, subtle depth                 |
+| `--color-text`         | Deep Charcoal Green  | `#24332F` | Body text, headings, high-contrast interface text           |
+| `--color-accent`       | Soft Clay Rose       | `#C9A79C` | Special highlights, small accents, occasional CTA support   |
 
 ## Colour Personality
 
@@ -347,16 +347,16 @@ Use this as the starting point for `public/css/variables.css`.
 ```css
 :root {
   /* Brand colours */
-  --color-primary-sage: #A8BFB3;
-  --color-primary-dark: #3F665C;
-  --color-warm-neutral: #D8C3A5;
-  --color-background: #F7F4EF;
-  --color-text: #24332F;
-  --color-accent: #C9A79C;
+  --color-primary-sage: #a8bfb3;
+  --color-primary-dark: #3f665c;
+  --color-warm-neutral: #d8c3a5;
+  --color-background: #f7f4ef;
+  --color-text: #24332f;
+  --color-accent: #c9a79c;
 
   /* Semantic colours */
-  --color-surface: #FFFFFF;
-  --color-surface-warm: #FBF8F3;
+  --color-surface: #ffffff;
+  --color-surface-warm: #fbf8f3;
   --color-surface-sage: rgba(168, 191, 179, 0.28);
   --color-surface-sand: rgba(216, 195, 165, 0.26);
   --color-border: rgba(36, 51, 47, 0.16);
@@ -365,8 +365,8 @@ Use this as the starting point for `public/css/variables.css`.
 
   /* Interactive colours */
   --color-button-bg: var(--color-primary-dark);
-  --color-button-text: #FFFFFF;
-  --color-button-hover: #33544B;
+  --color-button-text: #ffffff;
+  --color-button-hover: #33544b;
   --color-link: var(--color-primary-dark);
   --color-focus: var(--color-primary-dark);
 
