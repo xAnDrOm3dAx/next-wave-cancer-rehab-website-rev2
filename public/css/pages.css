@@ -193,12 +193,8 @@
 }
 
 /* Services page — anchor service sections
-   scroll-margin-top complements the global scroll-padding-top on html (layout.css)
-   — apply .service-section to every anchor section on services.html */
-
-.service-section {
-  scroll-margin-top: var(--header-height);
-}
+   Anchor offset is handled globally via scroll-padding-top on html (layout.css).
+   Apply .service-section to every anchor section on services.html for spacing rules. */
 
 .service-section h2 {
   margin-bottom: var(--space-2xl);
