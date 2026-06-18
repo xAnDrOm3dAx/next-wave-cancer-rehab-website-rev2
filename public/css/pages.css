@@ -210,11 +210,11 @@
   margin-bottom: var(--space-md);
 }
 
-.service-subsection p + .checklist {
+.service-subsection p + .quals-list {
   margin-top: var(--space-md);
 }
 
-.service-subsection .checklist + p {
+.service-subsection .quals-list + p {
   margin-top: var(--space-lg);
 }
 
