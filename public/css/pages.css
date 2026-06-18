@@ -191,3 +191,38 @@
   margin: 0;
   color: var(--color-muted-text);
 }
+
+/* Services page — anchor service sections
+   scroll-margin-top complements the global scroll-padding-top on html (layout.css)
+   — apply .service-section to every anchor section on services.html */
+
+.service-section {
+  scroll-margin-top: var(--header-height);
+}
+
+.service-section h2 {
+  margin-bottom: var(--space-2xl);
+}
+
+.service-subsection + .service-subsection {
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-2xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.service-subsection h3 {
+  margin-bottom: var(--space-md);
+}
+
+.service-subsection p + .checklist {
+  margin-top: var(--space-md);
+}
+
+.service-subsection .checklist + p {
+  margin-top: var(--space-lg);
+}
+
+.service-section__list-lead {
+  font-weight: 600;
+  margin-top: var(--space-lg);
+}
