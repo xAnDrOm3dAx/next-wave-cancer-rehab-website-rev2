@@ -343,6 +343,12 @@
   display: none;
 }
 
+.disclosure__summary h3 {
+  font: inherit;
+  color: inherit;
+  margin: 0;
+}
+
 .disclosure__summary::after {
   content: "";
   flex-shrink: 0;
