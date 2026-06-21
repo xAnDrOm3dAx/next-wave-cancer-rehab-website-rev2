@@ -355,7 +355,7 @@
   transition: transform 0.25s ease;
 }
 
-details[open] > .disclosure__summary::after {
+details[open]>.disclosure__summary::after {
   transform: rotate(180deg);
 }
 
@@ -376,11 +376,11 @@ details[open] > .disclosure__summary::after {
   line-height: var(--line-height-body);
 }
 
-.disclosure__panel p + .quals-list {
+.disclosure__panel p+.quals-list {
   margin-top: var(--space-md);
 }
 
-.disclosure__panel .quals-list + p {
+.disclosure__panel .quals-list+p {
   margin-top: var(--space-lg);
 }
 
