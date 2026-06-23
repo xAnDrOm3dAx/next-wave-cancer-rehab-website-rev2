@@ -15,6 +15,8 @@ All notable implementation work completed so far is summarised here.
 - Added service content for pre and post-operative care, breast cancer rehabilitation, scar management, side effect management, pain management, exercise rehabilitation, physical activity guidance, and functional assessment/return to activity.
 - Added native disclosure accordions for detailed service subsections, including surgery stages, breast cancer rehabilitation topics, and treatment side effects.
 - Added reusable UI patterns for page heroes, anchor lists, cards, callouts, qualification lists, disclosure accordions, forms, privacy/disclaimer notes, maps, feature items, and grid/split layouts.
+- Implemented the remaining Services page sections: Exercise Rehabilitation, Physical Activity Guidance (evidence-based outcomes and COSA guidelines), and Functional Assessment & Return to Activity.
+- Added a pre-footer CTA band on the Services page ("Not sure where to start?") with links to Contact and Your Next Steps.
 
 ### Changed
 
@@ -24,6 +26,9 @@ All notable implementation work completed so far is summarised here.
 - Improved service list styling, pullquote treatment, card spacing, responsive image sizing, and page-specific spacing rules.
 - Adjusted navigation and footer styling for better mobile behaviour, clearer hover states, and more consistent alignment.
 - Restored and refined typography/layout CSS variables, including content measure and line-height handling.
+- Extended `.cta-band` styles for centred copy, action-button layout, and primary-button treatment on the dark background.
+- Added `.section--prefooter` spacing so the Services CTA band clears the footer wave on large viewports.
+- Reformatted disclosure summary markup across the Services page for readability.
 
 ### Fixed
 
