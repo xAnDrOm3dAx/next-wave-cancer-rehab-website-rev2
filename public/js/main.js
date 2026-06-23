@@ -50,13 +50,28 @@
   });
 })();
 
-/* Return to top */
+/* Return to top — auto-attaches on any page with .page-hero .anchor-list */
 (function () {
   var anchorList = document.querySelector(".page-hero .anchor-list");
+
+  if (!anchorList) {
+    return;
+  }
+
   var btn = document.querySelector(".return-to-top");
 
-  if (!anchorList || !btn) {
-    return;
+  if (!btn) {
+    btn = document.createElement("a");
+    btn.href = "#main-content";
+    btn.className = "return-to-top";
+    btn.innerHTML =
+      '<svg class="return-to-top__icon" aria-hidden="true" focusable="false"' +
+      ' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none">' +
+      '<path d="M10 15V5M5 10l5-5 5 5" stroke="currentColor"' +
+      ' stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>' +
+      "</svg>" +
+      "Back to top";
+    document.body.appendChild(btn);
   }
 
   function show() {
@@ -67,28 +82,24 @@
     btn.classList.remove("return-to-top--visible");
   }
 
+  function updateVisibility() {
+    var rect = anchorList.getBoundingClientRect();
+    if (rect.bottom < 0) {
+      show();
+    } else {
+      hide();
+    }
+  }
+
   if ("IntersectionObserver" in window) {
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          hide();
-        } else {
-          show();
-        }
-      });
+    var observer = new IntersectionObserver(function () {
+      updateVisibility();
     });
     observer.observe(anchorList);
+    updateVisibility();
   } else {
-    function onScroll() {
-      var rect = anchorList.getBoundingClientRect();
-      if (rect.bottom < 0) {
-        show();
-      } else {
-        hide();
-      }
-    }
-    window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
+    window.addEventListener("scroll", updateVisibility, { passive: true });
+    updateVisibility();
   }
 
   btn.addEventListener("click", function (event) {
