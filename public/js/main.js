@@ -49,3 +49,60 @@
     });
   });
 })();
+
+/* Return to top */
+(function () {
+  var anchorList = document.querySelector(".page-hero .anchor-list");
+  var btn = document.querySelector(".return-to-top");
+
+  if (!anchorList || !btn) {
+    return;
+  }
+
+  function show() {
+    btn.classList.add("return-to-top--visible");
+  }
+
+  function hide() {
+    btn.classList.remove("return-to-top--visible");
+  }
+
+  if ("IntersectionObserver" in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          hide();
+        } else {
+          show();
+        }
+      });
+    });
+    observer.observe(anchorList);
+  } else {
+    function onScroll() {
+      var rect = anchorList.getBoundingClientRect();
+      if (rect.bottom < 0) {
+        show();
+      } else {
+        hide();
+      }
+    }
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  }
+
+  btn.addEventListener("click", function (event) {
+    event.preventDefault();
+    var target = document.getElementById("main-content");
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+      target.setAttribute("tabindex", "-1");
+      target.focus({ preventScroll: true });
+      target.addEventListener("blur", function () {
+        target.removeAttribute("tabindex");
+      }, { once: true });
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  });
+})();
