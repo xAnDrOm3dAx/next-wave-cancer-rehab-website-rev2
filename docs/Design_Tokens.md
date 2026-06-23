@@ -102,7 +102,7 @@ Use this as the starting point for `public/css/variables.css`.
 
   /* Typography */
   --font-heading: Georgia, Cambria, "Times New Roman", serif;
-  --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-body: "Source Sans 3", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
   --line-height-tight: 1.1;
   --line-height-heading: 1.18;
