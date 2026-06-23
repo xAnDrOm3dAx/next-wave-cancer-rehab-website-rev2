@@ -4,6 +4,10 @@ All notable implementation work completed so far is summarised here.
 
 ## Unreleased
 
+### Completed
+
+- Completed the current static website implementation pass, covering the core page set, responsive shared navigation and footer, service and About content, reusable CSS patterns, accessibility-minded accordions and anchor behaviour, return-to-top support, and final visual refinements.
+
 ### Added
 
 - Built the initial static site structure for Next Wave Cancer Rehab, including shared HTML page templates, stylesheet layers, and reusable layout/component classes.
