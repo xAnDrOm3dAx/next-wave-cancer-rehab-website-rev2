@@ -212,26 +212,25 @@ Typography should be:
 - suitable for people experiencing fatigue or cognitive load
 - premium without being decorative
 
-## Recommended Starting Point
+## Current Typography Stack
 
-Use system fonts initially for simplicity:
+- Headings: Georgia, Cambria, Times New Roman, serif (system serif)
+- Body: Source Sans 3 (Google Fonts), with system sans-serif fallbacks
 
-- Headings: Georgia, Cambria, Times New Roman, serif
-- Body: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif
+Source Sans 3 is loaded via Google Fonts at weights 400, 500, and 600. CSS tokens:
 
-This keeps the site simple and fast.
+- `--font-heading`: Georgia, Cambria, "Times New Roman", serif
+- `--font-body`: "Source Sans 3", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif
 
-## Future Typography Option
+## Alternative Typography Options
 
-If Google Fonts are added later, possible pairings include:
+If the stack is revised later, possible pairings include:
 
 - Source Serif 4 + Source Sans 3
 - Fraunces + Inter
 - Lora + Source Sans 3
 - Cormorant Garamond + Inter, used carefully
 - Manrope only, for an all-sans premium healthcare feel
-
-Do not add Google Fonts until the core layout is stable.
 
 ---
 
