@@ -126,6 +126,7 @@
   color: var(--color-surface-warm);
   border-radius: var(--radius-lg);
   padding: var(--space-2xl);
+  text-align: center;
 }
 
 .cta-band h2,
