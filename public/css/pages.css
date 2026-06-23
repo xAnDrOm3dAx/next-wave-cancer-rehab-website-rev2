@@ -227,6 +227,14 @@
   margin-top: var(--space-lg);
 }
 
+.service-section p+.quals-list {
+  margin-top: var(--space-md);
+}
+
+.service-section .quals-list+p {
+  margin-top: var(--space-md);
+}
+
 /* Service section — card layout variant (used in sections with no tinted background) */
 
 .service-section--cards .service-subsection {
