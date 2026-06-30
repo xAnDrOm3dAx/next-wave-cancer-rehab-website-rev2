@@ -394,32 +394,31 @@ html {
   width: auto;
 }
 
-/* @media (min-width: 48rem) {
-  .site-footer__inner {
-    grid-template-columns: 1fr 1fr;
-  }
-} */
-
 @media (min-width: 48rem) {
   .site-footer__inner {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .site-footer__inner>div:nth-child(2) {
+    order: 3;
+  }
+
   .site-footer__brand {
     grid-column: auto;
+    order: 2;
     align-items: center;
     text-align: center;
     justify-content: normal;
   }
 
   .site-footer__brand img {
-    max-height: 10rem;
+    max-height: 8rem;
   }
 }
 
 @media (min-width: 64rem) {
   .site-footer__inner {
-    grid-template-columns: 1fr 1fr 1.5fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
