@@ -389,7 +389,7 @@ html {
 }
 
 .site-footer__brand img {
-  max-height: 8rem;
+  max-height: 6rem;
   width: auto;
 }
 
@@ -407,7 +407,11 @@ html {
     order: 2;
     align-items: center;
     text-align: center;
-    justify-content: normal;
+    justify-content: center;
+  }
+
+  .site-footer__brand img {
+    max-height: 8rem;
   }
 }
 
