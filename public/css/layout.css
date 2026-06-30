@@ -363,7 +363,15 @@ html {
 
 .site-footer__inner {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: var(--space-2xl);
+}
+
+.site-footer__brand {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .site-footer__brand a {
@@ -397,11 +405,14 @@ html {
   }
 
   .site-footer__brand {
+    grid-column: auto;
+    align-items: flex-end;
     text-align: right;
+    justify-content: normal;
   }
 
   .site-footer__brand img {
-    max-height: 8rem;
+    max-height: 10rem;
   }
 }
 
