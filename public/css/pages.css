@@ -261,6 +261,35 @@
   }
 }
 
+/* Your Next Steps page — How It Works subsections */
+
+#how-it-works {
+  scroll-margin-top: var(--header-height);
+}
+
+.next-steps-subsection + .next-steps-subsection {
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-2xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.next-steps-subsection h3 {
+  margin-bottom: var(--space-lg);
+}
+
+.next-steps-subsection__list-lead {
+  font-weight: 600;
+  margin-top: var(--space-lg);
+}
+
+.next-steps-subsection p + .checklist {
+  margin-top: var(--space-md);
+}
+
+.next-steps-subsection .checklist + p {
+  margin-top: var(--space-lg);
+}
+
 .section--prefooter {
   padding-top: 0;
 }
