@@ -140,7 +140,7 @@ html {
 
 @media (min-width: 64rem) {
   .split {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
   }
 
   .split--reverse .split__media {
