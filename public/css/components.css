@@ -408,6 +408,19 @@ details[open]>.disclosure__summary::after {
   margin-top: var(--space-lg);
 }
 
+.disclosure__panel p+.checklist {
+  margin-top: var(--space-md);
+}
+
+.disclosure__panel .checklist+p {
+  margin-top: var(--space-lg);
+}
+
+.disclosure__panel h4 {
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-sm);
+}
+
 /* Form layout */
 
 .form {
