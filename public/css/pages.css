@@ -329,6 +329,19 @@
   margin-top: var(--space-xl);
 }
 
+/* Locations subsection within the combined contact + locations section:
+   visual separator (matching the next-steps-subsection and service-subsection pattern) */
+.contact-locations-subsection {
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-2xl);
+  border-top: 1px solid var(--color-border);
+}
+
+/* Gap between the Locations intro paragraph and the cards grid */
+.contact-locations-subsection .section-intro__lead {
+  margin-bottom: var(--space-2xl);
+}
+
 /* Remove default iframe border (older browser reset) */
 .location-card iframe {
   border: 0;
