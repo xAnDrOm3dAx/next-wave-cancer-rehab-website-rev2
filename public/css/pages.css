@@ -267,7 +267,7 @@
   scroll-margin-top: var(--header-height);
 }
 
-.next-steps-subsection + .next-steps-subsection {
+.next-steps-subsection+.next-steps-subsection {
   margin-top: var(--space-2xl);
   padding-top: var(--space-2xl);
   border-top: 1px solid var(--color-border);
@@ -282,11 +282,11 @@
   margin-top: var(--space-lg);
 }
 
-.next-steps-subsection p + .checklist {
+.next-steps-subsection p+.checklist {
   margin-top: var(--space-md);
 }
 
-.next-steps-subsection .checklist + p {
+.next-steps-subsection .checklist+p {
   margin-top: var(--space-lg);
 }
 
@@ -302,9 +302,21 @@
   margin-bottom: var(--space-2xl);
 }
 
+/* Contact detail items */
+.contact-detail-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.contact-detail-item p {
+  font-size: var(--text-md);
+}
+
 /* Form section — space between the form and the follow-up paragraph,
    and between the paragraph and the notice boxes */
-.contact-form-content > .form {
+.contact-form-content>.form {
   margin-bottom: var(--space-xl);
 }
 
@@ -322,11 +334,6 @@
   aspect-ratio: unset;
   overflow: hidden;
   margin-top: var(--space-lg);
-}
-
-/* Telehealth closing note below the location grid */
-.contact-telehealth-note {
-  margin-top: var(--space-xl);
 }
 
 /* Locations subsection within the combined contact + locations section:
