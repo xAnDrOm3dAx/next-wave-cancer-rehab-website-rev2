@@ -251,7 +251,7 @@
   border-top: none;
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 48rem) {
   .service-section--cards .service-subsection {
     padding: var(--space-lg) var(--space-xl);
   }
@@ -308,6 +308,11 @@
   flex-direction: row;
   align-items: center;
   gap: var(--space-md);
+
+  @media (max-width: 48rem) {
+    flex-direction: column;
+    align-items: start;
+  }
 }
 
 .contact-detail-item p {
