@@ -328,12 +328,30 @@
   margin-top: var(--space-md);
 }
 
-/* Location cards — disable map-block aspect-ratio so the iframe height
-   drives the container, and space the map below the card text */
-.location-card .map-block {
-  aspect-ratio: unset;
+/* Location cards — stretch to equal grid height; map fills remaining space
+   and sits flush with the card bottom (no padding/border gap) */
+.location-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-bottom: 0;
   overflow: hidden;
+}
+
+.location-card .map-block {
+  flex: 1 1 auto;
+  aspect-ratio: unset;
+  min-height: 16rem;
   margin-top: var(--space-lg);
+  margin-left: calc(-1 * var(--space-xl));
+  margin-right: calc(-1 * var(--space-xl));
+  margin-bottom: 0;
+  width: calc(100% + 2 * var(--space-xl));
+  border: 0;
+  border-top: 1px solid var(--color-border);
+  border-radius: 0;
+  overflow: hidden;
+  line-height: 0;
 }
 
 /* Locations subsection within the combined contact + locations section:
@@ -349,8 +367,12 @@
   margin-bottom: var(--space-2xl);
 }
 
-/* Remove default iframe border (older browser reset) */
+/* Map iframe fills the map-block completely (removes inline-gap under iframe) */
 .location-card iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 16rem;
   border: 0;
 }
 
