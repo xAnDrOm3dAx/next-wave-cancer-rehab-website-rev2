@@ -294,7 +294,48 @@
   padding-top: 0;
 }
 
-/* Services page — CTA band directly above the footer.
+/* Contact Page
+   ========================================= */
+
+/* Section heading bottom margin */
+.contact-section h2 {
+  margin-bottom: var(--space-2xl);
+}
+
+/* Form section — space between the form and the follow-up paragraph,
+   and between the paragraph and the notice boxes */
+.contact-form-content > .form {
+  margin-bottom: var(--space-xl);
+}
+
+.contact-form-content .privacy-note {
+  margin-top: var(--space-xl);
+}
+
+.contact-form-content .disclaimer-box {
+  margin-top: var(--space-md);
+}
+
+/* Location cards — disable map-block aspect-ratio so the iframe height
+   drives the container, and space the map below the card text */
+.location-card .map-block {
+  aspect-ratio: unset;
+  overflow: hidden;
+  margin-top: var(--space-lg);
+}
+
+/* Telehealth closing note below the location grid */
+.contact-telehealth-note {
+  margin-top: var(--space-xl);
+}
+
+/* Remove default iframe border (older browser reset) */
+.location-card iframe {
+  border: 0;
+}
+
+/* =========================================
+   Services page — CTA band directly above the footer.
    At 64rem+ the footer wave uses margin-top: -140px / height: 140px.
    The default section bottom padding (max 7rem = 112px) is not enough to
    clear the wave, causing it to cut into the dark card. Push the bottom
