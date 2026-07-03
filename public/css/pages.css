@@ -315,10 +315,6 @@
   }
 }
 
-.contact-detail-item p {
-  font-size: var(--text-md);
-}
-
 /* Form section — space between the form and the follow-up paragraph,
    and between the paragraph and the notice boxes */
 .contact-form-content>.form {
