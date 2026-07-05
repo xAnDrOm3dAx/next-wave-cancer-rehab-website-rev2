@@ -171,13 +171,17 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-sm);
+
+  @media (max-width: 48rem) {
+    justify-content: center;
+  }
 }
 
 .anchor-list__link {
   display: inline-flex;
   align-items: center;
   min-height: 2.5rem;
-  padding: var(--space-xs) var(--space-md);
+  padding: var(--space-xs) var(--space-sm);
   font-size: var(--text-sm);
   font-weight: 500;
   text-decoration: none;
@@ -185,6 +189,10 @@
   background-color: var(--color-surface-sage);
   border-radius: var(--radius-pill);
   border: 1.5px solid var(--color-primary-dark);
+
+  @media (max-width: 48rem) {
+    text-align: center;
+  }
 }
 
 .anchor-list__link:hover {
