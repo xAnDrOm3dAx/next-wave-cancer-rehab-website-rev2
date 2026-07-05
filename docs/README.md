@@ -26,7 +26,7 @@ Treat this file as the index, and treat `Next_Wave_Website_Planning_Handover.md`
    The practical build guide for Cursor. Use this for technology constraints, file structure, coding rules, reusable components, accessibility requirements, and the recommended build order.
 
 6. `Content_Source.md`  
-   The source-content reference. Use this when writing or structuring page content for About, Services, Your Next Steps, Referrals, Contact, Location, Privacy Policy, and Terms of Use.
+   The source-content reference. Use this when writing or structuring page content for About, Services, Your Next Steps, Referrers, Contact, Privacy Policy, and Terms & Conditions.
 
 ## Asset Included
 

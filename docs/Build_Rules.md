@@ -267,7 +267,7 @@ Use careful claim language:
 11. Build Contact page.
     Location details are included on the Contact page, not a separate page.
 12. Build Referrers page.
-13. Add Privacy Policy and Terms of Use placeholder pages.
+13. Add Privacy Policy and Terms & Conditions placeholder pages.
 14. Review responsiveness.
 15. Review accessibility.
 16. Review healthcare compliance.
