@@ -149,15 +149,12 @@
       <div class="container">
         <h2>Send an Enquiry</h2>
         <div class="contact-form-content">
-          </p>
           <form class="form" novalidate>
-            <p class="section-intro__lead">Thanks for getting in touch! We personally review every enquiry and endeavour
-              to respond as soon as
-              possible.</p>
+            <p class="section-intro__lead">Thanks for getting in touch! We personally review every enquiry and will
+              endeavour to respond as soon as possible.</p>
             <div class="disclaimer-box">
               <p>This form is not monitored for urgent medical concerns. If you need urgent medical help, contact your
-                GP,
-                treating team, 000, or your nearest emergency department.</p>
+                GP, treating team, call 000, or visit your nearest emergency department.</p>
             </div>
             <p class="form__note">Fields marked <span aria-hidden="true">*</span> are required.</p>
 
@@ -173,12 +170,12 @@
 
             <div class="form__group">
               <label for="contact-phone">Phone number <span aria-hidden="true">*</span></label>
-              <input type="tel" id="contact-phone" name="phone" autocomplete="tel">
+              <input type="tel" id="contact-phone" name="phone" autocomplete="tel" required>
             </div>
 
             <div class="form__group">
               <label for="contact-role">I am a <span aria-hidden="true">*</span></label>
-              <select id="contact-role" name="role">
+              <select id="contact-role" name="role" required>
                 <option value="">Please select&hellip;</option>
                 <option value="patient">Patient</option>
                 <option value="family">Family member or carer</option>
@@ -189,7 +186,7 @@
 
             <div class="form__group">
               <label for="contact-method">Preferred contact method <span aria-hidden="true">*</span></label>
-              <select id="contact-method" name="preferred_contact">
+              <select id="contact-method" name="preferred_contact" required>
                 <option value="">Please select&hellip;</option>
                 <option value="phone">Phone</option>
                 <option value="email">Email</option>
@@ -199,6 +196,11 @@
             <div class="form__group">
               <label for="contact-message">Message <span aria-hidden="true">*</span></label>
               <textarea id="contact-message" name="message" rows="5"></textarea>
+            </div>
+
+            <div class="disclaimer-box">
+              <p>Please avoid including highly sensitive medical information in this form. We can discuss your situation
+                privately during your appointment or during the intake process.</p>
             </div>
 
             <div class="form__checkbox">
