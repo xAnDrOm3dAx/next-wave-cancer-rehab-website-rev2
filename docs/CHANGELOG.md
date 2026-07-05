@@ -50,3 +50,9 @@ All notable implementation work completed so far is summarised here.
 - Hid the mobile hamburger control in desktop layouts.
 - Corrected mobile navigation positioning and hover styling.
 - Tidied CSS selector spacing and HTML formatting for maintainability.
+- Fixed an invalid orphaned closing `</p>` tag preceding the Contact page enquiry form.
+- Added missing `required` attributes to the Phone, "I am a," and Preferred contact method fields on the Contact form, matching their visible required-field indicators.
+- Added a privacy notice disclaimer to the Contact form advising against including highly sensitive medical information.
+- Updated the Contact page "after you enquire" messaging.
+- Corrected the "Clinical expertise" heading on the About page to "Clinical Experience," removing a restricted AHPRA term.
+- Updated the Noosa location card business name and its map embed title to Cancer Care Associates.
