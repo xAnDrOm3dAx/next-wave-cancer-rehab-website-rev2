@@ -83,7 +83,6 @@ next-wave-cancer-rehab/
 ├── services.html
 ├── your-next-steps.html
 ├── referrers.html
-├── location.html
 ├── contact.html
 ├── privacy-policy.html
 ├── terms-and-conditions.html
@@ -266,14 +265,14 @@ Use careful claim language:
 9. Build Services page.
 10. Build Your Next Steps page.
 11. Build Contact page.
-12. Build Referrals page.
-13. Build Location page.
-14. Add Privacy Policy and Terms of Use placeholder pages.
-15. Review responsiveness.
-16. Review accessibility.
-17. Review healthcare compliance.
-18. Optimise images.
-19. Prepare for deployment.
+    Location details are included on the Contact page, not a separate page.
+12. Build Referrers page.
+13. Add Privacy Policy and Terms of Use placeholder pages.
+14. Review responsiveness.
+15. Review accessibility.
+16. Review healthcare compliance.
+17. Optimise images.
+18. Prepare for deployment.
 
 ---
 
@@ -316,7 +315,6 @@ Confirmed site pages:
 - services.html
 - your-next-steps.html
 - referrers.html
-- location.html
 - contact.html
 - privacy-policy.html
 - terms-and-conditions.html
@@ -326,7 +324,7 @@ Main navigation:
 - About
 - Services
 - Your Next Steps
-- Referrals
+- Referrers
 - Contact
 
 Footer navigation:
@@ -334,11 +332,10 @@ Footer navigation:
 - About
 - Services
 - Your Next Steps
-- Referrals
-- Location
+- Referrers
 - Contact
 - Privacy Policy
-- Terms of Use
+- Terms & Conditions
 
 Colour palette:
 - Soft Eucalyptus Sage: #A8BFB3

@@ -558,7 +558,7 @@ Recommended final main navigation:
 2. About
 3. Services
 4. Your Next Steps
-5. Referrals
+5. Referrers
 6. Contact
 
 ## Footer Navigation
@@ -569,13 +569,10 @@ Recommended footer navigation:
 2. About
 3. Services
 4. Your Next Steps
-5. Referrals
-6. Location
-7. Contact
-8. Privacy Policy
-9. Terms of Use
-
-Location should be footer-only.
+5. Referrers
+6. Contact
+7. Privacy Policy
+8. Terms & Conditions
 
 ## Confirmed Pages
 
@@ -587,7 +584,6 @@ about.html
 services.html
 your-next-steps.html
 referrers.html
-location.html
 contact.html
 privacy-policy.html
 terms-and-conditions.html
@@ -606,7 +602,6 @@ next-wave-cancer-rehab/
 ├── services.html
 ├── your-next-steps.html
 ├── referrers.html
-├── location.html
 ├── contact.html
 ├── privacy-policy.html
 ├── terms-and-conditions.html
@@ -1248,41 +1243,7 @@ This form is not monitored for urgent medical concerns. If you need urgent medic
 
 ## 16.7 Location Page
 
-File:
-
-```text
-location.html
-```
-
-## Page Goal
-
-The Location page supports local SEO and provides practical access information.
-
-This page should be in the footer, not the main navigation.
-
-The Contact CTA has been removed from the Location page.
-
-## Recommended Sections
-
-1. Page hero
-2. Clinic location
-3. Parking
-4. Accessibility
-5. What to expect when arriving
-6. Service area
-7. Map, if appropriate
-8. Telehealth note
-
-## Required Details Still Needed
-
-- exact clinic address
-- whether the clinic is inside another clinic or health business
-- parking details
-- accessibility details
-- public transport details
-- nearby landmarks
-- Google Maps embed preference
-- service area wording
+Location page merged into Contact page (contact.html) — see 16.6.
 
 ---
 
@@ -1621,7 +1582,6 @@ Confirmed site pages:
 - services.html
 - your-next-steps.html
 - referrers.html
-- location.html
 - contact.html
 - privacy-policy.html
 - terms-and-conditions.html
@@ -1631,7 +1591,7 @@ Main navigation:
 - About
 - Services
 - Your Next Steps
-- Referrals
+- Referrers
 - Contact
 
 Footer navigation:
@@ -1639,11 +1599,10 @@ Footer navigation:
 - About
 - Services
 - Your Next Steps
-- Referrals
-- Location
+- Referrers
 - Contact
 - Privacy Policy
-- Terms of Use
+- Terms & Conditions
 
 Colour palette:
 - Soft Eucalyptus Sage: #A8BFB3
@@ -1697,8 +1656,8 @@ Start by scaffolding the static file structure and CSS files. Do not write every
 
 ## Navigation
 
-6. Confirm final page label: “Referrals” or “For Referrers”.
-7. ~~Confirm file name: `referrals.html` or `referrers.html`.~~ Confirmed: `referrers.html`.
+6. ~~Confirm final page label: “Referrals” or “For Referrers”.~~ Resolved: label is “Referrers,” filename is referrers.html.
+7. ~~Confirm final filename for the referrers page.~~ Confirmed: `referrers.html`.
 
 ## Contact and Bookings
 
@@ -1710,13 +1669,13 @@ Start by scaffolding the static file structure and CSS files. Do not write every
 
 ## Location
 
-13. What is the exact clinic address?
-14. Is the clinic inside another clinic or health business?
-15. What are the parking details?
-16. What are the accessibility details?
-17. Are there nearby landmarks?
-18. Should there be a Google Maps embed?
-19. What exact service area should be listed?
+13. ~~What is the exact clinic address?~~ Superseded — location detail now lives on contact.html.
+14. ~~Is the clinic inside another clinic or health business?~~ Superseded — location detail now lives on contact.html.
+15. ~~What are the parking details?~~ Superseded — location detail now lives on contact.html.
+16. ~~What are the accessibility details?~~ Superseded — location detail now lives on contact.html.
+17. ~~Are there nearby landmarks?~~ Superseded — location detail now lives on contact.html.
+18. ~~Should there be a Google Maps embed?~~ Superseded — location detail now lives on contact.html.
+19. ~~What exact service area should be listed?~~ Superseded — location detail now lives on contact.html.
 
 ## Services
 
