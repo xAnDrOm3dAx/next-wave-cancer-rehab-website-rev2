@@ -716,8 +716,8 @@ The homepage should feel calm, clear, and reassuring.
 4. Services Snapshot
 5. Meet Megan
 6. Your Next Steps Preview
-7. Referrals Preview
-8. Location and Telehealth Snapshot
+7. Referrers Preview
+8. Location and Telehealth Details
 9. Final CTA
 
 ## Home Hero Direction
@@ -1120,7 +1120,7 @@ Telehealth can help improve access for people in rural and regional communities 
 
 ---
 
-## 16.5 Referrals Page
+## 16.5 Referrers Page
 
 File:
 
@@ -1130,7 +1130,7 @@ referrers.html
 
 ## Page Goal
 
-The Referrals page should make it easy for health professionals to understand who to refer, when to refer, and how to refer.
+The Referrers page should make it easy for health professionals to understand who to refer, when to refer, and how to refer.
 
 The tone should be professional, concise, clinically credible, and collaborative.
 
@@ -1241,8 +1241,6 @@ This form is not monitored for urgent medical concerns. If you need urgent medic
 
 ---
 
-## 16.7 Location Page
-
 Location page merged into Contact page (contact.html) — see 16.6.
 
 ---
@@ -1278,7 +1276,7 @@ Do not treat the AI-generated privacy policy as legal advice.
 
 ---
 
-## 16.9 Terms of Use Page
+## 16.9 Terms & Conditions Page
 
 File:
 
@@ -1439,7 +1437,7 @@ Before publication:
 
 ## Local SEO Pages
 
-The Location page should support local search intent.
+Location details on the Contact page should support local search intent.
 
 Potential local terms:
 
@@ -1511,11 +1509,11 @@ Meta description:
 
 Learn when to access cancer rehabilitation, what to expect at your first appointment, whether you need a referral, and how telehealth may support care.
 
-## Referrals
+## Referrers
 
 Title:
 
-Referrals | Next Wave Cancer Rehab
+Referrers | Next Wave Cancer Rehab
 
 Meta description:
 
@@ -1530,16 +1528,6 @@ Contact | Next Wave Cancer Rehab
 Meta description:
 
 Contact Next Wave Cancer Rehab to make an enquiry, request an appointment, or discuss cancer rehabilitation and oncology physiotherapy support on the Sunshine Coast.
-
-## Location
-
-Title:
-
-Location | Next Wave Cancer Rehab Sunshine Coast
-
-Meta description:
-
-Find location, parking, access information, and telehealth details for Next Wave Cancer Rehab on the Sunshine Coast.
 
 ---
 
@@ -1630,14 +1618,14 @@ Start by scaffolding the static file structure and CSS files. Do not write every
 9. Build Services page.
 10. Build Your Next Steps page.
 11. Build Contact page.
-12. Build Referrals page.
-13. Build Location page.
-14. Add Privacy Policy and Terms of Use placeholder pages.
-15. Review responsiveness.
-16. Review accessibility.
-17. Review healthcare compliance.
-18. Optimise images.
-19. Prepare for deployment.
+    Location details are included on the Contact page, not a separate page.
+12. Build Referrers page.
+13. Add Privacy Policy and Terms & Conditions placeholder pages.
+14. Review responsiveness.
+15. Review accessibility.
+16. Review healthcare compliance.
+17. Optimise images.
+18. Prepare for deployment.
 
 ---
 
@@ -1667,7 +1655,7 @@ Start by scaffolding the static file structure and CSS files. Do not write every
 11. What CRM or booking system will forms connect to?
 12. Should the contact form submit directly, embed a third-party form, or link externally?
 
-## Location
+## Clinic Location Details (Contact page)
 
 13. ~~What is the exact clinic address?~~ Superseded — location detail now lives on contact.html.
 14. ~~Is the clinic inside another clinic or health business?~~ Superseded — location detail now lives on contact.html.
@@ -1687,7 +1675,7 @@ Start by scaffolding the static file structure and CSS files. Do not write every
 
 23. Confirm testimonial will not be published until compliance review.
 24. Confirm whether clinical references should appear on-page.
-25. Confirm final Privacy Policy and Terms of Use with an appropriate professional.
+25. Confirm final Privacy Policy and Terms & Conditions with an appropriate professional.
 
 ## Assets
 
@@ -1735,7 +1723,7 @@ Start by scaffolding the static file structure and CSS files. Do not write every
 
 Recommendation:
 
-- Use mostly third-person on Home, Services, Contact, Location, and Referrals.
+- Use mostly third-person on Home, Services, Contact, and Referrers.
 - Use warmer first-person language on About, especially in “Behind The Name” and “Meet Megan”.
 
 ## Example Third-Person Style
