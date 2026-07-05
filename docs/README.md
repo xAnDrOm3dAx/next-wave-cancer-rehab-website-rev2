@@ -69,7 +69,6 @@ about.html
 services.html
 your-next-steps.html
 referrers.html
-location.html
 contact.html
 privacy-policy.html
 terms-and-conditions.html
@@ -83,7 +82,7 @@ Main navigation:
 - About
 - Services
 - Your Next Steps
-- Referrals
+- Referrers
 - Contact
 
 Footer navigation:
@@ -92,9 +91,8 @@ Footer navigation:
 - About
 - Services
 - Your Next Steps
-- Referrals
-- Location
+- Referrers
 - Contact
 - Privacy Policy
-- Terms of Use
+- Terms & Conditions
 ```
