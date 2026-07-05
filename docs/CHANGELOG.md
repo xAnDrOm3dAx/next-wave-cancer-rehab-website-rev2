@@ -6,7 +6,7 @@ All notable implementation work completed so far is summarised here.
 
 ### Completed
 
-- Completed the current static website implementation pass, covering the core page set, responsive shared navigation and footer, service and About content, reusable CSS patterns, accessibility-minded accordions and anchor behaviour, return-to-top support, and final visual refinements.
+- Completed the current static website implementation pass through About, Services, Your Next Steps, and Contact: shared responsive navigation and footer, reusable CSS patterns, accessibility-minded accordions and anchor behaviour, return-to-top support, site-wide branding (Source Sans 3, SVG logos, favicons), and merged location/contact information. Home, Referrers, Privacy Policy, and Terms & Conditions remain placeholder shells.
 
 ### Added
 
@@ -21,6 +21,10 @@ All notable implementation work completed so far is summarised here.
 - Added reusable UI patterns for page heroes, anchor lists, cards, callouts, qualification lists, disclosure accordions, forms, privacy/disclaimer notes, maps, feature items, and grid/split layouts.
 - Implemented the remaining Services page sections: Exercise Rehabilitation, Physical Activity Guidance (evidence-based outcomes and COSA guidelines), and Functional Assessment & Return to Activity.
 - Added a pre-footer CTA band on the Services page ("Not sure where to start?") with links to Contact and Your Next Steps.
+- Implemented the Your Next Steps page with rehabilitation-stage disclosure sections, How It Works appointment guidance, telehealth information, and a pre-footer CTA.
+- Implemented the Contact page with icon-backed contact details, two location cards with embedded maps, telehealth availability, and an enquiry form with required-field indicators and medical/privacy disclaimers.
+- Added favicon assets and applied consistent header and footer SVG logo treatment across all pages.
+- Adopted Source Sans 3 as the site body font via Google Fonts.
 
 ### Changed
 
@@ -33,6 +37,11 @@ All notable implementation work completed so far is summarised here.
 - Extended `.cta-band` styles for centred copy, action-button layout, and primary-button treatment on the dark background.
 - Added `.section--prefooter` spacing so the Services CTA band clears the footer wave on large viewports.
 - Reformatted disclosure summary markup across the Services page for readability.
+- Merged the former Location page into Contact and removed `location.html` from the site structure.
+- Renamed navigation from "Referrals" to "Referrers" site-wide and reorganised the footer into Explore and Get in touch groups.
+- Replaced footer tagline text with the secondary logo image and refined footer alignment and sizing.
+- Added border styling to shared components and refined checklist and split-column layout responsiveness.
+- Clarified Megan's lymphoedema role on About and Services, and aligned About page headings for consistency.
 
 ### Fixed
 
