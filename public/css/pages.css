@@ -302,19 +302,6 @@
   margin-bottom: var(--space-2xl);
 }
 
-/* Contact detail items */
-.contact-detail-item {
-  display: flex;
-  flex-direction: row;
-  align-items: start;
-  gap: var(--space-md);
-
-  @media (max-width: 48rem) {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 /* Form section — space between the form and the follow-up paragraph,
    and between the paragraph and the notice boxes */
 .contact-form-content>.form {
