@@ -83,7 +83,7 @@ Include:
 
 Use this wherever lymphoedema is discussed:
 
-Megan holds formal training in upper quadrant lymphoedema management. She uses this training to support early identification, risk reduction, and basic management strategies, and works closely with dedicated lymphoedema therapists when more comprehensive care is required.
+Whilst Megan holds formal qualifications in upper quadrant lymphoedema management, she does not practise as a dedicated lymphoedema therapist. Instead, she uses this training to guide patients in early identification, risk reduction, and basic management strategies, and works closely with lymphoedema therapists when more comprehensive care is required.
 
 ---
 
