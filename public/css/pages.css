@@ -388,3 +388,41 @@
     padding-bottom: 9.5rem;
   }
 }
+
+/* Referrers page
+   ========================================= */
+
+#working-together,
+#how-to-refer,
+#referral-form {
+  scroll-margin-top: var(--header-height);
+}
+
+.referrers-checklist {
+  margin-top: var(--space-xl);
+}
+
+.referrers-contact-grid {
+  margin-top: var(--space-xl);
+}
+
+.quals-callout--standalone {
+  margin-top: 0;
+  max-width: var(--content-measure);
+}
+
+.referral-fieldset-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.referral-form-preference {
+  gap: var(--space-sm);
+}
+
+.referral-other-input {
+  margin-top: var(--space-xs);
+  display: block;
+  width: 100%;
+}

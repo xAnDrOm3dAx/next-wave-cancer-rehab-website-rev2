@@ -64,7 +64,291 @@
   </header>
 
   <main id="main-content" class="page__main">
-    <!-- Page content to be added -->
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero__content">
+          <p class="page-hero__eyebrow">Referrers</p>
+          <h1>Referring to Next Wave Cancer Rehab</h1>
+          <p class="page-hero__lead">Information for GPs, oncologists, surgeons, breast care nurses, and allied health professionals referring patients for cancer rehabilitation physiotherapy on the Sunshine Coast.</p>
+          <div class="page-hero__actions">
+            <nav class="anchor-list" aria-label="On this page">
+              <a href="#working-together" class="anchor-list__link">Working Alongside Your Care Team</a>
+              <a href="#how-to-refer" class="anchor-list__link">How to Refer</a>
+              <a href="#referral-form" class="anchor-list__link">Referral Form</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What We Can Help With -->
+    <section class="section section--sage">
+      <div class="container">
+        <div class="section-intro">
+          <h2>What We Can Help With</h2>
+          <p class="section-intro__lead">Megan sees patients across all tumour groups and at any stage of the cancer experience, from diagnosis through treatment, survivorship, and palliative care. Common referral areas include:</p>
+        </div>
+        <ul class="checklist referrers-checklist">
+          <li class="checklist__item">Scar management after surgery, biopsy, radiotherapy, or reconstruction</li>
+          <li class="checklist__item">Breast cancer rehabilitation, including shoulder, chest wall, and arm recovery</li>
+          <li class="checklist__item">Pre and post-operative rehabilitation</li>
+          <li class="checklist__item">Side-effect management, including fatigue, joint pain, breathlessness, and peripheral neuropathy</li>
+          <li class="checklist__item">Physical activity guidance and facilitation during and after treatment</li>
+          <li class="checklist__item">Pain management related to cancer, surgery, or treatment</li>
+          <li class="checklist__item">Functional assessment and return to activity, work, or daily independence</li>
+          <li class="checklist__item">Exercise rehabilitation and progressive conditioning</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Lymphoedema Scope Note -->
+    <section class="section section--compact">
+      <div class="container">
+        <div class="quals-callout quals-callout--standalone">
+          <h3 class="quals-callout__heading">A note on lymphoedema</h3>
+          <p>Whilst Megan holds formal qualifications in upper quadrant lymphoedema management, she does not practise as a dedicated lymphoedema therapist. Instead, she uses this training to guide patients in early identification, risk reduction, and basic management strategies, and works closely with lymphoedema therapists when more comprehensive care is required.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Working Alongside Your Care Team -->
+    <section id="working-together" class="section section--warm">
+      <div class="container">
+        <h2>Working Alongside Your Care Team</h2>
+        <p>Next Wave Cancer Rehab is designed to complement the care your patient is already receiving. Megan values close collaboration with the wider oncology and multidisciplinary team and is committed to care that is consistent, well communicated, and supportive of the broader treatment plan.</p>
+        <ul class="checklist referrers-checklist">
+          <li class="checklist__item">Referral summaries and progress notes are available on request, supporting continuity within the treating team.</li>
+          <li class="checklist__item">Megan welcomes referrals from GPs, oncologists, surgeons, breast care nurses, radiation therapists, and allied health professionals across the care pathway.</li>
+          <li class="checklist__item">If you are unsure whether a patient is appropriate for referral, Megan is available to discuss informally before a formal referral is made.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- How to Refer -->
+    <section id="how-to-refer" class="section section--sage contact-section">
+      <div class="container">
+        <h2>How to Refer</h2>
+        <p>Referrals can be made by email or phone, or by completing the <a href="#referral-form">referral form below</a>. No formal referral letter is required, although any relevant clinical information is welcome.</p>
+        <div class="grid grid--2 referrers-contact-grid">
+          <div class="contact-detail-item">
+            <img src="public/icons/mail-green.svg" alt="" width="50" height="50">
+            <p><strong>Email:</strong> <a href="mailto:referrals@nextwavecancerrehab.com.au">referrals@nextwavecancerrehab.com.au</a></p>
+          </div>
+          <div class="contact-detail-item">
+            <img src="public/icons/phone-green.svg" alt="" width="50" height="50">
+            <p><strong>Phone:</strong> <a href="tel:0493007436">0493 007 436</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Referral Form -->
+    <section id="referral-form" class="section contact-section">
+      <div class="container">
+        <h2>Referral Form</h2>
+        <div class="contact-form-content">
+
+          <form class="form" novalidate>
+            <!-- FORM ACTION: pending Apps Script Web App URL, wire alongside contact.html per parked decision -->
+
+            <p class="form__note">Complete the form below to refer a patient. Fields marked <span aria-hidden="true">*</span> are required.</p>
+
+            <fieldset>
+              <legend>Patient Details</legend>
+              <div class="referral-fieldset-body">
+
+                <div class="form__group">
+                  <label for="pat-firstname">First Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="pat-firstname" name="patient_firstname" autocomplete="given-name" required>
+                </div>
+
+                <div class="form__group">
+                  <label for="pat-lastname">Last Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="pat-lastname" name="patient_lastname" autocomplete="family-name" required>
+                </div>
+
+                <div class="form__group">
+                  <label for="pat-dob">Date of Birth <span aria-hidden="true">*</span></label>
+                  <input type="date" id="pat-dob" name="patient_dob" required>
+                </div>
+
+                <div class="form__group">
+                  <label for="pat-phone">Phone <span aria-hidden="true">*</span></label>
+                  <input type="tel" id="pat-phone" name="patient_phone" autocomplete="tel" required>
+                </div>
+
+                <div class="form__group">
+                  <label for="pat-email">Email <span aria-hidden="true">*</span></label>
+                  <input type="email" id="pat-email" name="patient_email" autocomplete="email" required>
+                </div>
+
+                <div class="form__group">
+                  <label for="pat-urn">Hospital / URN Number (if known)</label>
+                  <input type="text" id="pat-urn" name="patient_urn">
+                </div>
+
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Referrer Details</legend>
+              <div class="referral-fieldset-body">
+
+                <div class="form__group">
+                  <label for="ref-name">Referrer Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="ref-name" name="referrer_name" autocomplete="name" required>
+                </div>
+
+                <div class="form__group">
+                  <label for="ref-position">Position <span aria-hidden="true">*</span></label>
+                  <input type="text" id="ref-position" name="referrer_position" required>
+                </div>
+
+                <div class="form__group">
+                  <label for="ref-practice">Practice Name &amp; Location <span aria-hidden="true">*</span></label>
+                  <input type="text" id="ref-practice" name="referrer_practice" required>
+                </div>
+
+                <div class="form__group">
+                  <label for="ref-phone">Phone <span aria-hidden="true">*</span></label>
+                  <input type="tel" id="ref-phone" name="referrer_phone" autocomplete="tel" required>
+                </div>
+
+                <div class="form__group">
+                  <label for="ref-email">Email <span aria-hidden="true">*</span></label>
+                  <input type="email" id="ref-email" name="referrer_email" autocomplete="email" required>
+                </div>
+
+                <div class="form__checkbox">
+                  <input type="checkbox" id="ref-consent" name="referrer_consent" required>
+                  <label for="ref-consent">I confirm the patient has consented to being contacted about this referral. <span aria-hidden="true">*</span></label>
+                </div>
+
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Reason for Referral</legend>
+              <div class="referral-fieldset-body">
+
+                <div class="checklist">
+                  <div class="form__checkbox">
+                    <input type="checkbox" id="reason-scar" name="reason[]" value="Scar Management">
+                    <label for="reason-scar">Scar Management</label>
+                  </div>
+                  <div class="form__checkbox">
+                    <input type="checkbox" id="reason-breast" name="reason[]" value="Breast Cancer Rehabilitation">
+                    <label for="reason-breast">Breast Cancer Rehabilitation</label>
+                  </div>
+                  <div class="form__checkbox">
+                    <input type="checkbox" id="reason-periop" name="reason[]" value="Pre &amp; Post-Operative Care">
+                    <label for="reason-periop">Pre &amp; Post-Operative Care</label>
+                  </div>
+                  <div class="form__checkbox">
+                    <input type="checkbox" id="reason-sideeffect" name="reason[]" value="Side-Effect Management">
+                    <label for="reason-sideeffect">Side-Effect Management</label>
+                  </div>
+                  <div class="form__checkbox">
+                    <input type="checkbox" id="reason-activity" name="reason[]" value="Physical Activity Guidance &amp; Facilitation">
+                    <label for="reason-activity">Physical Activity Guidance &amp; Facilitation</label>
+                  </div>
+                  <div class="form__checkbox">
+                    <input type="checkbox" id="reason-pain" name="reason[]" value="Pain Management">
+                    <label for="reason-pain">Pain Management</label>
+                  </div>
+                  <div class="form__checkbox">
+                    <input type="checkbox" id="reason-functional" name="reason[]" value="Functional Assessment / Return to Activity">
+                    <label for="reason-functional">Functional Assessment / Return to Activity</label>
+                  </div>
+                  <div class="form__checkbox">
+                    <input type="checkbox" id="reason-exercise" name="reason[]" value="Exercise Rehabilitation">
+                    <label for="reason-exercise">Exercise Rehabilitation</label>
+                  </div>
+                  <div class="form__checkbox">
+                    <input type="checkbox" id="reason-other" name="reason[]" value="Other">
+                    <div>
+                      <label for="reason-other">Other (please specify)</label>
+                      <input type="text" id="reason-other-text" name="reason_other" aria-label="Please specify other reason" class="referral-other-input">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form__group">
+                  <label for="referral-details">Please share any further details that may help us understand this referral.</label>
+                  <textarea id="referral-details" name="referral_details" rows="5"></textarea>
+                </div>
+
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Appointment Preferences</legend>
+              <div class="referral-fieldset-body">
+
+                <div class="form__group referral-form-preference">
+                  <p><strong>Preferred Clinic</strong></p>
+                  <div class="form__checkbox">
+                    <input type="radio" id="clinic-sippy" name="preferred_clinic" value="Sippy Downs">
+                    <label for="clinic-sippy">Sippy Downs</label>
+                  </div>
+                  <div class="form__checkbox">
+                    <input type="radio" id="clinic-noosa" name="preferred_clinic" value="Noosaville">
+                    <label for="clinic-noosa">Noosaville</label>
+                  </div>
+                </div>
+
+                <div class="form__group referral-form-preference">
+                  <p><strong>Preferred Contact Method</strong></p>
+                  <div class="form__checkbox">
+                    <input type="radio" id="pref-phone" name="preferred_contact" value="Phone">
+                    <label for="pref-phone">Phone</label>
+                  </div>
+                  <div class="form__checkbox">
+                    <input type="radio" id="pref-email" name="preferred_contact" value="Email">
+                    <label for="pref-email">Email</label>
+                  </div>
+                </div>
+
+              </div>
+            </fieldset>
+
+            <!-- Honeypot: visually hidden, not display:none -->
+            <div class="sr-only" aria-hidden="true">
+              <label for="referral-website">Leave this field blank</label>
+              <input type="text" id="referral-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div>
+              <button type="submit" class="btn btn--primary">Submit Referral</button>
+            </div>
+
+          </form>
+
+          <p class="privacy-note form__note">Information submitted through this form is stored securely within Next Wave Cancer Rehab&#8217;s own systems and used only to arrange care for the patient referred. See our <a href="privacy-policy.html">Privacy Policy</a> for more information.</p>
+          <div class="disclaimer-box">
+            <p>This form is not monitored in real time and should not be used for urgent clinical matters. In an emergency, call 000.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Not Sure Whether to Refer? -->
+    <section class="section section--prefooter">
+      <div class="container">
+        <div class="cta-band">
+          <h2>Not Sure Whether to Refer?</h2>
+          <p>If you&#8217;re unsure whether a patient is suitable for cancer rehabilitation physiotherapy, get in touch, we&#8217;re happy to discuss.</p>
+          <div class="cta-band__actions">
+            <a href="contact.html" class="btn btn--primary">Make an Enquiry</a>
+            <a href="tel:0493007436" class="btn btn--secondary">0493 007 436</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
