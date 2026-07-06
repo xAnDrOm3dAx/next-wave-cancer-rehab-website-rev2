@@ -504,7 +504,8 @@ html {
 
 /* Utility classes */
 
-.sr-only {
+.sr-only,
+.visually-hidden-honeypot {
   position: absolute;
   width: 1px;
   height: 1px;

@@ -443,6 +443,13 @@ details[open]>.disclosure__summary::after {
   flex-direction: column;
 }
 
+/* Nested fieldset used as a .form__group (e.g. .referral-form-preference):
+   removes the browser's default legend inline padding so the legend lines
+   up flush with the fieldset body, matching the plain div/p pattern. */
+.form__group>legend {
+  padding: 0;
+}
+
 .form__note {
   font-size: var(--text-sm);
   color: var(--color-muted-text);
@@ -483,6 +490,27 @@ details[open]>.disclosure__summary::after {
   background-color: var(--color-surface-sand);
   border-radius: var(--radius-md);
   border: 1px solid var(--color-border);
+}
+
+/* Contact detail item — icon + label pairing, used on contact.html and referrers.html */
+
+.contact-detail-item {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: var(--space-md);
+
+  >p {
+    min-height: 100%;
+    display: flex;
+    gap: var(--space-xs);
+    align-items: center;
+  }
+
+  @media (max-width: 48rem) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* Feature grid item */

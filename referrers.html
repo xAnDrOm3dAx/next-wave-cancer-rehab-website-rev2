@@ -311,8 +311,8 @@
               <legend>Appointment Preferences</legend>
               <div class="referral-fieldset-body">
 
-                <div class="form__group referral-form-preference">
-                  <p><strong>Preferred Clinic</strong></p>
+                <fieldset class="form__group referral-form-preference">
+                  <legend>Preferred Clinic</legend>
                   <div class="form__checkbox">
                     <input type="radio" id="clinic-sippy" name="preferred_clinic" value="Sippy Downs">
                     <label for="clinic-sippy">Sippy Downs</label>
@@ -321,10 +321,10 @@
                     <input type="radio" id="clinic-noosa" name="preferred_clinic" value="Noosaville">
                     <label for="clinic-noosa">Noosaville</label>
                   </div>
-                </div>
+                </fieldset>
 
-                <div class="form__group referral-form-preference">
-                  <p><strong>Preferred Contact Method</strong></p>
+                <fieldset class="form__group referral-form-preference">
+                  <legend>Preferred Contact Method</legend>
                   <div class="form__checkbox">
                     <input type="radio" id="pref-phone" name="preferred_contact" value="Phone">
                     <label for="pref-phone">Phone</label>
@@ -333,13 +333,13 @@
                     <input type="radio" id="pref-email" name="preferred_contact" value="Email">
                     <label for="pref-email">Email</label>
                   </div>
-                </div>
+                </fieldset>
 
               </div>
             </fieldset>
 
             <!-- Honeypot: visually hidden, not display:none -->
-            <div class="sr-only" aria-hidden="true">
+            <div class="visually-hidden-honeypot" aria-hidden="true">
               <label for="referral-website">Leave this field blank</label>
               <input type="text" id="referral-website" name="website" tabindex="-1" autocomplete="off">
             </div>
