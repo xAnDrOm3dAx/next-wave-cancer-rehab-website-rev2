@@ -61,7 +61,6 @@
 .career-grid {
   display: grid;
   gap: var(--space-2xl);
-  margin-top: var(--space-xl);
 }
 
 @media (min-width: 64rem) {
@@ -111,10 +110,6 @@
 }
 
 /* About page — Qualifications and Memberships section */
-
-.quals__intro {
-  margin-top: var(--space-md);
-}
 
 .quals-group {
   margin-top: var(--space-2xl);
@@ -195,10 +190,6 @@
 /* Services page — anchor service sections
    Anchor offset is handled globally via scroll-padding-top on html (layout.css).
    Apply .service-section to every anchor section on services.html for spacing rules. */
-
-.service-section h2 {
-  margin-bottom: var(--space-2xl);
-}
 
 .service-section p+.service-subsection {
   margin-top: var(--space-2xl);
@@ -296,11 +287,6 @@
 
 /* Contact Page
    ========================================= */
-
-/* Section heading bottom margin */
-.contact-section h2 {
-  margin-bottom: var(--space-2xl);
-}
 
 /* Form section — space between the form and the follow-up paragraph,
    and between the paragraph and the notice boxes */

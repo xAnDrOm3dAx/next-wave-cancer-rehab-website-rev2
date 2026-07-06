@@ -52,7 +52,6 @@
 .section-intro__lead {
   font-size: var(--text-md);
   color: var(--color-muted-text);
-  margin-top: var(--space-md);
 }
 
 /* Cards */
