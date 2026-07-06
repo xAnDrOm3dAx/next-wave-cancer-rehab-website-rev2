@@ -297,11 +297,6 @@
 /* Contact Page
    ========================================= */
 
-/* Section heading bottom margin */
-.contact-section h2 {
-  margin-bottom: var(--space-2xl);
-}
-
 /* Form section — space between the form and the follow-up paragraph,
    and between the paragraph and the notice boxes */
 .contact-form-content>.form {
