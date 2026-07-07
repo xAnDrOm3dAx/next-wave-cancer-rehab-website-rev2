@@ -6,31 +6,35 @@ This is the simplified 6-file documentation pack for building the **Next Wave Ca
 
 Upload this `/docs` folder to Cursor and ask Cursor to read these files before making changes.
 
-Treat this file as the index, and treat `Next_Wave_Website_Planning_Handover.md` as the master source of truth.
+Treat this file as the index. There is no single master source-of-truth
+document — use `Build_Rules.md`, `Content_Source.md`, `Design_Tokens.md`, and
+`Brand_Style_Guide.md` together as the current authority for structure,
+copy, and design tokens. Megan_Verbatim_Source.md is a reference for
+original wording and AHPRA compliance flagging only.
 
 ## Files Included
 
 1. `README.md`  
    This index file. Use it to understand how the documentation pack is organised.
 
-2. `Next_Wave_Website_Planning_Handover.md`  
-   The master planning document. This is the authoritative source for the project direction, sitemap, page architecture, brand tone, content strategy, accessibility notes, healthcare compliance cautions, SEO direction, and build philosophy.
-
-3. `Brand_Style_Guide.md`  
+2. `Brand_Style_Guide.md`  
    The brand reference. Use this for visual direction, colour personality, logo guidance, typography direction, imagery direction, voice, tone, and safe public copy style.
 
-4. `Design_Tokens.md`  
+3. `Design_Tokens.md`  
    The CSS design-token reference. Use this when building `variables.css`, including colours, spacing, typography scale, layout widths, border radius, shadows, and interactive colour rules.
 
-5. `Build_Rules.md`  
+4. `Build_Rules.md`  
    The practical build guide for Cursor. Use this for technology constraints, file structure, coding rules, reusable components, accessibility requirements, and the recommended build order.
 
-6. `Content_Source.md`  
+5. `Content_Source.md`  
    The source-content reference. Use this when writing or structuring page content for About, Services, Your Next Steps, Referrers, Contact, Privacy Policy, and Terms & Conditions.
 
 ## Asset Included
 
 - `assets/logo-reference-final.png` — current logo reference image.
+- `public/favicons` - favicons.
+- `public/images` - images.
+- `public/icons` - icons.
 
 ## Cursor Instruction to Use First
 
@@ -95,4 +99,7 @@ Footer navigation:
 - Contact
 - Privacy Policy
 - Terms & Conditions
+
+```
+
 ```
