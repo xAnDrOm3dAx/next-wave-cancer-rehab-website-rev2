@@ -252,11 +252,8 @@
   }
 }
 
-/* Your Next Steps page — How It Works subsections */
-
-#how-it-works {
-  scroll-margin-top: var(--header-height);
-}
+/* Your Next Steps page — How It Works subsections
+   Anchor offset is handled globally via scroll-padding-top on html (layout.css). */
 
 .next-steps-subsection+.next-steps-subsection {
   margin-top: var(--space-2xl);
@@ -363,13 +360,8 @@
 }
 
 /* Referrers page
+   Anchor offset is handled globally via scroll-padding-top on html (layout.css).
    ========================================= */
-
-#working-together,
-#how-to-refer,
-#referral-form {
-  scroll-margin-top: var(--header-height);
-}
 
 .referrers-contact-grid {
   margin-top: var(--space-xl);
