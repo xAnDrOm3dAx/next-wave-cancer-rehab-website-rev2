@@ -61,10 +61,6 @@ html {
   padding-block: var(--space-section);
 }
 
-.section--compact {
-  padding-block: var(--space-2xl);
-}
-
 .section--warm {
   background-color: var(--color-surface-warm);
 }
