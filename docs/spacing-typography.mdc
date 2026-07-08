@@ -1,0 +1,32 @@
+---
+description: Section heading spacing and typography conventions for the static site
+globs: public/css/**/*.css,*.html
+alwaysApply: false
+---
+
+# Spacing and Typography
+
+## Section headings (`h2`)
+
+- All section `h2` elements use the global rule in `base.css`: `margin-bottom: var(--space-2xl)`.
+- Do **not** add page-specific `h2` margin rules (e.g. `.contact-section h2`, `.service-section h2`).
+- Do **not** add `margin-top` on the first element after an `h2` to fake heading spacing — let the `h2` margin handle it.
+
+## Exceptions (override global `h2` margin when needed)
+
+- `.site-footer__heading` — compact footer nav labels (`margin-bottom: var(--space-md)`).
+- Nested headings inside cards, CTAs, or forms where a smaller gap is intentional — override locally with a specific class, not a page wrapper.
+
+## Section vs subsection spacing
+
+- **Between sections**: `.section { padding-block: var(--space-section) }` — do not duplicate with heading margins.
+- **Within a section**: use subsection patterns (border-top + padding-top + margin-top) for visual dividers, e.g. `.contact-locations-subsection`, `.service-subsection`.
+
+## Lead paragraphs
+
+- `.section-intro__lead` styles typography only — no top margin. Spacing comes from the preceding `h2`.
+- Use `.section__header` when a heading and lead paragraph form a single intro block that needs extra space before the next content.
+
+## Spacing scale
+
+Use design tokens only: `--space-md` (1rem), `--space-lg` (1.5rem), `--space-xl` (2rem), `--space-2xl` (3rem), `--space-section` (clamp 4–7rem).

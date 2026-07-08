@@ -492,21 +492,25 @@ details[open]>.disclosure__summary::after {
 
 .contact-detail-item {
   display: flex;
-  flex-direction: row;
-  align-items: start;
+  flex-direction: column;
   gap: var(--space-md);
 
-  >p {
-    height: 100%;
-    display: flex;
-    gap: var(--space-xs);
-    align-items: center;
+  @media (min-width: 48rem) {
+    flex-direction: row;
   }
 
-  @media (max-width: 48rem) {
+  >p {
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: var(--space-xs);
+
+    @media (min-width: 48rem) {
+      gap: initial;
+    }
   }
+
+
+
 }
 
 /* Feature grid item */
