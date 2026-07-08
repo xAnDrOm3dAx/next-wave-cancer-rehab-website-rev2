@@ -6,7 +6,7 @@ All notable implementation work completed so far is summarised here.
 
 ### Completed
 
-- Completed the current static website implementation pass through About, Services, Your Next Steps, and Contact: shared responsive navigation and footer, reusable CSS patterns, accessibility-minded accordions and anchor behaviour, return-to-top support, site-wide branding (Source Sans 3, SVG logos, favicons), and merged location/contact information. Home, Referrers, Privacy Policy, and Terms & Conditions remain placeholder shells.
+- Extended the static site implementation to the Referrers page and refined Contact and Referrers forms, contact-detail layout, responsive typography/spacing, and cross-page styling consistency. Service image placeholders were added on a development branch. Home, Privacy Policy, and Terms & Conditions remain placeholder shells.
 
 ### Added
 
@@ -25,6 +25,9 @@ All notable implementation work completed so far is summarised here.
 - Implemented the Contact page with icon-backed contact details, two location cards with embedded maps, telehealth availability, and an enquiry form with required-field indicators and medical/privacy disclaimers.
 - Added favicon assets and applied consistent header and footer SVG logo treatment across all pages.
 - Adopted Source Sans 3 as the site body font via Google Fonts.
+- Implemented the Referrers page with hero and in-page anchor navigation, referral scope and lymphoedema context, care-team collaboration guidance, how-to-refer contact details, a structured referral form (patient, referrer, reason-for-referral checklist, and clinical notes), and a pre-footer CTA.
+- Added semantic `fieldset`/`legend` grouping to the referral form and visually hidden honeypot fields on the Contact and Referrers forms for spam reduction.
+- Added service image placeholder styling with responsive aspect-ratio variants (wide, portrait, square) and placeholder elements in three Services page sections (`add-placeholders-for-images-rev1` branch).
 
 ### Changed
 
@@ -42,6 +45,10 @@ All notable implementation work completed so far is summarised here.
 - Replaced footer tagline text with the secondary logo image and refined footer alignment and sizing.
 - Added border styling to shared components and refined checklist and split-column layout responsiveness.
 - Clarified Megan's lymphoedema role on About and Services, and aligned About page headings for consistency.
+- Enhanced responsive design with media queries for text alignment and layout on smaller screens; normalised anchor-link padding.
+- Consolidated section heading spacing by applying a global `h2` bottom margin in `base.css` and removing redundant page-specific margin rules.
+- Refactored contact detail item layout and styling for consistency across Contact and Referrers pages.
+- Made the Contact enquiry form message field required.
 
 ### Fixed
 
@@ -56,3 +63,5 @@ All notable implementation work completed so far is summarised here.
 - Updated the Contact page "after you enquire" messaging.
 - Corrected the "Clinical expertise" heading on the About page to "Clinical Experience," removing a restricted AHPRA term.
 - Updated the Noosa location card business name and its map embed title to Cancer Care Associates.
+- Restored disclaimer box border-radius and corrected disclosure summary height for consistent accordion alignment.
+- Updated the Referrers page referral contact email to match site-wide support address.
