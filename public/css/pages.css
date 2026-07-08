@@ -380,5 +380,5 @@
 .referral-other-input {
   margin-top: var(--space-xs);
   display: block;
-  width: 100%;
+  width: 100% !important;
 }
