@@ -171,9 +171,10 @@
   flex-wrap: wrap;
   gap: var(--space-sm);
 
+  /* 
   @media (max-width: 48rem) {
     justify-content: center;
-  }
+  } */
 }
 
 .anchor-list__link {
