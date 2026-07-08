@@ -6,7 +6,8 @@ All notable implementation work completed so far is summarised here.
 
 ### Completed
 
-- Extended the static site implementation to the Referrers page and refined Contact and Referrers forms, contact-detail layout, responsive typography/spacing, and cross-page styling consistency. Service image placeholders were added on a development branch. Home, Privacy Policy, and Terms & Conditions remain placeholder shells.
+- Completed the static site implementation across About, Services, Your Next Steps, Contact, and Referrers, including shared navigation/footer, reusable CSS component patterns, accessibility-minded accordions and anchor behaviour, return-to-top support, site-wide branding, and a full referral form for health professionals. Home, Privacy Policy, and Terms & Conditions remain placeholder shells. Service image placeholders exist on an experimental, unmerged branch (`add-placeholders-for-images-rev1`).
+- The `build-referrers-page` branch (not yet merged to `main`) carries the completed Referrers page plus a round of site-wide polish: consolidated form sections, a "Refer a Patient" call-to-action nav treatment, global anchor-scroll handling, and a more robust return-to-top control.
 
 ### Added
 
@@ -27,7 +28,11 @@ All notable implementation work completed so far is summarised here.
 - Adopted Source Sans 3 as the site body font via Google Fonts.
 - Implemented the Referrers page with hero and in-page anchor navigation, referral scope and lymphoedema context, care-team collaboration guidance, how-to-refer contact details, a structured referral form (patient, referrer, reason-for-referral checklist, and clinical notes), and a pre-footer CTA.
 - Added semantic `fieldset`/`legend` grouping to the referral form and visually hidden honeypot fields on the Contact and Referrers forms for spam reduction.
-- Added service image placeholder styling with responsive aspect-ratio variants (wide, portrait, square) and placeholder elements in three Services page sections (`add-placeholders-for-images-rev1` branch).
+- Added service image placeholder styling with responsive aspect-ratio variants (wide, portrait, square) and placeholder elements in three Services page sections (`add-placeholders-for-images-rev1` branch, experimental/unmerged).
+- Added a `.site-nav__link--cta` / `.mobile-nav__link--cta` pill-button treatment, applied to the Referrers navigation link (renamed to "Refer a Patient") across the desktop nav, mobile nav, and footer on every page.
+- Added an in-page anchor link back to the Referral Form from the Referrers page hero.
+- Added `input[type="date"]` styling to `base.css` so date fields match the width of other form controls.
+- Added a project-level Cursor rule (`.cursor/rules/spacing-typography.mdc`, mirrored in `docs/spacing-typography.mdc`) documenting section-heading spacing and typography conventions for future edits.
 
 ### Changed
 
@@ -49,6 +54,12 @@ All notable implementation work completed so far is summarised here.
 - Consolidated section heading spacing by applying a global `h2` bottom margin in `base.css` and removing redundant page-specific margin rules.
 - Refactored contact detail item layout and styling for consistency across Contact and Referrers pages.
 - Made the Contact enquiry form message field required.
+- Simplified the Referrers page by removing the "What We Can Help With" checklist and the standalone lymphoedema callout section, and by removing the duplicate pre-footer "Not Sure Whether to Refer?" CTA band, reducing repetition with the Services page.
+- Merged the "How to Refer" and "Referral Form" sections into a single combined section on the Referrers page, and moved global in-page anchor offset handling to `scroll-padding-top` on `html` (`layout.css`), removing the per-page `scroll-margin-top` rules it replaced on the Your Next Steps and Referrers pages.
+- Refactored the referral form layout: grouped field legends under `h4` headings for consistency with visual hierarchy, enforced consistent width on referral input fields (including the "Other" reason text input), and added the clinic business names ("Sycamore Health, Sippy Downs" and "Cancer Care Associates, Noosaville") to the appointment-preference options.
+- Refined the Referrers page hero copy to describe the fuller range of referring health professionals (including nurse specialists, cancer care coordinators, radiation therapists, and complementary therapists) in more inclusive language.
+- Reworked the return-to-top button so it activates independently of any `.anchor-list` on the page (previously the button only appeared on pages with an anchor-list): visibility is now driven by an `IntersectionObserver` on the page hero, with a scroll-position fallback for browsers without `IntersectionObserver` support.
+- Split the long page-hero lead paragraphs on the Contact, Services, and Your Next Steps pages into shorter, separately styled paragraphs and tightened wording for readability (replacing an em dash with a comma on Services, and separating the tumour-group/age-range sentence on Your Next Steps).
 
 ### Fixed
 
