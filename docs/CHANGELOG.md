@@ -60,6 +60,8 @@ All notable implementation work completed so far is summarised here.
 - Refined the Referrers page hero copy to describe the fuller range of referring health professionals (including nurse specialists, cancer care coordinators, radiation therapists, and complementary therapists) in more inclusive language.
 - Reworked the return-to-top button so it activates independently of any `.anchor-list` on the page (previously the button only appeared on pages with an anchor-list): visibility is now driven by an `IntersectionObserver` on the page hero, with a scroll-position fallback for browsers without `IntersectionObserver` support.
 - Split the long page-hero lead paragraphs on the Contact, Services, and Your Next Steps pages into shorter, separately styled paragraphs and tightened wording for readability (replacing an em dash with a comma on Services, and separating the tumour-group/age-range sentence on Your Next Steps).
+- Consolidated the Referrers page "Working Alongside Your Care Team" content into the page hero as additional lead paragraphs, removed the standalone section, and applied `section--sage` styling to the combined "How to Refer" and Referral Form section for visual continuity.
+- Updated the Contact page hero CTA from Megan-specific scheduling language ("she'll be in touch to arrange a time that suits you") to practice-level wording ("contact us directly") with a response-time expectation ("We will endeavour to respond as soon as possible").
 
 ### Fixed
 
