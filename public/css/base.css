@@ -56,6 +56,13 @@ small,
   color: var(--color-muted-text);
 }
 
+.text-subheading {
+  font-weight: 600;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-text);
+}
+
 a {
   color: var(--color-link);
   text-decoration-thickness: 1px;

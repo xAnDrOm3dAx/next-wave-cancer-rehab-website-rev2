@@ -10,13 +10,6 @@
   max-width: var(--content-measure);
 } */
 
-.page-hero__content p:nth-child(3) {
-  font-weight: 600;
-  font-family: var(--font-body);
-  font-size: var(--text-base);
-  color: var(--color-text);
-}
-
 .page-hero__eyebrow {
   font-size: var(--text-sm);
   font-weight: 600;
@@ -98,6 +91,10 @@
   color: inherit;
   text-decoration: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+  @media (min-width: 64rem) {
+    text-align: center;
+  }
 }
 
 .service-card:hover {

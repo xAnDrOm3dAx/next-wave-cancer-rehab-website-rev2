@@ -51,13 +51,6 @@
   }
 }
 
-.about-megan__subheading {
-  font-weight: 600;
-  font-family: var(--font-body);
-  font-size: var(--text-base);
-  color: var(--color-text);
-}
-
 .about-megan__callout {
   margin-top: var(--space-xl);
   padding: var(--space-md) var(--space-lg);
