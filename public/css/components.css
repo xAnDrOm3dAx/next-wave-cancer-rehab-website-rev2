@@ -88,17 +88,20 @@
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   padding: var(--space-lg);
-  color: inherit;
-  text-decoration: none;
   box-shadow: var(--shadow-card);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 
   @media (min-width: 64rem) {
     text-align: center;
   }
 }
 
-.service-card:hover {
+a.service-card {
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+a.service-card:hover {
   border-color: var(--color-border-strong);
   box-shadow: var(--shadow-card-hover);
 }
