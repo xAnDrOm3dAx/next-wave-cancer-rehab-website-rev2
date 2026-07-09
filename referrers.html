@@ -125,205 +125,194 @@
         <h2>Referral Form</h2>
         <div class="contact-form-content">
 
-            <form class="form" novalidate>
-              <!-- FORM ACTION: pending Apps Script Web App URL, wire alongside contact.html per parked decision -->
+          <form class="form" novalidate>
+            <!-- FORM ACTION: pending Apps Script Web App URL, wire alongside contact.html per parked decision -->
 
-              <p class="form__note">Complete the form below to refer a patient. Fields marked <span
-                  aria-hidden="true">*</span> are required.</p>
+            <p class="form__note">Complete the form below to refer a patient. Fields marked <span
+                aria-hidden="true">*</span> are required.</p>
 
-              <fieldset>
-                <legend>
-                  <h4>Patient Details</h4>
-                </legend>
-                <div class="referral-fieldset-body">
+            <fieldset>
+              <legend>Patient Details</legend>
+              <div class="referral-fieldset-body">
 
-                  <div class="form__group">
-                    <label for="pat-firstname">First Name <span aria-hidden="true">*</span></label>
-                    <input type="text" id="pat-firstname" name="patient_firstname" autocomplete="given-name" required>
-                  </div>
-
-                  <div class="form__group">
-                    <label for="pat-lastname">Last Name <span aria-hidden="true">*</span></label>
-                    <input type="text" id="pat-lastname" name="patient_lastname" autocomplete="family-name" required>
-                  </div>
-
-                  <div class="form__group">
-                    <label for="pat-dob">Date of Birth <span aria-hidden="true">*</span></label>
-                    <input type="date" id="pat-dob" name="patient_dob" required>
-                  </div>
-
-                  <div class="form__group">
-                    <label for="pat-phone">Phone <span aria-hidden="true">*</span></label>
-                    <input type="tel" id="pat-phone" name="patient_phone" autocomplete="tel" required>
-                  </div>
-
-                  <div class="form__group">
-                    <label for="pat-email">Email <span aria-hidden="true">*</span></label>
-                    <input type="email" id="pat-email" name="patient_email" autocomplete="email" required>
-                  </div>
-
-                  <div class="form__group">
-                    <label for="pat-urn">Hospital / URN Number (if known)</label>
-                    <input type="text" id="pat-urn" name="patient_urn">
-                  </div>
-
+                <div class="form__group">
+                  <label for="pat-firstname">First Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="pat-firstname" name="patient_firstname" autocomplete="given-name" required>
                 </div>
-              </fieldset>
 
-              <fieldset>
-                <legend>
-                  <h4>Referrer Details</h4>
-                </legend>
-                <div class="referral-fieldset-body">
+                <div class="form__group">
+                  <label for="pat-lastname">Last Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="pat-lastname" name="patient_lastname" autocomplete="family-name" required>
+                </div>
 
-                  <div class="form__group">
-                    <label for="ref-name">Referrer Name <span aria-hidden="true">*</span></label>
-                    <input type="text" id="ref-name" name="referrer_name" autocomplete="name" required>
-                  </div>
+                <div class="form__group">
+                  <label for="pat-dob">Date of Birth <span aria-hidden="true">*</span></label>
+                  <input type="date" id="pat-dob" name="patient_dob" required>
+                </div>
 
-                  <div class="form__group">
-                    <label for="ref-position">Position <span aria-hidden="true">*</span></label>
-                    <input type="text" id="ref-position" name="referrer_position" required>
-                  </div>
+                <div class="form__group">
+                  <label for="pat-phone">Phone <span aria-hidden="true">*</span></label>
+                  <input type="tel" id="pat-phone" name="patient_phone" autocomplete="tel" required>
+                </div>
 
-                  <div class="form__group">
-                    <label for="ref-practice">Practice Name &amp; Location <span aria-hidden="true">*</span></label>
-                    <input type="text" id="ref-practice" name="referrer_practice" required>
-                  </div>
+                <div class="form__group">
+                  <label for="pat-email">Email <span aria-hidden="true">*</span></label>
+                  <input type="email" id="pat-email" name="patient_email" autocomplete="email" required>
+                </div>
 
-                  <div class="form__group">
-                    <label for="ref-phone">Phone <span aria-hidden="true">*</span></label>
-                    <input type="tel" id="ref-phone" name="referrer_phone" autocomplete="tel" required>
-                  </div>
+                <div class="form__group">
+                  <label for="pat-urn">Hospital / URN Number (if known)</label>
+                  <input type="text" id="pat-urn" name="patient_urn">
+                </div>
 
-                  <div class="form__group">
-                    <label for="ref-email">Email <span aria-hidden="true">*</span></label>
-                    <input type="email" id="ref-email" name="referrer_email" autocomplete="email" required>
-                  </div>
+              </div>
+            </fieldset>
 
+            <fieldset>
+              <legend>Referrer Details</legend>
+              <div class="referral-fieldset-body">
+
+                <div class="form__group">
+                  <label for="ref-name">Referrer Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="ref-name" name="referrer_name" autocomplete="name" required>
+                </div>
+
+                <div class="form__group">
+                  <label for="ref-position">Position <span aria-hidden="true">*</span></label>
+                  <input type="text" id="ref-position" name="referrer_position" required>
+                </div>
+
+                <div class="form__group">
+                  <label for="ref-practice">Practice Name &amp; Location <span aria-hidden="true">*</span></label>
+                  <input type="text" id="ref-practice" name="referrer_practice" required>
+                </div>
+
+                <div class="form__group">
+                  <label for="ref-phone">Phone <span aria-hidden="true">*</span></label>
+                  <input type="tel" id="ref-phone" name="referrer_phone" autocomplete="tel" required>
+                </div>
+
+                <div class="form__group">
+                  <label for="ref-email">Email <span aria-hidden="true">*</span></label>
+                  <input type="email" id="ref-email" name="referrer_email" autocomplete="email" required>
+                </div>
+
+                <div class="form__checkbox">
+                  <input type="checkbox" id="ref-consent" name="referrer_consent" required>
+                  <label for="ref-consent">I confirm the patient has consented to being contacted about this referral.
+                    <span aria-hidden="true">*</span></label>
+                </div>
+
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Reason for Referral</legend>
+              <div class="referral-fieldset-body">
+
+                <div class="checklist">
                   <div class="form__checkbox">
-                    <input type="checkbox" id="ref-consent" name="referrer_consent" required>
-                    <label for="ref-consent">I confirm the patient has consented to being contacted about this referral.
-                      <span aria-hidden="true">*</span></label>
+                    <input type="checkbox" id="reason-scar" name="reason[]" value="Scar Management">
+                    <label for="reason-scar">Scar Management</label>
                   </div>
-
-                </div>
-              </fieldset>
-
-              <fieldset>
-                <legend>
-                  <h4>Reason for Referral</h4>
-                </legend>
-                <div class="referral-fieldset-body">
-
-                  <div class="checklist">
-                    <div class="form__checkbox">
-                      <input type="checkbox" id="reason-scar" name="reason[]" value="Scar Management">
-                      <label for="reason-scar">Scar Management</label>
-                    </div>
-                    <div class="form__checkbox">
-                      <input type="checkbox" id="reason-breast" name="reason[]" value="Breast Cancer Rehabilitation">
-                      <label for="reason-breast">Breast Cancer Rehabilitation</label>
-                    </div>
-                    <div class="form__checkbox">
-                      <input type="checkbox" id="reason-periop" name="reason[]" value="Pre &amp; Post-Operative Care">
-                      <label for="reason-periop">Pre &amp; Post-Operative Care</label>
-                    </div>
-                    <div class="form__checkbox">
-                      <input type="checkbox" id="reason-sideeffect" name="reason[]" value="Side-Effect Management">
-                      <label for="reason-sideeffect">Side-Effect Management</label>
-                    </div>
-                    <div class="form__checkbox">
-                      <input type="checkbox" id="reason-activity" name="reason[]"
-                        value="Physical Activity Guidance &amp; Facilitation">
-                      <label for="reason-activity">Physical Activity Guidance &amp; Facilitation</label>
-                    </div>
-                    <div class="form__checkbox">
-                      <input type="checkbox" id="reason-pain" name="reason[]" value="Pain Management">
-                      <label for="reason-pain">Pain Management</label>
-                    </div>
-                    <div class="form__checkbox">
-                      <input type="checkbox" id="reason-functional" name="reason[]"
-                        value="Functional Assessment / Return to Activity">
-                      <label for="reason-functional">Functional Assessment / Return to Activity</label>
-                    </div>
-                    <div class="form__checkbox">
-                      <input type="checkbox" id="reason-exercise" name="reason[]" value="Exercise Rehabilitation">
-                      <label for="reason-exercise">Exercise Rehabilitation</label>
-                    </div>
-                    <div class="form__checkbox">
-                      <input type="checkbox" id="reason-other" name="reason[]" value="Other">
-                      <div>
-                        <label for="reason-other">Other (please specify)</label>
-                        <input type="text" id="reason-other-text" name="reason_other"
-                          aria-label="Please specify other reason" class="referral-other-input">
-                      </div>
+                  <div class="form__checkbox">
+                    <input type="checkbox" id="reason-breast" name="reason[]" value="Breast Cancer Rehabilitation">
+                    <label for="reason-breast">Breast Cancer Rehabilitation</label>
+                  </div>
+                  <div class="form__checkbox">
+                    <input type="checkbox" id="reason-periop" name="reason[]" value="Pre &amp; Post-Operative Care">
+                    <label for="reason-periop">Pre &amp; Post-Operative Care</label>
+                  </div>
+                  <div class="form__checkbox">
+                    <input type="checkbox" id="reason-sideeffect" name="reason[]" value="Side-Effect Management">
+                    <label for="reason-sideeffect">Side-Effect Management</label>
+                  </div>
+                  <div class="form__checkbox">
+                    <input type="checkbox" id="reason-activity" name="reason[]"
+                      value="Physical Activity Guidance &amp; Facilitation">
+                    <label for="reason-activity">Physical Activity Guidance &amp; Facilitation</label>
+                  </div>
+                  <div class="form__checkbox">
+                    <input type="checkbox" id="reason-pain" name="reason[]" value="Pain Management">
+                    <label for="reason-pain">Pain Management</label>
+                  </div>
+                  <div class="form__checkbox">
+                    <input type="checkbox" id="reason-functional" name="reason[]"
+                      value="Functional Assessment / Return to Activity">
+                    <label for="reason-functional">Functional Assessment / Return to Activity</label>
+                  </div>
+                  <div class="form__checkbox">
+                    <input type="checkbox" id="reason-exercise" name="reason[]" value="Exercise Rehabilitation">
+                    <label for="reason-exercise">Exercise Rehabilitation</label>
+                  </div>
+                  <div class="form__checkbox">
+                    <input type="checkbox" id="reason-other" name="reason[]" value="Other">
+                    <div>
+                      <label for="reason-other">Other (please specify)</label>
+                      <input type="text" id="reason-other-text" name="reason_other"
+                        aria-label="Please specify other reason" class="referral-other-input">
                     </div>
                   </div>
-
-                  <div class="form__group">
-                    <label for="referral-details">Please share any further details that may help us understand this
-                      referral.</label>
-                    <textarea id="referral-details" name="referral_details" rows="5"></textarea>
-                  </div>
-
                 </div>
-              </fieldset>
 
-              <fieldset>
-                <legend>
-                  <h4>Appointment Preferences</h4>
-                </legend>
-                <div class="referral-fieldset-body">
-
-                  <fieldset class="form__group referral-form-preference">
-                    <legend>Preferred Clinic</legend>
-                    <div class="form__checkbox">
-                      <input type="radio" id="clinic-sippy" name="preferred_clinic" value="Sippy Downs">
-                      <label for="clinic-sippy">Sycamore Health, Sippy Downs</label>
-                    </div>
-                    <div class="form__checkbox">
-                      <input type="radio" id="clinic-noosa" name="preferred_clinic" value="Noosaville">
-                      <label for="clinic-noosa">Cancer Care Associates, Noosaville</label>
-                    </div>
-                  </fieldset>
-
-                  <fieldset class="form__group referral-form-preference">
-                    <legend>
-                      <h4>Preferred Contact Method</h4>
-                    </legend>
-                    <div class="form__checkbox">
-                      <input type="radio" id="pref-phone" name="preferred_contact" value="Phone">
-                      <label for="pref-phone">Phone</label>
-                    </div>
-                    <div class="form__checkbox">
-                      <input type="radio" id="pref-email" name="preferred_contact" value="Email">
-                      <label for="pref-email">Email</label>
-                    </div>
-                  </fieldset>
-
+                <div class="form__group">
+                  <label for="referral-details">Please share any further details that may help us understand this
+                    referral.</label>
+                  <textarea id="referral-details" name="referral_details" rows="5"></textarea>
                 </div>
-              </fieldset>
 
-              <!-- Honeypot: visually hidden, not display:none -->
-              <div class="visually-hidden-honeypot" aria-hidden="true">
-                <label for="referral-website">Leave this field blank</label>
-                <input type="text" id="referral-website" name="website" tabindex="-1" autocomplete="off">
               </div>
+            </fieldset>
 
-              <div>
-                <button type="submit" class="btn btn--primary">Submit Referral</button>
+            <fieldset>
+              <div class="referral-fieldset-body">
+
+                <fieldset class="form__group referral-form-preference">
+                  <legend>Preferred Clinic</legend>
+                  <div class="form__checkbox">
+                    <input type="radio" id="clinic-sippy" name="preferred_clinic" value="Sippy Downs">
+                    <label for="clinic-sippy">Sycamore Health, Sippy Downs</label>
+                  </div>
+                  <div class="form__checkbox">
+                    <input type="radio" id="clinic-noosa" name="preferred_clinic" value="Noosaville">
+                    <label for="clinic-noosa">Cancer Care Associates, Noosaville</label>
+                  </div>
+                </fieldset>
+
+                <fieldset class="form__group referral-form-preference">
+                  <legend>Preferred Contact Method</legend>
+                  <div class="form__checkbox">
+                    <input type="radio" id="pref-phone" name="preferred_contact" value="Phone">
+                    <label for="pref-phone">Phone</label>
+                  </div>
+                  <div class="form__checkbox">
+                    <input type="radio" id="pref-email" name="preferred_contact" value="Email">
+                    <label for="pref-email">Email</label>
+                  </div>
+                </fieldset>
+
               </div>
+            </fieldset>
 
-            </form>
-            <div class="disclaimer-box">
-              <p>This form is not monitored in real time and should not be used for urgent clinical matters. In an
-                emergency, call 000.</p>
+            <!-- Honeypot: visually hidden, not display:none -->
+            <div class="visually-hidden-honeypot" aria-hidden="true">
+              <label for="referral-website">Leave this field blank</label>
+              <input type="text" id="referral-website" name="website" tabindex="-1" autocomplete="off">
             </div>
-            <p class="privacy-note form__note">Information submitted through this form is stored securely within Next
-              Wave
-              Cancer Rehab&#8217;s own systems and used only to arrange care for the patient referred. See our <a
-                href="privacy-policy.html">Privacy Policy</a> for more information.</p>
+
+            <div>
+              <button type="submit" class="btn btn--primary">Submit Referral</button>
+            </div>
+
+          </form>
+          <div class="disclaimer-box">
+            <p>This form is not monitored in real time and should not be used for urgent clinical matters. In an
+              emergency, call 000.</p>
+          </div>
+          <p class="privacy-note form__note">Information submitted through this form is stored securely within Next
+            Wave
+            Cancer Rehab&#8217;s own systems and used only to arrange care for the patient referred. See our <a
+              href="privacy-policy.html">Privacy Policy</a> for more information.</p>
         </div>
       </div>
     </section>

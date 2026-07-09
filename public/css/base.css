@@ -164,8 +164,12 @@ fieldset {
 }
 
 legend {
-  font-weight: 600;
   margin-bottom: var(--space-sm);
+  font-family: var(--font-heading);
+  line-height: var(--line-height-heading);
+  font-weight: 600;
+  color: var(--color-text);
+  font-size: var(--text-lg);
 }
 
 /* Reduced motion */
