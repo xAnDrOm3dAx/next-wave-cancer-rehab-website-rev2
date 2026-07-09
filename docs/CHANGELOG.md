@@ -11,6 +11,9 @@ All notable implementation work completed so far is summarised here.
 
 ### Added
 
+- Implemented the Home page with a branded hero, About snapshot with Megan's portrait, a Services snapshot with four stage cards, a Your Next Steps summary, a Contact snapshot with phone, email, telehealth, and location details, and a closing CTA band — replacing the previous placeholder shell.
+- Added four green SVG service icons to the homepage service cards so each rehabilitation stage is visually distinct at a glance.
+- Added in-page anchor navigation and section IDs to the Contact page (Contact Details, Locations, Enquiry Form) and Your Next Steps page (Support at Every Stage, How It Works) so visitors can jump directly to key sections from the page hero.
 - Added a "How to Refer" in-page anchor link on the Referrers page hero so visitors can jump directly to referral contact details alongside the existing Referral Form link.
 - Built the initial static site structure for Next Wave Cancer Rehab, including shared HTML page templates, stylesheet layers, and reusable layout/component classes.
 - Added a responsive site header with desktop navigation, mobile hamburger navigation, active-page states, skip link support, and consistent navigation ordering across pages.
@@ -37,6 +40,16 @@ All notable implementation work completed so far is summarised here.
 
 ### Changed
 
+- Consolidated `.service-card` and `.career-approach-card` into a unified `.card` component with a `.card--stack` modifier, reducing duplicate styles and aligning card presentation across the Home and About pages.
+- Refined homepage service cards with centred layout, card shadows and hover elevation, stage icons, and tighter padding; settled cards as informational display elements rather than navigational links after exploring deep-link behaviour.
+- Introduced a reusable `.text-subheading` class and standardised hero subheading markup across all pages, decoupling subheading appearance from lead paragraphs for consistent sizing, colour, and spacing.
+- Refined homepage and site-wide hero layout: responsive submark treatment, updated hero copy, tighter grid and anchor-list spacing, and improved small-screen alignment.
+- Increased spacing below the homepage hero submark for clearer separation from the heading block.
+- Refined About page career-and-approach cards with bordered styling, full-height flex layout, and quote typography that follows global styles for more consistent presentation.
+- Updated Megan Oster's title from "Director" to "Founder" on the About page and homepage to reflect her role more accurately.
+- Consolidated the Contact enquiry form's duplicate disclaimer boxes into a single message covering both urgent medical concerns and sensitive-information guidance; softened emergency wording on the Referrers form ("please call 000").
+- Replaced colons with em dashes in Your Next Steps rehabilitation-stage headings for consistency with other section headings.
+- Renamed the Contact form section from "Send an Enquiry" to "Enquiry Form" to match its in-page anchor label.
 - Softened the Contact enquiry form lead-in punctuation for a calmer tone.
 - Updated Your Next Steps rehabilitation-stage disclosures to use heading markup in summaries, aligning with the Services page pattern for clearer document structure.
 - Restyled referral form fieldset legends as heading-weight text (removing nested heading elements) so section labels read more clearly and match the site's typography hierarchy.
