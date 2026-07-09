@@ -45,9 +45,9 @@
   max-width: var(--container-wide);
 }
 
-.container--narrow {
+/* .container--narrow {
   max-width: var(--container-narrow);
-}
+} */
 
 /* In-page anchor offset for sticky header — apply to all anchor jumps */
 html {
@@ -75,7 +75,6 @@ html {
 
 .section__header {
   margin-bottom: var(--space-2xl);
-  max-width: var(--content-measure);
 }
 
 .section__header--center {
@@ -87,7 +86,7 @@ html {
 
 .grid {
   display: grid;
-  gap: var(--space-xl);
+  gap: var(--space-sm);
 }
 
 .grid--2 {
