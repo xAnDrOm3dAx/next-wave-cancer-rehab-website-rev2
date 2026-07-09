@@ -53,8 +53,9 @@
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  padding: var(--space-xl);
-  box-shadow: var(--shadow-soft);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-card);
+
 }
 
 .card--sage {
@@ -89,10 +90,17 @@
   border-radius: var(--radius-md);
   padding: var(--space-lg);
   box-shadow: var(--shadow-card);
+  align-items: center;
+  text-align: center;
+  gap: var(--space-md);
 
   @media (min-width: 64rem) {
     text-align: center;
   }
+}
+
+.service-card>img {
+  padding-top: var(--space-md);
 }
 
 a.service-card {
@@ -108,7 +116,6 @@ a.service-card:hover {
 
 .service-card__title {
   font-size: var(--text-md);
-  margin-bottom: var(--space-lg);
 }
 
 .service-card__text {
