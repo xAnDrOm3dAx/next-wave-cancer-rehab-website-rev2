@@ -11,6 +11,7 @@ All notable implementation work completed so far is summarised here.
 
 ### Added
 
+- Added a "How to Refer" in-page anchor link on the Referrers page hero so visitors can jump directly to referral contact details alongside the existing Referral Form link.
 - Built the initial static site structure for Next Wave Cancer Rehab, including shared HTML page templates, stylesheet layers, and reusable layout/component classes.
 - Added a responsive site header with desktop navigation, mobile hamburger navigation, active-page states, skip link support, and consistent navigation ordering across pages.
 - Added a shared footer with grouped navigation links, legal links, brand tagline, and decorative wave treatment.
@@ -36,6 +37,10 @@ All notable implementation work completed so far is summarised here.
 
 ### Changed
 
+- Softened the Contact enquiry form lead-in punctuation for a calmer tone.
+- Updated Your Next Steps rehabilitation-stage disclosures to use heading markup in summaries, aligning with the Services page pattern for clearer document structure.
+- Restyled referral form fieldset legends as heading-weight text (removing nested heading elements) so section labels read more clearly and match the site's typography hierarchy.
+- Separated the Referrers page "How to Refer" and "Referral Form" back into distinct sections for clearer page structure and independent anchor targets.
 - Refined the About page copy and layout for clearer clinical positioning, a more supportive tone, and stronger emphasis on oncology-informed physiotherapy care.
 - Reworked the Services page content structure from long static sections into scannable anchor-linked sections with collapsible detail where appropriate.
 - Updated disclosure summary markup to use headings for improved document structure and readability.
@@ -65,6 +70,7 @@ All notable implementation work completed so far is summarised here.
 
 ### Fixed
 
+- Corrected broken heading and panel markup in the Your Next Steps rehabilitation disclosures so accordion summaries and content nest properly for accessibility.
 - Fixed sticky-header anchor jump spacing by applying a global scroll offset.
 - Fixed footer wave spacing and responsive layout issues.
 - Hid the mobile hamburger control in desktop layouts.
