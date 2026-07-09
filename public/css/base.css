@@ -59,8 +59,9 @@ small,
 .text-subheading {
   font-weight: 600;
   font-family: var(--font-body);
-  font-size: var(--text-base);
-  color: var(--color-text);
+  font-size: var(--text-md);
+  color: var(--color-muted-text);
+  margin-top: var(--space-md);
 }
 
 a {
