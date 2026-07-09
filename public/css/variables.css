@@ -64,6 +64,8 @@
   --radius-lg: 1.5rem;
   --radius-pill: 999px;
   --shadow-soft: 0 1.25rem 3rem rgba(36, 51, 47, 0.08);
+  --shadow-card: 0 0.75rem 2.25rem rgba(36, 51, 47, 0.1);
+  --shadow-card-hover: 0 1.5rem 3.75rem rgba(36, 51, 47, 0.14);
 
   /* Header */
   --header-height: 4.5rem;
