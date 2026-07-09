@@ -39,7 +39,7 @@ original wording and AHPRA compliance flagging only.
 ## Cursor Instruction to Use First
 
 ```text
-Please read the files in /docs before making changes. Treat Next_Wave_Website_Planning_Handover.md as the master source of truth. Use the other documents as supporting references. Do not introduce React, Next.js, Tailwind, npm tooling, or complex architecture. This is a static HTML/CSS/JS website. Build one page or section at a time.
+Please read the files in /docs before making changes. Do not introduce React, Next.js, Tailwind, npm tooling, or complex architecture. This is a static HTML/CSS/JS website. Build one page or section at a time.
 ```
 
 ## Build Approach
