@@ -50,7 +50,7 @@
   --space-xl: 2rem;
   --space-2xl: 3rem;
   --space-3xl: clamp(4rem, 8vw, 7rem);
-  --space-section: clamp(4rem, 8vw, 7rem);
+  --space-section: clamp(3rem, 6vw, 5.5rem);
 
   /* Layout */
   --container: 72rem;
