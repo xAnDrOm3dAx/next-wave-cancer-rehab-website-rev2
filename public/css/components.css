@@ -35,6 +35,40 @@
   max-width: var(--content-measure);
 }
 
+/* Subsection — visual divider within a section (e.g. Locations within Contact) */
+
+.subsection + .subsection,
+.subsection--divider {
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-2xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.subsection h3 {
+  margin-bottom: var(--space-lg);
+}
+
+.subsection p + .quals-list,
+.subsection p + .checklist {
+  margin-top: var(--space-md);
+}
+
+.subsection .quals-list + p,
+.subsection .checklist + p {
+  margin-top: var(--space-lg);
+}
+
+.subsection > .section-intro__lead {
+  margin-bottom: var(--space-2xl);
+}
+
+/* Emphasised lead-in before a list */
+
+.list-lead {
+  font-weight: 600;
+  margin-top: var(--space-lg);
+}
+
 .section-intro__eyebrow {
   font-size: var(--text-sm);
   font-weight: 600;

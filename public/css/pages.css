@@ -96,6 +96,10 @@
 
 /* About page — Qualifications and Memberships section */
 
+.section__header + .quals-group {
+  margin-top: 0;
+}
+
 .quals-group {
   margin-top: var(--space-2xl);
 }
@@ -176,92 +180,15 @@
    Anchor offset is handled globally via scroll-padding-top on html (layout.css).
    Apply .service-section to every anchor section on services.html for spacing rules. */
 
-.service-section p+.service-subsection {
-  margin-top: var(--space-2xl);
-}
-
-.service-subsection+.service-subsection {
-  margin-top: var(--space-2xl);
-  padding-top: var(--space-2xl);
-  border-top: 1px solid var(--color-border);
-}
-
-.service-subsection h3 {
-  margin-bottom: var(--space-md);
-}
-
-.service-subsection p+.quals-list {
+.service-section p + .quals-list {
   margin-top: var(--space-md);
 }
 
-.service-subsection .quals-list+p {
+.service-section .quals-list + p {
   margin-top: var(--space-lg);
 }
 
-.service-section__list-lead {
-  font-weight: 600;
-  margin-top: var(--space-lg);
-}
-
-.service-section p+.quals-list {
-  margin-top: var(--space-md);
-}
-
-.service-section .quals-list+p {
-  margin-top: var(--space-md);
-}
-
-/* Service section — card layout variant (used in sections with no tinted background) */
-
-.service-section--cards .service-subsection {
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  padding: var(--space-xl) var(--space-2xl);
-  box-shadow: var(--shadow-soft);
-}
-
-.service-section--cards .service-subsection+.service-subsection {
-  margin-top: var(--space-lg);
-  padding-top: var(--space-xl);
-  border-top: none;
-}
-
-@media (max-width: 48rem) {
-  .service-section--cards .service-subsection {
-    padding: var(--space-lg) var(--space-xl);
-  }
-
-  .service-section--cards .service-subsection+.service-subsection {
-    padding-top: var(--space-lg);
-  }
-}
-
-/* Your Next Steps page — How It Works subsections
-   Anchor offset is handled globally via scroll-padding-top on html (layout.css). */
-
-.next-steps-subsection+.next-steps-subsection {
-  margin-top: var(--space-2xl);
-  padding-top: var(--space-2xl);
-  border-top: 1px solid var(--color-border);
-}
-
-.next-steps-subsection h3 {
-  margin-bottom: var(--space-lg);
-}
-
-.next-steps-subsection__list-lead {
-  font-weight: 600;
-  margin-top: var(--space-lg);
-}
-
-.next-steps-subsection p+.checklist {
-  margin-top: var(--space-md);
-}
-
-.next-steps-subsection .checklist+p {
-  margin-top: var(--space-lg);
-}
+/* Your Next Steps page — How It Works uses shared .subsection pattern (components.css). */
 
 .section--prefooter {
   padding-top: 0;
@@ -278,10 +205,6 @@
 
 .contact-form-content .privacy-note {
   margin-top: var(--space-xl);
-}
-
-.contact-form-content .disclaimer-box {
-  margin-top: var(--space-md);
 }
 
 /* Location cards — stretch to equal grid height; map fills remaining space
@@ -313,19 +236,6 @@
   border-radius: 0;
   overflow: hidden;
   line-height: 0;
-}
-
-/* Locations subsection within the combined contact + locations section:
-   visual separator (matching the next-steps-subsection and service-subsection pattern) */
-.contact-locations-subsection {
-  margin-top: var(--space-2xl);
-  padding-top: var(--space-2xl);
-  border-top: 1px solid var(--color-border);
-}
-
-/* Gap between the Locations intro paragraph and the cards grid */
-.contact-locations-subsection .section-intro__lead {
-  margin-bottom: var(--space-2xl);
 }
 
 /* Map iframe fills the map-block completely (removes inline-gap under iframe) */

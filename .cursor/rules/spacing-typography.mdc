@@ -20,12 +20,13 @@ alwaysApply: false
 ## Section vs subsection spacing
 
 - **Between sections**: `.section { padding-block: var(--space-section) }` — do not duplicate with heading margins.
-- **Within a section**: use subsection patterns (border-top + padding-top + margin-top) for visual dividers, e.g. `.contact-locations-subsection`, `.service-subsection`.
+- **Within a section**: use the shared `.subsection` pattern (border-top + padding-top + margin-top) for visual dividers. Use `.subsection--divider` when a single subsection needs a divider after other content (e.g. Locations within Contact). Stacked subsections use `.subsection + .subsection` automatically.
 
 ## Lead paragraphs
 
 - `.section-intro__lead` styles typography only — no top margin. Spacing comes from the preceding `h2`.
 - Use `.section__header` when a heading and lead paragraph form a single intro block that needs extra space before the next content.
+- Use `.list-lead` for emphasised text that introduces a list (replaces page-specific list-lead classes).
 
 ## Spacing scale
 

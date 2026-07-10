@@ -129,7 +129,6 @@ html {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-xl);
-  margin-top: var(--space-xl);
 }
 
 /* Split layout */
