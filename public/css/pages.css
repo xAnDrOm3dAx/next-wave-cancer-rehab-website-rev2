@@ -20,7 +20,7 @@
   border-left: 2px solid var(--color-primary-sage);
   font-family: var(--font-heading);
   font-style: italic;
-  font-size: var(--text-xl);
+  font-size: var(--text-lg);
   color: var(--color-text);
 }
 
@@ -49,16 +49,6 @@
     min-height: 0;
     margin-inline: auto;
   }
-}
-
-.about-megan__callout {
-  margin-top: var(--space-xl);
-  padding: var(--space-md) var(--space-lg);
-  background-color: var(--color-surface-sand);
-  border-left: 3px solid var(--color-primary-sage);
-  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-  font-size: var(--text-sm);
-  max-width: none;
 }
 
 /* About page — Career and Experience section */
@@ -96,7 +86,7 @@
 
 /* About page — Qualifications and Memberships section */
 
-.section__header + .quals-group {
+.section__header+.quals-group {
   margin-top: 0;
 }
 
@@ -179,11 +169,11 @@
    Anchor offset is handled globally via scroll-padding-top on html (layout.css).
    Apply .service-section to every anchor section on services.html for spacing rules. */
 
-.service-section p + .quals-list {
+.service-section p+.quals-list {
   margin-top: var(--space-md);
 }
 
-.service-section .quals-list + p {
+.service-section .quals-list+p {
   margin-top: var(--space-lg);
 }
 
