@@ -340,12 +340,7 @@ a.card:hover {
   justify-content: space-between;
   gap: var(--space-md);
   list-style: none;
-  min-height: 3.25rem;
   padding-block: var(--space-md);
-  font-family: var(--font-body);
-  font-size: var(--text-md);
-  font-weight: 600;
-  color: var(--color-text);
   cursor: pointer;
   -webkit-user-select: none;
   user-select: none;
@@ -355,9 +350,38 @@ a.card:hover {
   display: none;
 }
 
+.disclosure__summary-main {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.disclosure__icon {
+  flex-shrink: 0;
+  padding: var(--space-sm);
+  background-color: var(--color-surface);
+  border-radius: var(--radius-pill);
+  box-sizing: content-box;
+}
+
+.disclosure__heading-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+}
+
 .disclosure__summary h3 {
-  font: inherit;
-  color: inherit;
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.disclosure__subheading {
+  font-size: var(--text-sm);
+  font-weight: 400;
+  color: var(--color-muted-text);
   margin: 0;
 }
 
@@ -377,7 +401,7 @@ details[open]>.disclosure__summary::after {
   transform: rotate(180deg);
 }
 
-.disclosure__summary:hover {
+.disclosure__summary:hover h3 {
   color: var(--color-primary-dark);
 }
 
