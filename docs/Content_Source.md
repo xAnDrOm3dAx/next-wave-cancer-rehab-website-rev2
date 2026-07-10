@@ -31,7 +31,7 @@ Tone should be warm, personal, and restrained. Do not over-design this section.
 Include:
 
 - Megan Oster
-- Founder and Director
+- Principal Physiotherapist and Founder
 - Oncology physiotherapist
 - Upper quadrant lymphoedema-trained
 - Clinical Pilates instructor
