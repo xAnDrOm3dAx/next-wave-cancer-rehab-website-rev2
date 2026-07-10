@@ -66,8 +66,12 @@
   height: 100%;
 }
 
-.card--stack > img {
-  padding-top: var(--space-md);
+.card--stack>img {
+  /* padding-top: var(--space-md); */
+  padding: var(--space-sm);
+  background-color: var(--color-surface-sage);
+  border-radius: var(--radius-pill);
+  box-sizing: content-box;
 }
 
 .card--sage {
