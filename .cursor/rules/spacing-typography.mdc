@@ -28,6 +28,12 @@ alwaysApply: false
 - Use `.section__header` when a heading and lead paragraph form a single intro block that needs extra space before the next content.
 - Use `.list-lead` for emphasised text that introduces a list (replaces page-specific list-lead classes).
 
+## Disclosure accordions
+
+- `.disclosure` has no default top margin — spacing comes from the element above it.
+- After `.section__header` or a bare `h2`, rely on that element's `margin-bottom` (`--space-2xl`).
+- When a disclosure follows one or more body paragraphs (not wrapped in `.section__header`), use `p + .disclosure` for `--space-2xl` separation.
+
 ## Spacing scale
 
 Use design tokens only: `--space-md` (1rem), `--space-lg` (1.5rem), `--space-xl` (2rem), `--space-2xl` (3rem), `--space-section` (clamp 4–7rem).

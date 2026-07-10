@@ -358,8 +358,12 @@ a.card:hover {
 
 /* Disclosure accordion (native <details>/<summary>, no JavaScript required) */
 
-.disclosure {
-  margin-top: var(--space-xl);
+/* Spacing before a disclosure block:
+   - after .section__header → header margin-bottom only (no extra top margin here)
+   - after h2 alone → h2 margin-bottom only
+   - after body paragraphs → separate the intro copy from the accordion */
+p + .disclosure {
+  margin-top: var(--space-2xl);
 }
 
 .disclosure__item {
