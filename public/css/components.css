@@ -340,7 +340,7 @@ a.card:hover {
   justify-content: space-between;
   gap: var(--space-md);
   list-style: none;
-  padding-block: var(--space-md);
+  padding-block: var(--space-lg);
   cursor: pointer;
   -webkit-user-select: none;
   user-select: none;
