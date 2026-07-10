@@ -11,6 +11,7 @@ All notable implementation work completed so far is summarised here.
 
 ### Added
 
+- Added icon and subheading styling to the Your Next Steps rehabilitation-stage disclosure summaries, so each stage's expandable section has a clearer visual heading at a glance.
 - Implemented the Home page with a branded hero, About snapshot with Megan's portrait, a Services snapshot with four stage cards, a Your Next Steps summary, a Contact snapshot with phone, email, telehealth, and location details, and a closing CTA band — replacing the previous placeholder shell.
 - Added four green SVG service icons to the homepage service cards so each rehabilitation stage is visually distinct at a glance.
 - Added in-page anchor navigation and section IDs to the Contact page (Contact Details, Locations, Enquiry Form) and Your Next Steps page (Support at Every Stage, How It Works) so visitors can jump directly to key sections from the page hero.
@@ -40,6 +41,16 @@ All notable implementation work completed so far is summarised here.
 
 ### Changed
 
+- Fine-tuned the spacing scale between page sections to use smaller, more proportional values for a tighter, more consistent layout across screen sizes.
+- Tidied up About page paragraph breaks and simplified the qualifications and memberships section styling.
+- Consolidated heading spacing rules into a single sitewide location and refined the overall spacing scale for headings and disclosures.
+- Tightened spacing around disclosure accordions and section headings site-wide, and updated the About and Services pages to use the shared heading layout so spacing stays consistent.
+- Introduced shared subsection-divider and emphasised-list styling used across the About, Contact, Referrers, Services, and Your Next Steps pages, replacing several page-specific spacing rules with consistent shared patterns.
+- Introduced a shared contact-details grid layout used consistently across the Home, Contact, and Referrers pages, removing duplicated grid styling.
+- Applied alternating sage and sand background colours to several Services page cards (Breast Cancer Rehabilitation, Scar Management, Pain Management, Exercise Rehabilitation, and Functional Assessment) for clearer visual variety, and switched the card hover effect from a border to a shadow for a cleaner look.
+- Increased the vertical padding inside cards for better visual balance.
+- Separated the icon styling on homepage card images from the card layout itself, and slightly reduced the spacing below the homepage hero submark to tighten the header.
+- Gave the homepage service card images a soft sage background and rounded corners for a more polished, consistent look.
 - Consolidated `.service-card` and `.career-approach-card` into a unified `.card` component with a `.card--stack` modifier, reducing duplicate styles and aligning card presentation across the Home and About pages.
 - Refined homepage service cards with centred layout, card shadows and hover elevation, stage icons, and tighter padding; settled cards as informational display elements rather than navigational links after exploring deep-link behaviour.
 - Introduced a reusable `.text-subheading` class and standardised hero subheading markup across all pages, decoupling subheading appearance from lead paragraphs for consistent sizing, colour, and spacing.
