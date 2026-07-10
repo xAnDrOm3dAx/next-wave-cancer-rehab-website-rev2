@@ -66,7 +66,7 @@
   height: 100%;
 }
 
-.card--stack>img {
+.card-stack-icon {
   /* padding-top: var(--space-md); */
   padding: var(--space-sm);
   background-color: var(--color-surface-sage);
@@ -414,7 +414,7 @@ details[open]>.disclosure__summary::after {
 .disclosure__panel {
   padding-top: var(--space-sm);
   padding-bottom: var(--space-xl);
-  color: var(--color-muted-text);
+  /* color: var(--color-muted-text); */
   line-height: var(--line-height-body);
 }
 
