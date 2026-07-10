@@ -44,10 +44,6 @@
   border-top: 1px solid var(--color-border);
 }
 
-.subsection h3 {
-  margin-bottom: var(--space-lg);
-}
-
 .subsection p + .quals-list,
 .subsection p + .checklist {
   margin-top: var(--space-md);
@@ -59,7 +55,7 @@
 }
 
 .subsection > .section-intro__lead {
-  margin-bottom: var(--space-2xl);
+  margin-bottom: var(--space-xl);
 }
 
 /* Emphasised lead-in before a list */
@@ -363,7 +359,7 @@ a.card:hover {
    - after h2 alone → h2 margin-bottom only
    - after body paragraphs → separate the intro copy from the accordion */
 p + .disclosure {
-  margin-top: var(--space-2xl);
+  margin-top: var(--space-xl);
 }
 
 .disclosure__item {
@@ -472,11 +468,6 @@ details[open]>.disclosure__summary::after {
 
 .disclosure__panel .checklist+p {
   margin-top: var(--space-lg);
-}
-
-.disclosure__panel h4 {
-  margin-top: var(--space-xl);
-  margin-bottom: var(--space-sm);
 }
 
 /* Form layout */
