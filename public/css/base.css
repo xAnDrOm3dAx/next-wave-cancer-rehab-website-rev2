@@ -27,7 +27,7 @@ h1 {
 
 h2 {
   font-size: var(--text-2xl);
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-2xl);
 }
 
 h3 {
