@@ -107,7 +107,6 @@
 .quals-group__heading {
   font-size: var(--text-lg);
   margin-top: 0;
-  margin-bottom: var(--space-lg);
   color: var(--color-text);
 }
 

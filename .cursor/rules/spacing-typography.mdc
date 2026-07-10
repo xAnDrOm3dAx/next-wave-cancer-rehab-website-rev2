@@ -6,16 +6,23 @@ alwaysApply: false
 
 # Spacing and Typography
 
-## Section headings (`h2`)
+## Heading margins (global rules in `base.css`)
 
-- All section `h2` elements use the global rule in `base.css`: `margin-bottom: var(--space-2xl)`.
-- Do **not** add page-specific `h2` margin rules (e.g. `.contact-section h2`, `.service-section h2`).
-- Do **not** add `margin-top` on the first element after an `h2` to fake heading spacing — let the `h2` margin handle it.
+| Element | `margin-bottom` | Notes |
+|---------|-----------------|-------|
+| `h1` | `--space-xl` | Page heroes only |
+| `h2` | `--space-xl` | Section titles |
+| `h3` | `--space-lg` | Subsection titles |
+| `h4` | `--space-sm` | Also `--space-lg` `margin-top` when following body copy |
 
-## Exceptions (override global `h2` margin when needed)
+- Do **not** add `margin-top` on the first element after a heading to fake heading spacing — let the heading's `margin-bottom` handle it (e.g. `.text-subheading`, `.section-intro__lead`).
+- `.section__header` uses `margin-bottom: var(--space-xl)` for the intro block as a whole.
+
+## Exceptions (override global heading margin when needed)
 
 - `.site-footer__heading` — compact footer nav labels (`margin-bottom: var(--space-md)`).
-- Nested headings inside cards, CTAs, or forms where a smaller gap is intentional — override locally with a specific class, not a page wrapper.
+- `.card__title`, `.disclosure__summary h3` — `margin: 0` (compact card/accordion labels).
+- `.career-narrative-block__heading` — smaller in-block label (`margin-bottom: var(--space-xs)`).
 
 ## Section vs subsection spacing
 
@@ -24,15 +31,16 @@ alwaysApply: false
 
 ## Lead paragraphs
 
-- `.section-intro__lead` styles typography only — no top margin. Spacing comes from the preceding `h2`.
+- `.section-intro__lead` and `.text-subheading` style typography only — no top margin. Spacing comes from the preceding `h1` or `h2`.
 - Use `.section__header` when a heading and lead paragraph form a single intro block that needs extra space before the next content.
-- Use `.list-lead` for emphasised text that introduces a list (replaces page-specific list-lead classes).
+- `.page-hero__lead` uses `margin-top: var(--space-lg)` to separate hero body copy from the tagline above it.
+- Use `.list-lead` for emphasised text that introduces a list.
 
 ## Disclosure accordions
 
 - `.disclosure` has no default top margin — spacing comes from the element above it.
-- After `.section__header` or a bare `h2`, rely on that element's `margin-bottom` (`--space-2xl`).
-- When a disclosure follows one or more body paragraphs (not wrapped in `.section__header`), use `p + .disclosure` for `--space-2xl` separation.
+- After `.section__header` or a bare `h2`, rely on that element's `margin-bottom` (`--space-xl`).
+- When a disclosure follows body paragraphs, `p + .disclosure` adds `--space-xl` separation.
 
 ## Spacing scale
 
