@@ -86,7 +86,7 @@ html {
 
 .grid {
   display: grid;
-  gap: var(--space-sm);
+  gap: var(--space-md);
 }
 
 .grid--2 {
@@ -123,6 +123,13 @@ html {
   .grid--4 {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  margin-top: var(--space-xl);
 }
 
 /* Split layout */

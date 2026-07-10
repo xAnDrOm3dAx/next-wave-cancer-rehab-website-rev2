@@ -353,10 +353,6 @@
    Anchor offset is handled globally via scroll-padding-top on html (layout.css).
    ========================================= */
 
-.referrers-contact-grid {
-  margin-top: var(--space-xl);
-}
-
 .referral-fieldset-body {
   display: flex;
   flex-direction: column;
