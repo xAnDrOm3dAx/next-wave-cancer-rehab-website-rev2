@@ -46,7 +46,7 @@ All notable implementation work completed so far is summarised here.
 - Refined homepage and site-wide hero layout: responsive submark treatment, updated hero copy, tighter grid and anchor-list spacing, and improved small-screen alignment.
 - Increased spacing below the homepage hero submark for clearer separation from the heading block.
 - Refined About page career-and-approach cards with bordered styling, full-height flex layout, and quote typography that follows global styles for more consistent presentation.
-- Updated Megan Oster's title from "Director" to "Founder" on the About page and homepage to reflect her role more accurately.
+- Updated Megan Oster's title from "Director" to "Principal Physiotherapist and Founder" on the About page and homepage to reflect her role more accurately.
 - Consolidated the Contact enquiry form's duplicate disclaimer boxes into a single message covering both urgent medical concerns and sensitive-information guidance; softened emergency wording on the Referrers form ("please call 000").
 - Replaced colons with em dashes in Your Next Steps rehabilitation-stage headings for consistency with other section headings.
 - Renamed the Contact form section from "Send an Enquiry" to "Enquiry Form" to match its in-page anchor label.

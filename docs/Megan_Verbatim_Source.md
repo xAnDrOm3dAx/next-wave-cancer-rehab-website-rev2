@@ -63,7 +63,7 @@ The name Next Wave Cancer Rehab reflects both the pathway of cancer recovery and
 
 ### Meet the Team
 
-**Megan Oster — Founder and Director**
+**Megan Oster — Principal Physiotherapist and Founder**
 Oncology Physiotherapist, Upper Quadrant Lymphoedema Therapist & Clinical Pilates Instructor
 
 Megan has a wealth of experience working in cancer care physiotherapy, expanding the last decade.
