@@ -11,7 +11,7 @@ All notable implementation work completed so far is summarised here.
 
 ### Added
 
-- Added a revised website header logo asset (`primary-logo-website-header-rev2.svg`) with updated artwork for clearer, proportionally scaled branding in the site header.
+- Added a revised website header logo asset (`primary-logo-website-header-rev1.svg`) with updated artwork for clearer, proportionally scaled branding in the site header.
 - Added a dedicated website header logo asset (`primary-logo-website-header-rev1.svg`) and applied it on the homepage for a sharper, proportionally scaled brand mark in the site header.
 - Added `Document.svg` to the image library as a logo asset for future use.
 - Added icon and subheading styling to the Your Next Steps rehabilitation-stage disclosure summaries, so each stage's expandable section has a clearer visual heading at a glance.

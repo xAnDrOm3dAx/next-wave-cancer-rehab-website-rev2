@@ -168,6 +168,7 @@ html {
 }
 
 .site-header__logo {
+  display: flex;
   flex-shrink: 0;
 }
 
