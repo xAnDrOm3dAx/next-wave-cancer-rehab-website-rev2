@@ -85,7 +85,7 @@ All notable implementation work completed so far is summarised here.
 - Made the Contact enquiry form message field required.
 - Simplified the Referrers page by removing the "What We Can Help With" checklist and the standalone lymphoedema callout section, and by removing the duplicate pre-footer "Not Sure Whether to Refer?" CTA band, reducing repetition with the Services page.
 - Merged the "How to Refer" and "Referral Form" sections into a single combined section on the Referrers page, and moved global in-page anchor offset handling to `scroll-padding-top` on `html` (`layout.css`), removing the per-page `scroll-margin-top` rules it replaced on the Your Next Steps and Referrers pages.
-- Refactored the referral form layout: grouped field legends under `h4` headings for consistency with visual hierarchy, enforced consistent width on referral input fields (including the "Other" reason text input), and added the clinic business names ("Sycamore Health, Sippy Downs" and "Cancer Care Associates, Noosaville") to the appointment-preference options.
+- Refactored the referral form layout: grouped field legends under `h4` headings for consistency with visual hierarchy, enforced consistent width on referral input fields (including the "Other" reason text input), and added the clinic business names ("Sycamore Health, Sippy Downs" and "Cancer Care Noosa, Noosaville") to the appointment-preference options.
 - Refined the Referrers page hero copy to describe the fuller range of referring health professionals (including nurse specialists, cancer care coordinators, radiation therapists, and complementary therapists) in more inclusive language.
 - Reworked the return-to-top button so it activates independently of any `.anchor-list` on the page (previously the button only appeared on pages with an anchor-list): visibility is now driven by an `IntersectionObserver` on the page hero, with a scroll-position fallback for browsers without `IntersectionObserver` support.
 - Split the long page-hero lead paragraphs on the Contact, Services, and Your Next Steps pages into shorter, separately styled paragraphs and tightened wording for readability (replacing an em dash with a comma on Services, and separating the tumour-group/age-range sentence on Your Next Steps).
@@ -105,6 +105,6 @@ All notable implementation work completed so far is summarised here.
 - Added a privacy notice disclaimer to the Contact form advising against including highly sensitive medical information.
 - Updated the Contact page "after you enquire" messaging.
 - Corrected the "Clinical expertise" heading on the About page to "Clinical Experience," removing a restricted AHPRA term.
-- Updated the Noosa location card business name and its map embed title to Cancer Care Associates.
+- Updated the Noosa location card business name and its map embed title to Cancer Care Noosa.
 - Restored disclaimer box border-radius and corrected disclosure summary height for consistent accordion alignment.
 - Updated the Referrers page referral contact email to match site-wide support address.
