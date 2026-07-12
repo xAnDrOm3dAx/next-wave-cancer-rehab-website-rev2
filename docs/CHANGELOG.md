@@ -11,6 +11,8 @@ All notable implementation work completed so far is summarised here.
 
 ### Added
 
+- Added a dedicated website header logo asset (`primary-logo-website-header-rev1.svg`) and applied it on the homepage for a sharper, proportionally scaled brand mark in the site header.
+- Added `Document.svg` to the image library as a logo asset for future use.
 - Added icon and subheading styling to the Your Next Steps rehabilitation-stage disclosure summaries, so each stage's expandable section has a clearer visual heading at a glance.
 - Implemented the Home page with a branded hero, About snapshot with Megan's portrait, a Services snapshot with four stage cards, a Your Next Steps summary, a Contact snapshot with phone, email, telehealth, and location details, and a closing CTA band — replacing the previous placeholder shell.
 - Added four green SVG service icons to the homepage service cards so each rehabilitation stage is visually distinct at a glance.
@@ -41,6 +43,12 @@ All notable implementation work completed so far is summarised here.
 
 ### Changed
 
+- Further refined the design token scale: tightened section-spacing and heading-size clamps, documented the full type scale in `Design_Tokens.md` and the Cursor spacing-typography rule, set list leads to `--text-md`, standardised eyebrow uppercase styling, and reduced navigation link font size to `--text-sm`.
+- Restored the `--line-height-heading` CSS variable so headings use a consistent line height for improved readability.
+- Switched the homepage Services snapshot from a four-column to a two-column grid and introduced a `.card--stack-left` modifier so stack cards align left for easier scanning of service categories.
+- Shortened the homepage About section heading from "About Next Wave Cancer Rehab" to "About Next Wave" for a cleaner, brand-aligned title.
+- Updated the homepage locations snapshot to use the Cancer Care Noosa clinic name, aligning with the Contact page and Referrers form.
+- Removed legacy font, colour, and hover styling from header and footer logo links, which now display image-only branding without redundant text-link treatment.
 - Fine-tuned the spacing scale between page sections to use smaller, more proportional values for a tighter, more consistent layout across screen sizes.
 - Tidied up About page paragraph breaks and simplified the qualifications and memberships section styling.
 - Consolidated heading spacing rules into a single sitewide location and refined the overall spacing scale for headings and disclosures.
