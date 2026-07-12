@@ -172,15 +172,8 @@ html {
 }
 
 .site-header__logo a {
-  font-family: var(--font-heading);
-  font-size: var(--text-md);
-  font-weight: 600;
+  display: inline-block;
   text-decoration: none;
-  color: var(--color-text);
-}
-
-.site-header__logo a:hover {
-  color: var(--color-primary-dark);
 }
 
 .site-header__logo img {
@@ -424,15 +417,7 @@ html {
 
 .site-footer__brand a {
   display: inline-block;
-  font-family: var(--font-heading);
-  font-size: var(--text-lg);
-  font-weight: 600;
   text-decoration: none;
-  color: var(--color-surface);
-}
-
-.site-footer__brand a:hover {
-  color: var(--color-surface-warm);
 }
 
 .site-footer__brand img {
