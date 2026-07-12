@@ -6,7 +6,7 @@ All notable implementation work completed so far is summarised here.
 
 ### Completed
 
-- Completed the static site implementation across About, Services, Your Next Steps, Contact, and Referrers, including shared navigation/footer, reusable CSS component patterns, accessibility-minded accordions and anchor behaviour, return-to-top support, site-wide branding, and a full referral form for health professionals. Home, Privacy Policy, and Terms & Conditions remain placeholder shells. Service image placeholders exist on an experimental, unmerged branch (`add-placeholders-for-images-rev1`).
+- Completed the static site implementation across Home, About, Services, Your Next Steps, Contact, and Referrers, including shared navigation/footer, reusable CSS component patterns, accessibility-minded accordions and anchor behaviour, return-to-top support, site-wide branding, and a full referral form for health professionals. Privacy Policy, and Terms & Conditions remain placeholder shells. Service image placeholders exist on an experimental, unmerged branch (`add-placeholders-for-images-rev1`).
 - The `build-referrers-page` branch (not yet merged to `main`) carries the completed Referrers page plus a round of site-wide polish: consolidated form sections, a "Refer a Patient" call-to-action nav treatment, global anchor-scroll handling, and a more robust return-to-top control.
 
 ### Added
