@@ -11,6 +11,7 @@ All notable implementation work completed so far is summarised here.
 
 ### Added
 
+- Added a revised website header logo asset (`primary-logo-website-header-rev2.svg`) with updated artwork for clearer, proportionally scaled branding in the site header.
 - Added a dedicated website header logo asset (`primary-logo-website-header-rev1.svg`) and applied it on the homepage for a sharper, proportionally scaled brand mark in the site header.
 - Added `Document.svg` to the image library as a logo asset for future use.
 - Added icon and subheading styling to the Your Next Steps rehabilitation-stage disclosure summaries, so each stage's expandable section has a clearer visual heading at a glance.
@@ -43,6 +44,7 @@ All notable implementation work completed so far is summarised here.
 
 ### Changed
 
+- Updated the site header logo to the revision 2 header asset across every page, replacing the revision 1 variant on the homepage and the generic logo on inner pages for consistent header branding site-wide.
 - Further refined the design token scale: tightened section-spacing and heading-size clamps, documented the full type scale in `Design_Tokens.md` and the Cursor spacing-typography rule, set list leads to `--text-md`, standardised eyebrow uppercase styling, and reduced navigation link font size to `--text-sm`.
 - Restored the `--line-height-heading` CSS variable so headings use a consistent line height for improved readability.
 - Switched the homepage Services snapshot from a four-column to a two-column grid and introduced a `.card--stack-left` modifier so stack cards align left for easier scanning of service categories.
