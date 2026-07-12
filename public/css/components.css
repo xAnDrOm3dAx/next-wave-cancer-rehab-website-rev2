@@ -37,24 +37,24 @@
 
 /* Subsection — visual divider within a section (e.g. Locations within Contact) */
 
-.subsection + .subsection,
+.subsection+.subsection,
 .subsection--divider {
   margin-top: var(--space-2xl);
   padding-top: var(--space-2xl);
   border-top: 1px solid var(--color-border);
 }
 
-.subsection p + .quals-list,
-.subsection p + .checklist {
+.subsection p+.quals-list,
+.subsection p+.checklist {
   margin-top: var(--space-md);
 }
 
-.subsection .quals-list + p,
-.subsection .checklist + p {
+.subsection .quals-list+p,
+.subsection .checklist+p {
   margin-top: var(--space-lg);
 }
 
-.subsection > .section-intro__lead {
+.subsection>.section-intro__lead {
   margin-bottom: var(--space-xl);
 }
 
@@ -94,6 +94,15 @@
   text-align: center;
   gap: var(--space-md);
   height: 100%;
+
+  >h3 {
+    flex: 1;
+  }
+}
+
+.card--stack-left {
+  align-items: start;
+  text-align: left;
 }
 
 .card-stack-icon {
@@ -358,7 +367,7 @@ a.card:hover {
    - after .section__header → header margin-bottom only (no extra top margin here)
    - after h2 alone → h2 margin-bottom only
    - after body paragraphs → separate the intro copy from the accordion */
-p + .disclosure {
+p+.disclosure {
   margin-top: var(--space-xl);
 }
 
