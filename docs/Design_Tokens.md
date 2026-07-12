@@ -115,8 +115,8 @@ Use this as the starting point for `public/css/variables.css`.
   --text-md: 1.125rem;
   --text-lg: 1.25rem;
   --text-xl: clamp(1.375rem, 2vw, 1.625rem);
-  --text-2xl: clamp(1.75rem, 3vw, 2.5rem);
-  --text-3xl: clamp(2.35rem, 5vw, 4.5rem);
+  --text-2xl: clamp(1.475rem, 3vw, 2.5rem);
+  --text-3xl: clamp(2.3rem, 5vw, 4rem);
 
   /* Spacing */
   --space-2xs: 0.25rem;
@@ -127,7 +127,7 @@ Use this as the starting point for `public/css/variables.css`.
   --space-xl: 2rem;
   --space-2xl: 3rem;
   --space-3xl: clamp(4rem, 8vw, 7rem);
-  --space-section: clamp(4rem, 8vw, 7rem);
+  --space-section: clamp(3rem, 6vw, 5.5rem);
 
   /* Layout */
   --container: 72rem;
@@ -143,3 +143,20 @@ Use this as the starting point for `public/css/variables.css`.
   --shadow-soft: 0 1.25rem 3rem rgba(36, 51, 47, 0.08);
 }
 ```
+
+## Type scale
+
+Use `--text-xs` through `--text-3xl` only. Do not add one-off `font-size` values.
+
+| Token | Value | Typical use |
+|---|---|---|
+| `--text-xs` | `0.8125rem` | Badges, footer legal |
+| `--text-sm` | `0.9375rem` | Buttons, nav, eyebrows, form labels, notes |
+| `--text-base` | `1rem` | Body copy, form inputs, inline labels |
+| `--text-md` | `1.125rem` | Card titles, accordion triggers, leads |
+| `--text-lg` | `1.25rem` | h4, subgroup headings, pullquotes, legend |
+| `--text-xl` | `clamp(1.375rem, 2vw, 1.625rem)` | Default h3 |
+| `--text-2xl` | `clamp(1.475rem, 3vw, 2.5rem)` | h2 |
+| `--text-3xl` | `clamp(2.3rem, 5vw, 4rem)` | h1 |
+
+Some `h3` elements use a smaller size via class (e.g. `.card__title` → `--text-md`, `.quals-group__heading` → `--text-lg`).
