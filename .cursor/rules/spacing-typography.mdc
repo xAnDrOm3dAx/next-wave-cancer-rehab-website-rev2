@@ -44,4 +44,25 @@ alwaysApply: false
 
 ## Spacing scale
 
-Use design tokens only: `--space-md` (1rem), `--space-lg` (1.5rem), `--space-xl` (2rem), `--space-2xl` (3rem), `--space-section` (clamp 4–7rem).
+Use design tokens only: `--space-md` (1rem), `--space-lg` (1.5rem), `--space-xl` (2rem), `--space-2xl` (3rem), `--space-section` (clamp 3–5.5rem).
+
+## Type scale
+
+Use `--text-xs` through `--text-3xl` from `variables.css`. Do not add one-off `font-size` values.
+
+| Token | Typical use |
+|---|---|
+| `--text-3xl` | `h1` |
+| `--text-2xl` | `h2` |
+| `--text-xl` | Default `h3` |
+| `--text-lg` | `h4`, `.quals-group__heading`, pullquotes |
+| `--text-md` | `.card__title`, leads, `.text-subheading` |
+| `--text-base` | Body copy, form inputs |
+| `--text-sm` | Buttons, nav, eyebrows, footer labels |
+| `--text-xs` | Badges, footer legal |
+
+Some `h3` elements use a smaller size via class — reuse an existing token rather than adding overrides.
+
+### Eyebrows
+
+`.page-hero__eyebrow` and `.section-intro__eyebrow` both use `--text-sm` with uppercase and letter-spacing.

@@ -61,6 +61,7 @@
 /* Emphasised lead-in before a list */
 
 .list-lead {
+  font-size: var(--text-md);
   font-weight: 600;
   margin-top: var(--space-lg);
 }
@@ -69,6 +70,8 @@
   font-size: var(--text-sm);
   font-weight: 600;
   color: var(--color-primary-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
   margin-bottom: var(--space-sm);
 }
 
