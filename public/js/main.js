@@ -188,11 +188,11 @@
       if (field.type === 'checkbox') return 'Please confirm this before continuing.';
       return 'This field is required.';
     }
-    if (field.validity.typeMismatch && field.type === 'email') {
-      return 'Please enter a valid email address.';
+    if ((field.validity.typeMismatch || field.validity.patternMismatch) && field.type === 'email') {
+      return 'Please enter a valid email address, including a domain (e.g. name@example.com).';
     }
-    if (field.validity.typeMismatch && field.type === 'tel') {
-      return 'Please enter a valid phone number.';
+    if ((field.validity.typeMismatch || field.validity.patternMismatch) && field.type === 'tel') {
+      return 'Please enter a valid phone number (at least 8 digits).';
     }
     return 'Please check this field.';
   }
