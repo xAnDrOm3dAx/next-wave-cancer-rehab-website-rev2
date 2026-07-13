@@ -127,3 +127,73 @@
     }
   });
 })();
+
+/* Populate hidden page_loaded timestamp for spam timing check */
+(function () {
+  document.querySelectorAll('input[name="page_loaded"]').forEach(function (el) {
+    el.value = Date.now();
+  });
+})();
+
+/* Contact & Referral form validation — conditional preventDefault */
+(function () {
+  var forms = document.querySelectorAll('form.form');
+
+  forms.forEach(function (form) {
+    form.addEventListener('submit', function (event) {
+      clearErrors(form);
+
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        showErrors(form);
+      }
+      // If valid, do nothing here — the native POST proceeds to the form's action URL.
+    });
+  });
+
+  function clearErrors(form) {
+    form.querySelectorAll('.form__error').forEach(function (el) { el.remove(); });
+    form.querySelectorAll('[aria-invalid="true"]').forEach(function (el) {
+      el.removeAttribute('aria-invalid');
+    });
+  }
+
+  function showErrors(form) {
+    var invalidFields = Array.prototype.filter.call(form.elements, function (el) {
+      return typeof el.checkValidity === 'function' && !el.checkValidity() && el.type !== 'hidden';
+    });
+
+    invalidFields.forEach(function (field) {
+      field.setAttribute('aria-invalid', 'true');
+
+      var errorId = field.id + '-error';
+      var error = document.createElement('p');
+      error.className = 'form__error';
+      error.id = errorId;
+      error.textContent = errorMessage(field);
+
+      var describedBy = field.getAttribute('aria-describedby');
+      field.setAttribute('aria-describedby', describedBy ? describedBy + ' ' + errorId : errorId);
+
+      field.insertAdjacentElement('afterend', error);
+    });
+
+    if (invalidFields.length) {
+      invalidFields[0].focus();
+    }
+  }
+
+  function errorMessage(field) {
+    if (field.validity.valueMissing) {
+      if (field.type === 'checkbox') return 'Please confirm this before continuing.';
+      return 'This field is required.';
+    }
+    if ((field.validity.typeMismatch || field.validity.patternMismatch) && field.type === 'email') {
+      return 'Please enter a valid email address, including a domain (e.g. name@example.com).';
+    }
+    if ((field.validity.typeMismatch || field.validity.patternMismatch) && field.type === 'tel') {
+      return 'Please enter a valid phone number (at least 8 digits).';
+    }
+    return 'Please check this field.';
+  }
+})();
