@@ -128,8 +128,7 @@
         <h2>Referral Form</h2>
         <div class="contact-form-content">
 
-          <form class="form" novalidate>
-            <!-- FORM ACTION: pending Apps Script Web App URL, wire alongside contact.html per parked decision -->
+          <form class="form" novalidate method="POST" action="https://script.google.com/macros/s/AKfycbxGPjUxnm3tGi0JXXg9hYeFOiNlcei6fqdNwo_lNKCECREU2IkzLDpqT3MIUT_QXTraQg/exec">
 
             <p class="form__note">Complete the form below to refer a patient. Fields marked <span
                 aria-hidden="true">*</span> are required.</p>
@@ -155,12 +154,12 @@
 
                 <div class="form__group">
                   <label for="pat-phone">Phone <span aria-hidden="true">*</span></label>
-                  <input type="tel" id="pat-phone" name="patient_phone" autocomplete="tel" required>
+                  <input type="tel" id="pat-phone" name="patient_phone" autocomplete="tel" required pattern="[0-9\s\+\-\(\)]{8,}" title="Enter a phone number with at least 8 digits">
                 </div>
 
                 <div class="form__group">
                   <label for="pat-email">Email <span aria-hidden="true">*</span></label>
-                  <input type="email" id="pat-email" name="patient_email" autocomplete="email" required>
+                  <input type="email" id="pat-email" name="patient_email" autocomplete="email" required pattern="[^\s@]+@[^\s@]+\.[^\s@]{2,}" title="Enter a full email address, e.g. name@example.com">
                 </div>
 
                 <div class="form__group">
@@ -192,12 +191,12 @@
 
                 <div class="form__group">
                   <label for="ref-phone">Phone <span aria-hidden="true">*</span></label>
-                  <input type="tel" id="ref-phone" name="referrer_phone" autocomplete="tel" required>
+                  <input type="tel" id="ref-phone" name="referrer_phone" autocomplete="tel" required pattern="[0-9\s\+\-\(\)]{8,}" title="Enter a phone number with at least 8 digits">
                 </div>
 
                 <div class="form__group">
                   <label for="ref-email">Email <span aria-hidden="true">*</span></label>
-                  <input type="email" id="ref-email" name="referrer_email" autocomplete="email" required>
+                  <input type="email" id="ref-email" name="referrer_email" autocomplete="email" required pattern="[^\s@]+@[^\s@]+\.[^\s@]{2,}" title="Enter a full email address, e.g. name@example.com">
                 </div>
 
                 <div class="form__checkbox">
@@ -296,6 +295,9 @@
 
               </div>
             </fieldset>
+
+            <input type="hidden" name="form_type" value="referral">
+            <input type="hidden" name="page_loaded" value="">
 
             <!-- Honeypot: visually hidden, not display:none -->
             <div class="visually-hidden-honeypot" aria-hidden="true">

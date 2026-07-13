@@ -164,7 +164,7 @@
             endeavour to respond as soon as possible.</p>
         </div>
         <div class="contact-form-content">
-          <form class="form" novalidate>
+          <form class="form" novalidate method="POST" action="https://script.google.com/macros/s/AKfycbxGPjUxnm3tGi0JXXg9hYeFOiNlcei6fqdNwo_lNKCECREU2IkzLDpqT3MIUT_QXTraQg/exec">
             <div class="disclaimer-box">
               <p>This form is not monitored for urgent medical concerns. If you need urgent medical help, contact your
                 GP, treating team, call 000, or visit your nearest emergency department. Please avoid including highly
@@ -181,12 +181,12 @@
 
             <div class="form__group">
               <label for="contact-email">Email address <span aria-hidden="true">*</span></label>
-              <input type="email" id="contact-email" name="email" autocomplete="email" required>
+              <input type="email" id="contact-email" name="email" autocomplete="email" required pattern="[^\s@]+@[^\s@]+\.[^\s@]{2,}" title="Enter a full email address, e.g. name@example.com">
             </div>
 
             <div class="form__group">
               <label for="contact-phone">Phone number <span aria-hidden="true">*</span></label>
-              <input type="tel" id="contact-phone" name="phone" autocomplete="tel" required>
+              <input type="tel" id="contact-phone" name="phone" autocomplete="tel" required pattern="[0-9\s\+\-\(\)]{8,}" title="Enter a phone number with at least 8 digits">
             </div>
 
             <div class="form__group">
@@ -219,6 +219,9 @@
               <label for="contact-consent">I consent to Next Wave Cancer Rehab contacting me about my enquiry. <span
                   aria-hidden="true">*</span></label>
             </div>
+
+            <input type="hidden" name="form_type" value="enquiry">
+            <input type="hidden" name="page_loaded" value="">
 
             <div class="visually-hidden-honeypot" aria-hidden="true">
               <label for="contact-website">Leave this field blank</label>

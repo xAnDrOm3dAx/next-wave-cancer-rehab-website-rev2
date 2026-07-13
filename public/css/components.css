@@ -520,6 +520,18 @@ details[open]>.disclosure__summary::after {
   margin-top: 0.2em;
 }
 
+/* Form validation error state */
+
+[aria-invalid="true"] {
+  border-color: var(--color-error);
+}
+
+.form__error {
+  margin: 0;
+  font-size: var(--text-sm);
+  color: var(--color-error);
+}
+
 /* Disclaimer box */
 
 .disclaimer-box {
