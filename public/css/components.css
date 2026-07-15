@@ -246,6 +246,11 @@ a.card:hover {
   background-color: var(--color-surface-sage);
 }
 
+/* Spacing before a callout after body copy — mirrors p+.disclosure */
+p+.callout {
+  margin-top: var(--space-xl);
+}
+
 /* Badge */
 
 .badge {
