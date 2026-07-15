@@ -247,6 +247,16 @@
   }
 }
 
+/* Privacy policy page — Contact Us section sits directly above the footer
+   and ends with a callout box. Same wave-clearance issue as .section--prefooter
+   above, but this section keeps its normal top padding (it's a regular content
+   section, not a CTA band), so only the bottom padding is boosted. */
+@media (min-width: 64rem) {
+  #contact-us {
+    padding-bottom: 9.5rem;
+  }
+}
+
 /* Referrers page
    Anchor offset is handled globally via scroll-padding-top on html (layout.css).
    ========================================= */
