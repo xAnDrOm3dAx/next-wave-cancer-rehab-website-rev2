@@ -131,11 +131,6 @@ html {
   gap: var(--space-xl);
 }
 
-/* Spacing when the contact grid follows a paragraph, e.g. entity details above contact icons */
-p + .contact-grid {
-  margin-top: var(--space-xl);
-}
-
 /* Spacing when a paragraph follows the contact grid, e.g. entity details below contact icons */
 .contact-grid + p {
   margin-top: var(--space-lg);
