@@ -141,15 +141,64 @@
 
   forms.forEach(function (form) {
     form.addEventListener('submit', function (event) {
+      event.preventDefault();
       clearErrors(form);
 
       if (!form.checkValidity()) {
-        event.preventDefault();
         showErrors(form);
+        return;
       }
-      // If valid, do nothing here — the native POST proceeds to the form's action URL.
+
+      submitViaFetch(form);
     });
   });
+
+  function submitViaFetch(form) {
+    var button = form.querySelector('button[type="submit"]');
+    var originalText = button ? button.textContent : '';
+
+    if (button) {
+      button.disabled = true;
+      button.textContent = 'Sending…';
+    }
+
+    var controller = new AbortController();
+    var timeout = setTimeout(function () { controller.abort(); }, 15000);
+
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      signal: controller.signal,
+    })
+      .then(function (response) { return response.json(); })
+      .then(function (result) {
+        clearTimeout(timeout);
+        if (result && result.success) {
+          window.location.href = 'thank-you.html';
+        } else {
+          throw new Error(result && result.error ? result.error : 'Submission failed');
+        }
+      })
+      .catch(function () {
+        clearTimeout(timeout);
+        showSubmitError(form);
+        if (button) {
+          button.disabled = false;
+          button.textContent = originalText;
+        }
+      });
+  }
+
+  function showSubmitError(form) {
+    var existing = form.querySelector('.form__submit-error');
+    if (existing) existing.remove();
+
+    var error = document.createElement('p');
+    error.className = 'form__error form__submit-error';
+    error.textContent = 'Something went wrong sending your submission. Please try again, or contact us directly by phone on 0493 007 436.';
+    form.insertBefore(error, form.firstChild);
+    error.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
 
   function clearErrors(form) {
     form.querySelectorAll('.form__error').forEach(function (el) { el.remove(); });
