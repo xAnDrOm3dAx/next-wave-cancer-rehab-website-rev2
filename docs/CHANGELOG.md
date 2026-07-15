@@ -11,6 +11,11 @@ All notable implementation work completed so far is summarised here.
 
 ### Added
 
+- Added a full Privacy Policy page with sections covering personal and health information, website enquiries, secure storage, rights, complaints, and contact details, replacing the placeholder shell with ready-to-read privacy guidance.
+- Added custom-domain configuration for `www.nextwavecancerrehab.com.au` so the static site can resolve through the preferred public web address.
+- Added a thank you confirmation page for enquiry and referral submissions, giving visitors a clear next step, response-time expectation, and urgent-care guidance after forms are sent.
+- Added hidden form source and page-load fields to the Contact and Referrers forms so submissions can identify where they came from and support spam timing checks.
+- Added client-side validation and visible error messaging to the Contact and Referrers forms, helping visitors fix missing or incorrectly formatted fields before sending an enquiry or referral.
 - Added a revised website header logo asset (`primary-logo-website-header-rev1.svg`) with updated artwork for clearer, proportionally scaled branding in the site header.
 - Added a dedicated website header logo asset (`primary-logo-website-header-rev1.svg`) and applied it on the homepage for a sharper, proportionally scaled brand mark in the site header.
 - Added `Document.svg` to the image library as a logo asset for future use.
@@ -44,6 +49,12 @@ All notable implementation work completed so far is summarised here.
 
 ### Changed
 
+- Refined the Privacy Policy contact section into the shared contact-details grid and adjusted nearby spacing so phone, email, and business details are easier to scan.
+- Reduced the smallest `--text-xl` size so larger text scales more gently on smaller screens.
+- Updated the Privacy Policy page spacing so callouts following body copy have more consistent breathing room.
+- Updated the About page hero subheading from "clarity" to "trust" to better reflect the supportive tone of the brand.
+- Connected the Contact and Referrers forms to the website's form-processing endpoint so valid submissions can be sent instead of remaining static.
+- Tightened email and phone validation on the Contact and Referrers forms with clearer examples, helping visitors understand the required format before submitting.
 - Updated the site header logo to the revision 2 header asset across every page, replacing the revision 1 variant on the homepage and the generic logo on inner pages for consistent header branding site-wide.
 - Further refined the design token scale: tightened section-spacing and heading-size clamps, documented the full type scale in `Design_Tokens.md` and the Cursor spacing-typography rule, set list leads to `--text-md`, standardised eyebrow uppercase styling, and reduced navigation link font size to `--text-sm`.
 - Restored the `--line-height-heading` CSS variable so headings use a consistent line height for improved readability.
@@ -104,6 +115,8 @@ All notable implementation work completed so far is summarised here.
 
 ### Fixed
 
+- Removed redundant Privacy Policy contact markup and obsolete spacing CSS after the contact grid was simplified.
+- Fixed Privacy Policy footer clearance so the final contact section does not crowd the decorative footer wave on larger screens.
 - Corrected broken heading and panel markup in the Your Next Steps rehabilitation disclosures so accordion summaries and content nest properly for accessibility.
 - Fixed sticky-header anchor jump spacing by applying a global scroll offset.
 - Fixed footer wave spacing and responsive layout issues.
