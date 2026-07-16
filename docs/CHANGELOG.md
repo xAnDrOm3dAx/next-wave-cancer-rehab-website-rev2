@@ -49,6 +49,12 @@ All notable implementation work completed so far is summarised here.
 
 ### Changed
 
+- Grouped the Contact form's name, email, and phone fields into a semantic "Your Details" fieldset, giving personal details a clearer section heading for visitors and assistive technology.
+- Replaced dropdown selects with radio button groups on the Contact form for "I am a" and preferred contact method, making all choices visible at once and adding an "Other (please specify)" text field when the listed roles do not apply.
+- Moved the referral form's patient-consent confirmation to the end of the form, immediately before submission, so referrers review and confirm consent as a final step.
+- Marked the referral form's reason-for-referral checklist and clinic and contact-preference radio groups as required, aligning visible required indicators with fields that must be completed.
+- Switched Contact and Referrers form submission to background sending so visitors receive immediate feedback without a full page reload, including a loading state on the submit button, a request timeout, a clear message if sending fails, and redirect to the thank-you page after a successful submission.
+- Updated thank-you page copy to remove the fixed 24-hour response-time expectation and clarify urgent-care guidance, directing visitors to their GP or treating team before calling emergency services.
 - Refined the Privacy Policy contact section into the shared contact-details grid and adjusted nearby spacing so phone, email, and business details are easier to scan.
 - Reduced the smallest `--text-xl` size so larger text scales more gently on smaller screens.
 - Updated the Privacy Policy page spacing so callouts following body copy have more consistent breathing room.
@@ -115,6 +121,7 @@ All notable implementation work completed so far is summarised here.
 
 ### Fixed
 
+- Improved Contact and Referrers form validation for radio button and checkbox groups so each group shows one clear error message instead of repeating the same message for every option, including proper handling when no reason for referral is selected.
 - Removed redundant Privacy Policy contact markup and obsolete spacing CSS after the contact grid was simplified.
 - Fixed Privacy Policy footer clearance so the final contact section does not crowd the decorative footer wave on larger screens.
 - Corrected broken heading and panel markup in the Your Next Steps rehabilitation disclosures so accordion summaries and content nest properly for accessibility.
