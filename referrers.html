@@ -199,17 +199,11 @@
                   <input type="email" id="ref-email" name="referrer_email" autocomplete="email" required pattern="[^\s@]+@[^\s@]+\.[^\s@]{2,}" title="Enter a full email address, e.g. name@example.com">
                 </div>
 
-                <div class="form__checkbox">
-                  <input type="checkbox" id="ref-consent" name="referrer_consent" required>
-                  <label for="ref-consent">I confirm the patient has consented to being contacted about this referral.
-                    <span aria-hidden="true">*</span></label>
-                </div>
-
               </div>
             </fieldset>
 
             <fieldset>
-              <legend>Reason for Referral</legend>
+              <legend>Reason for Referral <span aria-hidden="true">*</span></legend>
               <div class="referral-fieldset-body">
 
                 <div class="checklist">
@@ -270,31 +264,37 @@
               <div class="referral-fieldset-body">
 
                 <fieldset class="form__group referral-form-preference">
-                  <legend>Preferred Clinic</legend>
+                  <legend>Preferred Clinic <span aria-hidden="true">*</span></legend>
                   <div class="form__checkbox">
-                    <input type="radio" id="clinic-sippy" name="preferred_clinic" value="Sippy Downs">
+                    <input type="radio" id="clinic-sippy" name="preferred_clinic" value="Sippy Downs" required>
                     <label for="clinic-sippy">Sycamore Health, Sippy Downs</label>
                   </div>
                   <div class="form__checkbox">
-                    <input type="radio" id="clinic-noosa" name="preferred_clinic" value="Noosaville">
+                    <input type="radio" id="clinic-noosa" name="preferred_clinic" value="Noosaville" required>
                     <label for="clinic-noosa">Cancer Care Noosa, Noosaville</label>
                   </div>
                 </fieldset>
 
                 <fieldset class="form__group referral-form-preference">
-                  <legend>Preferred Contact Method</legend>
+                  <legend>Preferred Contact Method <span aria-hidden="true">*</span></legend>
                   <div class="form__checkbox">
-                    <input type="radio" id="pref-phone" name="preferred_contact" value="Phone">
+                    <input type="radio" id="pref-phone" name="preferred_contact" value="Phone" required>
                     <label for="pref-phone">Phone</label>
                   </div>
                   <div class="form__checkbox">
-                    <input type="radio" id="pref-email" name="preferred_contact" value="Email">
+                    <input type="radio" id="pref-email" name="preferred_contact" value="Email" required>
                     <label for="pref-email">Email</label>
                   </div>
                 </fieldset>
 
               </div>
             </fieldset>
+
+            <div class="form__checkbox">
+              <input type="checkbox" id="ref-consent" name="referrer_consent" required>
+              <label for="ref-consent">I confirm the patient has consented to being contacted about this referral.
+                <span aria-hidden="true">*</span></label>
+            </div>
 
             <input type="hidden" name="form_type" value="referral">
             <input type="hidden" name="page_loaded" value="">

@@ -189,25 +189,41 @@
               <input type="tel" id="contact-phone" name="phone" autocomplete="tel" required pattern="[0-9\s\+\-\(\)]{8,}" title="Enter a phone number with at least 8 digits">
             </div>
 
-            <div class="form__group">
-              <label for="contact-role">I am a <span aria-hidden="true">*</span></label>
-              <select id="contact-role" name="role" required>
-                <option value="">Please select&hellip;</option>
-                <option value="patient">Patient</option>
-                <option value="family">Family member or carer</option>
-                <option value="referrer">Referring health professional</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
+            <fieldset class="form__group form__radio-group">
+              <legend>I am a <span aria-hidden="true">*</span></legend>
+              <div class="form__checkbox">
+                <input type="radio" id="role-patient" name="role" value="patient" required>
+                <label for="role-patient">Patient</label>
+              </div>
+              <div class="form__checkbox">
+                <input type="radio" id="role-family" name="role" value="family" required>
+                <label for="role-family">Family member or carer</label>
+              </div>
+              <div class="form__checkbox">
+                <input type="radio" id="role-referrer" name="role" value="referrer" required>
+                <label for="role-referrer">Referring health professional</label>
+              </div>
+              <div class="form__checkbox">
+                <input type="radio" id="role-other" name="role" value="other" required>
+                <div>
+                  <label for="role-other">Other (please specify)</label>
+                  <input type="text" id="role-other-text" name="role_other"
+                    aria-label="Please specify" class="referral-other-input">
+                </div>
+              </div>
+            </fieldset>
 
-            <div class="form__group">
-              <label for="contact-method">Preferred contact method <span aria-hidden="true">*</span></label>
-              <select id="contact-method" name="preferred_contact" required>
-                <option value="">Please select&hellip;</option>
-                <option value="phone">Phone</option>
-                <option value="email">Email</option>
-              </select>
-            </div>
+            <fieldset class="form__group form__radio-group">
+              <legend>Preferred contact method <span aria-hidden="true">*</span></legend>
+              <div class="form__checkbox">
+                <input type="radio" id="contact-method-phone" name="preferred_contact" value="phone" required>
+                <label for="contact-method-phone">Phone</label>
+              </div>
+              <div class="form__checkbox">
+                <input type="radio" id="contact-method-email" name="preferred_contact" value="email" required>
+                <label for="contact-method-email">Email</label>
+              </div>
+            </fieldset>
 
             <div class="form__group">
               <label for="contact-message">Message <span aria-hidden="true">*</span></label>
