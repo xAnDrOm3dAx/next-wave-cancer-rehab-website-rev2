@@ -525,6 +525,10 @@ details[open]>.disclosure__summary::after {
   margin-top: 0.2em;
 }
 
+.form__radio-group {
+  gap: var(--space-sm);
+}
+
 /* Form validation error state */
 
 [aria-invalid="true"] {

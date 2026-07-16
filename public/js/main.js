@@ -137,12 +137,13 @@
 
 /* Contact & Referral form validation — conditional preventDefault */
 (function () {
-  var forms = document.querySelectorAll('form.form');
+  var forms = document.querySelectorAll("form.form");
 
   forms.forEach(function (form) {
-    form.addEventListener('submit', function (event) {
+    form.addEventListener("submit", function (event) {
       event.preventDefault();
       clearErrors(form);
+      syncReasonValidity(form);
 
       if (!form.checkValidity()) {
         showErrors(form);
@@ -152,6 +153,13 @@
       submitViaFetch(form);
     });
   });
+
+  function syncReasonValidity(form) {
+    var reasonCheckboxes = form.querySelectorAll('input[name="reason[]"]');
+    if (!reasonCheckboxes.length) return;
+    var anyChecked = Array.prototype.some.call(reasonCheckboxes, function (cb) { return cb.checked; });
+    reasonCheckboxes[0].setCustomValidity(anyChecked ? '' : 'Please select at least one reason for referral.');
+  }
 
   function submitViaFetch(form) {
     var button = form.querySelector('button[type="submit"]');
@@ -201,48 +209,71 @@
   }
 
   function clearErrors(form) {
-    form.querySelectorAll('.form__error').forEach(function (el) { el.remove(); });
+    form.querySelectorAll(".form__error").forEach(function (el) {
+      el.remove();
+    });
     form.querySelectorAll('[aria-invalid="true"]').forEach(function (el) {
-      el.removeAttribute('aria-invalid');
+      el.removeAttribute("aria-invalid");
     });
   }
 
   function showErrors(form) {
     var invalidFields = Array.prototype.filter.call(form.elements, function (el) {
-      return typeof el.checkValidity === 'function' && !el.checkValidity() && el.type !== 'hidden';
+      return typeof el.checkValidity === "function" && !el.checkValidity() && el.type !== "hidden";
     });
 
-    invalidFields.forEach(function (field) {
-      field.setAttribute('aria-invalid', 'true');
+    var shownGroups = {};
+    var focusTarget = null;
 
-      var errorId = field.id + '-error';
-      var error = document.createElement('p');
-      error.className = 'form__error';
+    invalidFields.forEach(function (field) {
+      field.setAttribute("aria-invalid", "true");
+
+      var groupKey = field.type === "radio" ? field.name : field.id;
+
+      if (shownGroups[groupKey]) {
+        var existingId = shownGroups[groupKey];
+        var describedByExisting = field.getAttribute("aria-describedby");
+        field.setAttribute("aria-describedby", describedByExisting ? describedByExisting + " " + existingId : existingId);
+        return;
+      }
+
+      var errorId = (field.id || field.name) + "-error";
+      var error = document.createElement("p");
+      error.className = "form__error";
       error.id = errorId;
       error.textContent = errorMessage(field);
 
-      var describedBy = field.getAttribute('aria-describedby');
-      field.setAttribute('aria-describedby', describedBy ? describedBy + ' ' + errorId : errorId);
+      var describedBy = field.getAttribute("aria-describedby");
+      field.setAttribute("aria-describedby", describedBy ? describedBy + " " + errorId : errorId);
 
-      field.insertAdjacentElement('afterend', error);
+      var insertAfterEl = field.type === "radio" ? (field.closest("fieldset") || field) : field;
+      insertAfterEl.insertAdjacentElement("afterend", error);
+
+      shownGroups[groupKey] = errorId;
+
+      if (!focusTarget) focusTarget = field;
     });
 
-    if (invalidFields.length) {
-      invalidFields[0].focus();
+    if (focusTarget) {
+      focusTarget.focus();
     }
   }
 
   function errorMessage(field) {
+    if (field.validity.customError) {
+      return field.validationMessage;
+    }
     if (field.validity.valueMissing) {
-      if (field.type === 'checkbox') return 'Please confirm this before continuing.';
-      return 'This field is required.';
+      if (field.type === "checkbox") return "Please confirm this before continuing.";
+      if (field.type === "radio") return "Please select an option.";
+      return "This field is required.";
     }
-    if ((field.validity.typeMismatch || field.validity.patternMismatch) && field.type === 'email') {
-      return 'Please enter a valid email address, including a domain (e.g. name@example.com).';
+    if ((field.validity.typeMismatch || field.validity.patternMismatch) && field.type === "email") {
+      return "Please enter a valid email address, including a domain (e.g. name@example.com).";
     }
-    if ((field.validity.typeMismatch || field.validity.patternMismatch) && field.type === 'tel') {
-      return 'Please enter a valid phone number (at least 8 digits).';
+    if ((field.validity.typeMismatch || field.validity.patternMismatch) && field.type === "tel") {
+      return "Please enter a valid phone number (at least 8 digits).";
     }
-    return 'Please check this field.';
+    return "Please check this field.";
   }
 })();
