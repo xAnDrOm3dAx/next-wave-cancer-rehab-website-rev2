@@ -50,6 +50,26 @@
   });
 })();
 
+/* Career and Experience — sections stay expanded on desktop, collapse into an accordion on mobile */
+(function () {
+  var items = document.querySelectorAll(".career-grid__left .disclosure__item");
+
+  if (!items.length) {
+    return;
+  }
+
+  var desktopQuery = window.matchMedia("(min-width: 64rem)");
+
+  function syncOpenState(event) {
+    items.forEach(function (item) {
+      item.open = event.matches;
+    });
+  }
+
+  syncOpenState(desktopQuery);
+  desktopQuery.addEventListener("change", syncOpenState);
+})();
+
 /* Return to top — auto-attaches on every page, independent of anchor-list links */
 (function () {
   var btn = document.querySelector(".return-to-top");
