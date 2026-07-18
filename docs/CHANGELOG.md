@@ -121,6 +121,7 @@ All notable implementation work completed so far is summarised here.
 
 ### Fixed
 
+- Improved validation error placement on the Contact and Referrers forms so messages appear below the relevant fieldset legend for radio and grouped-checkbox fields, below the checkbox label for standalone checkboxes, and with clearer spacing on the referral form when an error precedes a field group.
 - Improved Contact and Referrers form validation for radio button and checkbox groups so each group shows one clear error message instead of repeating the same message for every option, including proper handling when no reason for referral is selected.
 - Removed redundant Privacy Policy contact markup and obsolete spacing CSS after the contact grid was simplified.
 - Fixed Privacy Policy footer clearance so the final contact section does not crowd the decorative footer wave on larger screens.
