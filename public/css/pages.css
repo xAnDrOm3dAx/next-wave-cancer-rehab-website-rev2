@@ -54,33 +54,52 @@
 /* About page — Career and Experience section */
 
 .career-grid {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: var(--space-2xl);
 }
 
-@media (min-width: 64rem) {
-  .career-grid {
-    grid-template-columns: 3fr 2fr;
-    align-items: center;
-  }
+.career-grid__right .card {
+  padding: var(--space-xl) var(--space-2xl);
 }
 
-.career-narrative-block+.career-narrative-block {
-  margin-top: var(--space-xl);
+.career-grid__right .card__text {
+  max-width: 38rem;
+  margin-inline: auto;
 }
 
-.career-narrative-block__heading {
-  font-family: var(--font-body);
+.career-grid__left .disclosure__summary h3 {
   font-size: var(--text-base);
-  font-weight: 600;
-  color: var(--color-text);
-  margin-top: 0;
-  margin-bottom: var(--space-xs);
 }
 
-.career-narrative-block p {
-  max-width: none;
-  margin: 0;
+@media (min-width: 64rem) {
+  .career-grid__left .disclosure__item {
+    border-top: none;
+  }
+
+  .career-grid__left .disclosure__item:last-child {
+    border-bottom: none;
+  }
+
+  .career-grid__left .disclosure__item+.disclosure__item {
+    margin-top: var(--space-xl);
+  }
+
+  .career-grid__left .disclosure__summary {
+    padding-block: 0;
+    margin-bottom: var(--space-xs);
+    pointer-events: none;
+    cursor: default;
+  }
+
+  .career-grid__left .disclosure__summary::after {
+    display: none;
+  }
+
+  .career-grid__left .disclosure__panel {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 
