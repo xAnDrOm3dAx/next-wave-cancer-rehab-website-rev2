@@ -246,7 +246,15 @@
       var describedBy = field.getAttribute("aria-describedby");
       field.setAttribute("aria-describedby", describedBy ? describedBy + " " + errorId : errorId);
 
-      var insertAfterEl = field.type === "radio" ? (field.closest("fieldset") || field) : field;
+      var isGroupedCheckbox = field.type === "checkbox" && field.name.slice(-2) === "[]";
+
+      var insertAfterEl = field;
+      if (field.type === "radio" || isGroupedCheckbox) {
+        var fieldset = field.closest("fieldset");
+        insertAfterEl = (fieldset && fieldset.querySelector("legend")) || fieldset || field;
+      } else if (field.type === "checkbox") {
+        insertAfterEl = field.closest(".form__checkbox") || field;
+      }
       insertAfterEl.insertAdjacentElement("afterend", error);
 
       shownGroups[groupKey] = errorId;
