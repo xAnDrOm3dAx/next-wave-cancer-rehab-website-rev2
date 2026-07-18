@@ -267,6 +267,10 @@
   gap: var(--space-lg);
 }
 
+.form__error + .referral-fieldset-body {
+  margin-top: var(--space-sm);
+}
+
 .referral-form-preference {
   gap: var(--space-sm);
 }
