@@ -6,7 +6,7 @@ All notable implementation work completed so far is summarised here.
 
 ### Completed
 
-- Completed the static site implementation across Home, About, Services, Your Next Steps, Contact, and Referrers, including shared navigation/footer, reusable CSS component patterns, accessibility-minded accordions and anchor behaviour, return-to-top support, site-wide branding, and a full referral form for health professionals. Privacy Policy, and Terms & Conditions remain placeholder shells. Service image placeholders exist on an experimental, unmerged branch (`add-placeholders-for-images-rev1`).
+- Completed the static site implementation across Home, About, Services, Your Next Steps, Contact, and Referrers, including shared navigation/footer, reusable CSS component patterns, accessibility-minded accordions and anchor behaviour, return-to-top support, site-wide branding, and a full referral form for health professionals. The Privacy Policy page is complete; Terms & Conditions remains a placeholder page and is intentionally unlinked from site navigation. Service image placeholders exist on an experimental, unmerged branch (`add-placeholders-for-images-rev1`).
 - The `build-referrers-page` branch (not yet merged to `main`) carries the completed Referrers page plus a round of site-wide polish: consolidated form sections, a "Refer a Patient" call-to-action nav treatment, global anchor-scroll handling, and a more robust return-to-top control.
 
 ### Added
@@ -49,6 +49,9 @@ All notable implementation work completed so far is summarised here.
 
 ### Changed
 
+- Converted the About page Career and Experience section from static narrative blocks into responsive disclosure sections that stay fully expanded on desktop and collapse into an accordion on smaller screens, making the longer career content easier to scan on mobile without hiding it on larger viewports.
+- Applied dark card styling to the "My Approach" panel in the Career and Experience section so it stands apart from the narrative disclosures beside it.
+- Removed the Terms & Conditions link from the footer legal area across every page, leaving Privacy Policy as the sole legal link while the Terms page remains unpublished.
 - Grouped the Contact form's name, email, and phone fields into a semantic "Your Details" fieldset, giving personal details a clearer section heading for visitors and assistive technology.
 - Replaced dropdown selects with radio button groups on the Contact form for "I am a" and preferred contact method, making all choices visible at once and adding an "Other (please specify)" text field when the listed roles do not apply.
 - Moved the referral form's patient-consent confirmation to the end of the form, immediately before submission, so referrers review and confirm consent as a final step.
