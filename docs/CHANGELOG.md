@@ -49,6 +49,7 @@ All notable implementation work completed so far is summarised here.
 
 ### Changed
 
+- Refactored footer wave layout to position the decorative wave with padding on the footer content container instead of negative margins, and removed page-specific bottom-padding overrides on the Services pre-footer CTA band and Privacy Policy contact section that had compensated for wave overlap, simplifying maintenance and making footer clearance more predictable site-wide.
 - Replaced the reused qualification-list classes on Services page content lists with a dedicated `.plain-list` pattern so ordinary bullet lists are named more clearly while keeping the same sage-marker presentation.
 - Removed obsolete primary and secondary logo assets (revision 1 and 2 PNG and SVG variants) and unused accordion and feature-item CSS, leaving only the logo files and disclosure styles the live pages actually use.
 - Converted the About page Career and Experience section from static narrative blocks into responsive disclosure sections that stay fully expanded on desktop and collapse into an accordion on smaller screens, making the longer career content easier to scan on mobile without hiding it on larger viewports.
@@ -126,6 +127,7 @@ All notable implementation work completed so far is summarised here.
 
 ### Fixed
 
+- Fixed footer wave overlapping content on short pages such as the thank-you confirmation page by removing the wave's negative top margin, which had previously pulled the decoration up into the page above and required per-page clearance workarounds.
 - Improved validation error placement on the Contact and Referrers forms so messages appear below the relevant fieldset legend for radio and grouped-checkbox fields, below the checkbox label for standalone checkboxes, and with clearer spacing on the referral form when an error precedes a field group.
 - Improved Contact and Referrers form validation for radio button and checkbox groups so each group shows one clear error message instead of repeating the same message for every option, including proper handling when no reason for referral is selected.
 - Removed redundant Privacy Policy contact markup and obsolete spacing CSS after the contact grid was simplified.
