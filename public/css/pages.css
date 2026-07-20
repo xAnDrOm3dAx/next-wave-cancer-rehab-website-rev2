@@ -260,28 +260,6 @@
   border: 0;
 }
 
-/* =========================================
-   Services page — CTA band directly above the footer.
-   At 64rem+ the footer wave uses margin-top: -140px / height: 140px.
-   The default section bottom padding (max 7rem = 112px) is not enough to
-   clear the wave, causing it to cut into the dark card. Push the bottom
-   padding above 140px so the card sits safely above the wave's bleed area. */
-@media (min-width: 64rem) {
-  .section--prefooter {
-    padding-bottom: 9.5rem;
-  }
-}
-
-/* Privacy policy page — Contact Us section sits directly above the footer
-   and ends with a callout box. Same wave-clearance issue as .section--prefooter
-   above, but this section keeps its normal top padding (it's a regular content
-   section, not a CTA band), so only the bottom padding is boosted. */
-@media (min-width: 64rem) {
-  #contact-us {
-    padding-bottom: 9.5rem;
-  }
-}
-
 /* Referrers page
    Anchor offset is handled globally via scroll-padding-top on html (layout.css).
    ========================================= */
