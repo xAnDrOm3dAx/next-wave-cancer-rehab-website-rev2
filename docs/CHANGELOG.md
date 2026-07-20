@@ -49,6 +49,8 @@ All notable implementation work completed so far is summarised here.
 
 ### Changed
 
+- Replaced the reused qualification-list classes on Services page content lists with a dedicated `.plain-list` pattern so ordinary bullet lists are named more clearly while keeping the same sage-marker presentation.
+- Removed obsolete primary and secondary logo assets (revision 1 and 2 PNG and SVG variants) and unused accordion and feature-item CSS, leaving only the logo files and disclosure styles the live pages actually use.
 - Converted the About page Career and Experience section from static narrative blocks into responsive disclosure sections that stay fully expanded on desktop and collapse into an accordion on smaller screens, making the longer career content easier to scan on mobile without hiding it on larger viewports.
 - Applied dark card styling to the "My Approach" panel in the Career and Experience section so it stands apart from the narrative disclosures beside it.
 - Removed the Terms & Conditions link from the footer legal area across every page, leaving Privacy Policy as the sole legal link while the Terms page remains unpublished.
