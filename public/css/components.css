@@ -437,11 +437,13 @@ details[open]>.disclosure__summary::after {
   line-height: var(--line-height-body);
 }
 
-.disclosure__panel p+.quals-list {
+.disclosure__panel p+.quals-list,
+.disclosure__panel p+.plain-list {
   margin-top: var(--space-md);
 }
 
-.disclosure__panel .quals-list+p {
+.disclosure__panel .quals-list+p,
+.disclosure__panel .plain-list+p {
   margin-top: var(--space-lg);
 }
 

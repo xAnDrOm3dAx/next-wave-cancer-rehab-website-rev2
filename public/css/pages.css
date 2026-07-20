@@ -119,7 +119,8 @@
   color: var(--color-text);
 }
 
-.quals-list {
+.quals-list,
+.plain-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -137,7 +138,8 @@
   }
 }
 
-.quals-item {
+.quals-item,
+.plain-list__item {
   padding: var(--space-xs) 0 var(--space-xs) var(--space-lg);
   font-size: var(--text-sm);
   color: var(--color-text);
@@ -145,7 +147,8 @@
   position: relative;
 }
 
-.quals-item::before {
+.quals-item::before,
+.plain-list__item::before {
   content: "";
   position: absolute;
   left: 0;
@@ -156,7 +159,8 @@
   background-color: var(--color-primary-sage);
 }
 
-.quals-list--plain {
+.quals-list--plain,
+.plain-list {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
@@ -188,11 +192,13 @@
    Anchor offset is handled globally via scroll-padding-top on html (layout.css).
    Apply .service-section to every anchor section on services.html for spacing rules. */
 
-.service-section p+.quals-list {
+.service-section p+.quals-list,
+.service-section p+.plain-list {
   margin-top: var(--space-md);
 }
 
-.service-section .quals-list+p {
+.service-section .quals-list+p,
+.service-section .plain-list+p {
   margin-top: var(--space-lg);
 }
 
