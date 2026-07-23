@@ -11,6 +11,7 @@ All notable implementation work completed so far is summarised here.
 
 ### Added
 
+- Added a map-pinned green icon for location entries on the homepage contact snapshot, giving session locations a distinct visual marker alongside phone and email.
 - Added a full Privacy Policy page with sections covering personal and health information, website enquiries, secure storage, rights, complaints, and contact details, replacing the placeholder shell with ready-to-read privacy guidance.
 - Added custom-domain configuration for `www.nextwavecancerrehab.com.au` so the static site can resolve through the preferred public web address.
 - Added a thank you confirmation page for enquiry and referral submissions, giving visitors a clear next step, response-time expectation, and urgent-care guidance after forms are sent.
@@ -49,6 +50,9 @@ All notable implementation work completed so far is summarised here.
 
 ### Changed
 
+- Restructured contact information across the Home, Contact, Referrers, and Privacy Policy pages using semantic address wrappers and definition lists for phone, email, and location labels, marked decorative icons as hidden from screen readers, and updated phone links to international (+61) format for clearer dialling and assistive-technology support.
+- Reworked the homepage and Contact page contact areas to show session locations (Cancer Care Noosa and Sycamore Health with days) instead of a standalone Telehealth block, removed the duplicate locations callout and enquiry button from the homepage contact snapshot, and tightened the Contact page locations introduction.
+- Refreshed copy across the About, Home, Services, and Your Next Steps pages: reframed the About hero as individualised rehabilitation, softened the homepage About snapshot tone, tightened service card descriptions, expanded the Breast Cancer Rehabilitation section with detail on common surgery types Megan supports, merged the separate Breathlessness and Breathing Techniques disclosures into a single topic, and standardised Telehealth capitalisation on Your Next Steps.
 - Refactored footer wave layout to position the decorative wave with padding on the footer content container instead of negative margins, and removed page-specific bottom-padding overrides on the Services pre-footer CTA band and Privacy Policy contact section that had compensated for wave overlap, simplifying maintenance and making footer clearance more predictable site-wide.
 - Replaced the reused qualification-list classes on Services page content lists with a dedicated `.plain-list` pattern so ordinary bullet lists are named more clearly while keeping the same sage-marker presentation.
 - Removed obsolete primary and secondary logo assets (revision 1 and 2 PNG and SVG variants) and unused accordion and feature-item CSS, leaving only the logo files and disclosure styles the live pages actually use.
