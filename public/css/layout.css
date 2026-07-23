@@ -142,15 +142,25 @@ html {
   display: grid;
   gap: var(--space-2xl);
   align-items: center;
-
-  @media (min-width: 64rem) {
-    grid-template-columns: 1fr 2fr;
-  }
 }
 
-.split--reverse {
-  @media (min-width: 64rem) {
+@media (min-width: 64rem) {
+  .split--media-left {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "media content";
+  }
+
+  .split--media-right {
     grid-template-columns: 2fr 1fr;
+    grid-template-areas: "content media";
+  }
+
+  .split__media {
+    grid-area: media;
+  }
+
+  .split__content {
+    grid-area: content;
   }
 }
 
