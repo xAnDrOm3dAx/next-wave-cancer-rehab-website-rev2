@@ -543,13 +543,18 @@ details[open]>.disclosure__summary::after {
   flex-direction: column;
   gap: var(--space-sm);
 
-  @media (min-width: 48rem) {
-    flex-direction: row;
-  }
-
-  >p {
+  >p,
+  >dl {
     display: flex;
     flex-direction: column;
+  }
+
+  dt {
+    font-weight: 600;
+  }
+
+  dd {
+    margin: 0;
   }
 
 
