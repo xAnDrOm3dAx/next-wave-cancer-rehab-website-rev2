@@ -80,6 +80,23 @@
   color: var(--color-muted-text);
 }
 
+/* Content images */
+
+.content-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+
+@media (max-width: 64rem) {
+  .content-image {
+    max-width: clamp(16rem, 55vw, 22rem);
+    margin-inline: auto;
+  }
+}
+
 /* Cards */
 
 .card {
