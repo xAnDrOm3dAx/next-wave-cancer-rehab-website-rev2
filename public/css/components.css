@@ -543,10 +543,19 @@ details[open]>.disclosure__summary::after {
   flex-direction: column;
   gap: var(--space-sm);
 
+  @media (min-width: 48rem) {
+    flex-direction: row;
+  }
+
   >p,
-  >dl {
+  >dl,
+  &__content {
     display: flex;
     flex-direction: column;
+  }
+
+  &__content {
+    gap: var(--space-sm);
   }
 
   dt {
@@ -556,9 +565,6 @@ details[open]>.disclosure__summary::after {
   dd {
     margin: 0;
   }
-
-
-
 }
 
 /* Return to top */
