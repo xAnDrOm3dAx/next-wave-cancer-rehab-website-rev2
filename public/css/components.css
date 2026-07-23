@@ -536,7 +536,7 @@ details[open]>.disclosure__summary::after {
   border: 1px solid var(--color-border);
 }
 
-/* Contact detail item — icon + label pairing, used on contact.html and referrers.html */
+/* Contact detail item — icon + label pairing */
 
 .contact-detail-item {
   display: flex;
@@ -565,6 +565,10 @@ details[open]>.disclosure__summary::after {
   dd {
     margin: 0;
   }
+}
+
+.contact-link {
+  margin-top: var(--space-sm);
 }
 
 /* Return to top */
