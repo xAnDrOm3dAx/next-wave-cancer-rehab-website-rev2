@@ -24,34 +24,6 @@
   color: var(--color-text);
 }
 
-/* About page — Meet Megan section */
-
-.about-portrait-placeholder {
-  background-color: var(--color-surface-sage);
-  border-radius: var(--radius-md);
-  min-height: 480px;
-  width: 100%;
-  overflow: hidden;
-  box-shadow: var(--shadow-card);
-}
-
-.about-portrait-placeholder picture,
-.about-portrait-img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: var(--radius-md);
-}
-
-@media (max-width: 64rem) {
-  .about-portrait-placeholder {
-    width: 100%;
-    max-width: clamp(16rem, 55vw, 22rem);
-    min-height: 0;
-    margin-inline: auto;
-  }
-}
-
 /* About page — Career and Experience section */
 
 .career-grid {
