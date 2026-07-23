@@ -132,7 +132,7 @@ html {
 }
 
 /* Spacing when a paragraph follows the contact grid, e.g. entity details below contact icons */
-.contact-grid + p {
+.contact-grid+p {
   margin-top: var(--space-lg);
 }
 
@@ -142,15 +142,15 @@ html {
   display: grid;
   gap: var(--space-2xl);
   align-items: center;
-}
 
-@media (min-width: 64rem) {
-  .split {
+  @media (min-width: 64rem) {
     grid-template-columns: 1fr 2fr;
   }
+}
 
-  .split--reverse .split__media {
-    order: 2;
+.split--reverse {
+  @media (min-width: 64rem) {
+    grid-template-columns: 2fr 1fr;
   }
 }
 

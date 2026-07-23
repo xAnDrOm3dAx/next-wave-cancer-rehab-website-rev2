@@ -32,6 +32,7 @@
   min-height: 480px;
   width: 100%;
   overflow: hidden;
+  box-shadow: var(--shadow-card);
 }
 
 .about-portrait-placeholder picture,
@@ -270,7 +271,7 @@
   gap: var(--space-lg);
 }
 
-.form__error + .referral-fieldset-body {
+.form__error+.referral-fieldset-body {
   margin-top: var(--space-sm);
 }
 
