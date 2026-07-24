@@ -157,6 +157,8 @@ html {
 
   .split__media {
     grid-area: media;
+    max-width: 300px;
+    margin: 0 auto;
   }
 
   .split__content {
