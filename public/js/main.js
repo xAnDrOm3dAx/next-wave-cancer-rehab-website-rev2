@@ -88,12 +88,11 @@
     document.body.appendChild(btn);
   }
 
-  function show() {
-    btn.classList.add("return-to-top--visible");
-  }
+  var isPastThreshold = false;
+  var isOverFooter = false;
 
-  function hide() {
-    btn.classList.remove("return-to-top--visible");
+  function render() {
+    btn.classList.toggle("return-to-top--visible", isPastThreshold && !isOverFooter);
   }
 
   var trigger = document.querySelector(".page-hero");
@@ -101,11 +100,8 @@
   if (trigger) {
     var updateVisibility = function () {
       var rect = trigger.getBoundingClientRect();
-      if (rect.bottom < 0) {
-        show();
-      } else {
-        hide();
-      }
+      isPastThreshold = rect.bottom < 0;
+      render();
     };
 
     if ("IntersectionObserver" in window) {
@@ -121,15 +117,32 @@
   } else {
     var SCROLL_THRESHOLD = 400;
     var updateVisibilityByScroll = function () {
-      if (window.scrollY > SCROLL_THRESHOLD) {
-        show();
-      } else {
-        hide();
-      }
+      isPastThreshold = window.scrollY > SCROLL_THRESHOLD;
+      render();
     };
 
     window.addEventListener("scroll", updateVisibilityByScroll, { passive: true });
     updateVisibilityByScroll();
+  }
+
+  /* Fade the button out once the footer scrolls into view, so it doesn't overlap footer content */
+  var footer = document.querySelector(".site-footer");
+
+  if (footer && "IntersectionObserver" in window) {
+    var footerObserver = new IntersectionObserver(function (entries) {
+      isOverFooter = entries[0].isIntersecting;
+      render();
+    });
+    footerObserver.observe(footer);
+  } else if (footer) {
+    var updateFooterState = function () {
+      var rect = footer.getBoundingClientRect();
+      isOverFooter = rect.top < window.innerHeight;
+      render();
+    };
+
+    window.addEventListener("scroll", updateFooterState, { passive: true });
+    updateFooterState();
   }
 
   btn.addEventListener("click", function (event) {
