@@ -92,12 +92,11 @@
   box-shadow: var(--shadow-card);
 }
 
-@media (max-width: 64rem) {
+/* @media (max-width: 64rem) {
   .content-image {
-    /* max-width: clamp(16rem, 60vw, 18rem); */
-    margin-inline: auto;
+    max-width: clamp(16rem, 60vw, 18rem);
   }
-}
+} */
 
 /* Cards */
 
