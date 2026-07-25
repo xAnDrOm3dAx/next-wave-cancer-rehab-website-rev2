@@ -144,7 +144,7 @@ html {
   align-items: center;
 }
 
-@media (min-width: 64rem) {
+@media (min-width: 48rem) {
   .split--media-left {
     grid-template-columns: 1fr 2fr;
     grid-template-areas: "media content";
