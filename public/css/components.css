@@ -146,18 +146,18 @@
   box-shadow: none;
 }
 
-.card--dark {
-  background-color: var(--color-primary-dark);
+.card--sage-solid {
+  background-color: var(--color-primary-sage);
   border-color: transparent;
   box-shadow: none;
 }
 
-.card--dark .card__title {
-  color: var(--color-surface-warm);
+.card--sage-solid .card__title {
+  color: var(--color-text);
 }
 
-.card--dark .card__text {
-  color: rgba(251, 248, 243, 0.85);
+.card--sage-solid .card__text {
+  color: var(--color-muted-text);
 }
 
 .card__title {
@@ -187,8 +187,8 @@ a.card:hover {
 /* CTA band */
 
 .cta-band {
-  background-color: var(--color-primary-dark);
-  color: var(--color-surface-warm);
+  background-color: var(--color-primary-sage);
+  color: var(--color-text);
   border-radius: var(--radius-lg);
   padding: var(--space-2xl);
   text-align: center;
@@ -196,30 +196,16 @@ a.card:hover {
 
 .cta-band h2,
 .cta-band h3 {
-  color: var(--color-surface);
+  color: var(--color-text);
 }
 
 .cta-band p {
-  color: rgba(251, 248, 243, 0.9);
+  color: var(--color-muted-text);
   margin-top: var(--space-md);
 }
 
-.cta-band .btn--primary {
-  color: var(--color-surface);
-  border-color: var(--color-surface);
-}
-
-.cta-band .btn--primary:hover {
-  background-color: rgba(255, 255, 255, 0.12);
-}
-
-.cta-band .btn--secondary {
-  color: var(--color-surface);
-  border-color: var(--color-surface);
-}
-
 .cta-band .btn--secondary:hover {
-  background-color: rgba(255, 255, 255, 0.12);
+  background-color: rgba(36, 51, 47, 0.08);
 }
 
 .cta-band__actions {
