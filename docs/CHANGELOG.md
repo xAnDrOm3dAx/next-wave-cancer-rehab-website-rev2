@@ -11,6 +11,10 @@ All notable implementation work completed so far is summarised here.
 
 ### Added
 
+- Added WebP photography assets for Megan's portrait and telehealth consultation, an Exercise Rehabilitation clinic photo, and additional clinic imagery for the library, and placed the portrait, telehealth, and treadmill images on the Home, About, Your Next Steps, and Services pages.
+- Added a shared `.content-image` style for portraits and content photos, replacing the older page-specific portrait placeholder markup with consistent sizing, rounded corners, and shadow treatment.
+- Added the practice ABN to the site footer on every page, with copyright and ABN grouped for clearer business identification.
+- Added a Locations link to the footer Get in touch group across every page, linking directly to the Contact page locations section.
 - Added a map-pinned green icon for location entries on the homepage contact snapshot, giving session locations a distinct visual marker alongside phone and email.
 - Added a full Privacy Policy page with sections covering personal and health information, website enquiries, secure storage, rights, complaints, and contact details, replacing the placeholder shell with ready-to-read privacy guidance.
 - Added custom-domain configuration for `www.nextwavecancerrehab.com.au` so the static site can resolve through the preferred public web address.
@@ -50,6 +54,13 @@ All notable implementation work completed so far is summarised here.
 
 ### Changed
 
+- Made primary and secondary buttons full width on screens smaller than 48rem so call-to-action controls are easier to tap on mobile.
+- Updated call-to-action buttons across the homepage, Services, and Your Next Steps so primary actions use the stronger button style, swapped the Your Next Steps secondary action to "Refer a Patient," and centered the About page "My Approach" card on wide screens.
+- Replaced dark styling on the CTA bands and the About page "My Approach" card with sage colouring so those panels sit more gently within the site palette.
+- Shortened and capitalised homepage call-to-action labels ("Learn More About Next Wave," "View Services," and "View Locations and Maps") for clearer branding.
+- Moved Megan's Principal Physiotherapist and Founder title into the homepage About paragraph instead of a separate subheading, for smoother reading.
+- Refactored the split content/media layout to use explicit left/right media modifiers with grid areas, placed portraits and the Exercise Rehabilitation photo on the right where appropriate, and lowered the side-by-side breakpoint so the layout engages earlier on narrower screens.
+- Refined footer column alignment (Explore left, Get in touch right) and removed unintended gap spacing from the footer bottom block for a cleaner legal and copyright area.
 - Restructured contact information across the Home, Contact, Referrers, and Privacy Policy pages using semantic address wrappers and definition lists for phone, email, and location labels, marked decorative icons as hidden from screen readers, and updated phone links to international (+61) format for clearer dialling and assistive-technology support.
 - Reworked the homepage and Contact page contact areas to show session locations (Cancer Care Noosa and Sycamore Health with days) instead of a standalone Telehealth block, removed the duplicate locations callout and enquiry button from the homepage contact snapshot, and tightened the Contact page locations introduction.
 - Refreshed copy across the About, Home, Services, and Your Next Steps pages: reframed the About hero as individualised rehabilitation, softened the homepage About snapshot tone, tightened service card descriptions, expanded the Breast Cancer Rehabilitation section with detail on common surgery types Megan supports, merged the separate Breathlessness and Breathing Techniques disclosures into a single topic, and standardised Telehealth capitalisation on Your Next Steps.
@@ -131,6 +142,7 @@ All notable implementation work completed so far is summarised here.
 
 ### Fixed
 
+- Updated the return-to-top button so it hides when the footer enters view, preventing overlap with footer content while keeping the existing scroll-threshold behaviour.
 - Fixed footer wave overlapping content on short pages such as the thank-you confirmation page by removing the wave's negative top margin, which had previously pulled the decoration up into the page above and required per-page clearance workarounds.
 - Improved validation error placement on the Contact and Referrers forms so messages appear below the relevant fieldset legend for radio and grouped-checkbox fields, below the checkbox label for standalone checkboxes, and with clearer spacing on the referral form when an error precedes a field group.
 - Improved Contact and Referrers form validation for radio button and checkbox groups so each group shows one clear error message instead of repeating the same message for every option, including proper handling when no reason for referral is selected.
