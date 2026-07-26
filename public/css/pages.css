@@ -32,6 +32,13 @@
   gap: var(--space-2xl);
 }
 
+.career-grid__right {
+  @media (min-width: 64rem) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .career-grid__right .card {
   padding: var(--space-xl) var(--space-2xl);
 }
