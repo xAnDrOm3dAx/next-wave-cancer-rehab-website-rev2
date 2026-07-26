@@ -133,6 +133,13 @@ img {
   background-color: var(--color-surface-sage);
 }
 
+.btn--primary,
+.btn--secondary {
+  @media (max-width: 48rem) {
+    width: 100%;
+  }
+}
+
 /* Forms */
 
 label {
