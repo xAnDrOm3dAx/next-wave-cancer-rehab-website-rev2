@@ -11,6 +11,7 @@ All notable implementation work completed so far is summarised here.
 
 ### Added
 
+- Added a clinic plinth photograph of Megan and placed it on the About page in place of the earlier portrait crop, giving visitors a clearer sense of the clinical care setting.
 - Added WebP photography assets for Megan's portrait and telehealth consultation, an Exercise Rehabilitation clinic photo, and additional clinic imagery for the library, and placed the portrait, telehealth, and treadmill images on the Home, About, Your Next Steps, and Services pages.
 - Added a shared `.content-image` style for portraits and content photos, replacing the older page-specific portrait placeholder markup with consistent sizing, rounded corners, and shadow treatment.
 - Added the practice ABN to the site footer on every page, with copyright and ABN grouped for clearer business identification.
@@ -54,6 +55,9 @@ All notable implementation work completed so far is summarised here.
 
 ### Changed
 
+- Switched the homepage hero submark from PNG to SVG and removed unused image and icon assets from the library so only media used by the live pages remains.
+- Widened the content column relative to media in split layouts on larger screens, and adjusted spacing after split blocks so following paragraphs and disclosures keep consistent breathing room.
+- Restructured Breast Cancer Rehabilitation, Exercise Rehabilitation, Physical Activity Guidance, and Functional Assessment on the Services page into split content/media sections with clinic photography beside the copy, helping visitors scan each service alongside a visual of the care setting.
 - Made primary and secondary buttons full width on screens smaller than 48rem so call-to-action controls are easier to tap on mobile.
 - Updated call-to-action buttons across the homepage, Services, and Your Next Steps so primary actions use the stronger button style, swapped the Your Next Steps secondary action to "Refer a Patient," and centered the About page "My Approach" card on wide screens.
 - Replaced dark styling on the CTA bands and the About page "My Approach" card with sage colouring so those panels sit more gently within the site palette.
@@ -142,6 +146,7 @@ All notable implementation work completed so far is summarised here.
 
 ### Fixed
 
+- Updated Services page image alt text so each description matches the photograph shown, improving accuracy for assistive technology.
 - Updated the return-to-top button so it hides when the footer enters view, preventing overlap with footer content while keeping the existing scroll-threshold behaviour.
 - Fixed footer wave overlapping content on short pages such as the thank-you confirmation page by removing the wave's negative top margin, which had previously pulled the decoration up into the page above and required per-page clearance workarounds.
 - Improved validation error placement on the Contact and Referrers forms so messages appear below the relevant fieldset legend for radio and grouped-checkbox fields, below the checkbox label for standalone checkboxes, and with clearer spacing on the referral form when an error precedes a field group.
