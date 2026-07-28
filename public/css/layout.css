@@ -140,7 +140,7 @@ html {
 
 .split {
   display: grid;
-  gap: var(--space-2xl);
+  gap: var(--space-xl);
   align-items: center;
 }
 
