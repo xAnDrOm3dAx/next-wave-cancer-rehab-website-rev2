@@ -345,7 +345,8 @@ p+.callout {
    - after .section__header → header margin-bottom only (no extra top margin here)
    - after h2 alone → h2 margin-bottom only
    - after body paragraphs → separate the intro copy from the accordion */
-p+.disclosure {
+p+.disclosure,
+.split+.disclosure {
   margin-top: var(--space-xl);
 }
 
