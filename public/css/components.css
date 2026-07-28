@@ -341,12 +341,14 @@ p+.callout {
 
 /* Disclosure accordion (native <details>/<summary>, no JavaScript required) */
 
-/* Spacing before a disclosure block:
+/* Spacing between major content blocks (paragraphs, split layouts, disclosures):
    - after .section__header → header margin-bottom only (no extra top margin here)
    - after h2 alone → h2 margin-bottom only
-   - after body paragraphs → separate the intro copy from the accordion */
+   - after body paragraphs → separate the intro copy from the accordion
+   - after a split (e.g. list + image) → separate it from the paragraphs or disclosure that follow */
 p+.disclosure,
-.split+.disclosure {
+.split+.disclosure,
+.split+p {
   margin-top: var(--space-xl);
 }
 
