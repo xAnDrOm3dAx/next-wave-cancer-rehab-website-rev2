@@ -6,8 +6,8 @@ All notable implementation work completed so far is summarised here.
 
 ### Completed
 
-- Completed the static site implementation across Home, About, Services, Your Next Steps, Contact, and Referrers, including shared navigation/footer, reusable CSS component patterns, accessibility-minded accordions and anchor behaviour, return-to-top support, site-wide branding, and a full referral form for health professionals. The Privacy Policy page is complete; Terms & Conditions remains a placeholder page and is intentionally unlinked from site navigation. Service image placeholders exist on an experimental, unmerged branch (`add-placeholders-for-images-rev1`).
-- The `build-referrers-page` branch (not yet merged to `main`) carries the completed Referrers page plus a round of site-wide polish: consolidated form sections, a "Refer a Patient" call-to-action nav treatment, global anchor-scroll handling, and a more robust return-to-top control.
+- Completed the static site implementation across Home, About, Services, Your Next Steps, Contact, and Referrers, including shared navigation/footer, reusable CSS component patterns, accessibility-minded accordions and anchor behaviour, return-to-top support, site-wide branding, and a full referral form for health professionals. The Privacy Policy page is complete; Terms & Conditions remains a placeholder page and is intentionally unlinked from site navigation. Service image placeholders were prototyped on a short-lived experimental branch (`add-placeholders-for-images-rev1`, since removed); on the live site those Services sections now use real clinic photography instead.
+- Merged the `build-referrers-page` work into `main`, bringing the completed Referrers page and site-wide polish (including the "Refer a Patient" nav CTA, global anchor-scroll handling, and the more robust return-to-top control) onto the live site.
 
 ### Added
 
@@ -26,10 +26,10 @@ All notable implementation work completed so far is summarised here.
 - Added client-side validation and visible error messaging to the Contact and Referrers forms, helping visitors fix missing or incorrectly formatted fields before sending an enquiry or referral.
 - Added a revised website header logo asset (`primary-logo-website-header-rev1.svg`) with updated artwork for clearer, proportionally scaled branding in the site header.
 - Added a dedicated website header logo asset (`primary-logo-website-header-rev1.svg`) and applied it on the homepage for a sharper, proportionally scaled brand mark in the site header.
-- Added `Document.svg` to the image library as a logo asset for future use.
+- Added `Document.svg` to the image library as a logo asset for future use (later removed when unused).
 - Added icon and subheading styling to the Your Next Steps rehabilitation-stage disclosure summaries, so each stage's expandable section has a clearer visual heading at a glance.
-- Implemented the Home page with a branded hero, About snapshot with Megan's portrait, a Services snapshot with four stage cards, a Your Next Steps summary, a Contact snapshot with phone, email, telehealth, and location details, and a closing CTA band — replacing the previous placeholder shell.
-- Added four green SVG service icons to the homepage service cards so each rehabilitation stage is visually distinct at a glance.
+- Implemented the Home page with a branded hero, About snapshot with Megan's portrait, a Services snapshot with eight service-category cards, a Your Next Steps summary with four rehabilitation-stage cards, a Contact snapshot with phone, email, telehealth, and location details, and a closing CTA band — replacing the previous placeholder shell.
+- Added four green SVG icons to the homepage Your Next Steps stage cards so each rehabilitation stage is visually distinct at a glance.
 - Added in-page anchor navigation and section IDs to the Contact page (Contact Details, Locations, Enquiry Form) and Your Next Steps page (Support at Every Stage, How It Works) so visitors can jump directly to key sections from the page hero.
 - Added a "How to Refer" in-page anchor link on the Referrers page hero so visitors can jump directly to referral contact details alongside the existing Referral Form link.
 - Built the initial static site structure for Next Wave Cancer Rehab, including shared HTML page templates, stylesheet layers, and reusable layout/component classes.
@@ -49,7 +49,7 @@ All notable implementation work completed so far is summarised here.
 - Adopted Source Sans 3 as the site body font via Google Fonts.
 - Implemented the Referrers page with hero and in-page anchor navigation, referral scope and lymphoedema context, care-team collaboration guidance, how-to-refer contact details, a structured referral form (patient, referrer, reason-for-referral checklist, and clinical notes), and a pre-footer CTA.
 - Added semantic `fieldset`/`legend` grouping to the referral form and visually hidden honeypot fields on the Contact and Referrers forms for spam reduction.
-- Added service image placeholder styling with responsive aspect-ratio variants (wide, portrait, square) and placeholder elements in three Services page sections (`add-placeholders-for-images-rev1` branch, experimental/unmerged).
+- Added service image placeholder styling with responsive aspect-ratio variants (wide, portrait, square) and placeholder elements in three Services page sections (`add-placeholders-for-images-rev1` branch; experimental work since removed, superseded by real clinic photography on `main`).
 - Added a `.site-nav__link--cta` / `.mobile-nav__link--cta` pill-button treatment, applied to the Referrers navigation link (renamed to "Refer a Patient") across the desktop nav, mobile nav, and footer on every page.
 - Added an in-page anchor link back to the Referral Form from the Referrers page hero.
 - Added `input[type="date"]` styling to `base.css` so date fields match the width of other form controls.
@@ -60,6 +60,8 @@ All notable implementation work completed so far is summarised here.
 - Updated the Privacy Policy Analytics and Cookies section to disclose Google Analytics use, describe what data may be collected, and explain how visitors can opt out, replacing the previous statement that analytics were not in use.
 - Applied a consistent sand background to all homepage service cards and added a subtle sage underline beneath each card title for clearer visual hierarchy in the Services snapshot.
 - Allowed content images to display wider on larger screens by raising the shared content-image max width, so portraits and clinic photos read more clearly beside copy.
+- Returned site-wide header branding to `primary-logo-website-header-rev1.svg` after a brief switch to a revision 2 filename, and removed the unused rev2 logo file.
+- Removed unused `Document.svg` from the image library.
 - Switched the homepage hero submark from PNG to SVG and removed unused image and icon assets from the library so only media used by the live pages remains.
 - Widened the content column relative to media in split layouts on larger screens, and adjusted spacing after split blocks so following paragraphs and disclosures keep consistent breathing room.
 - Restructured Breast Cancer Rehabilitation, Exercise Rehabilitation, Physical Activity Guidance, and Functional Assessment on the Services page into split content/media sections with clinic photography beside the copy, helping visitors scan each service alongside a visual of the care setting.
@@ -109,7 +111,7 @@ All notable implementation work completed so far is summarised here.
 - Separated the icon styling on homepage card images from the card layout itself, and slightly reduced the spacing below the homepage hero submark to tighten the header.
 - Gave the homepage service card images a soft sage background and rounded corners for a more polished, consistent look.
 - Consolidated `.service-card` and `.career-approach-card` into a unified `.card` component with a `.card--stack` modifier, reducing duplicate styles and aligning card presentation across the Home and About pages.
-- Refined homepage service cards with centred layout, card shadows and hover elevation, stage icons, and tighter padding; settled cards as informational display elements rather than navigational links after exploring deep-link behaviour.
+- Refined homepage Your Next Steps stage cards with centred layout, card shadows and hover elevation, stage icons, and tighter padding; settled those stage cards as informational display elements rather than navigational links after exploring deep-link behaviour, while homepage Services cards remain deep-linked to matching Services page sections.
 - Introduced a reusable `.text-subheading` class and standardised hero subheading markup across all pages, decoupling subheading appearance from lead paragraphs for consistent sizing, colour, and spacing.
 - Refined homepage and site-wide hero layout: responsive submark treatment, updated hero copy, tighter grid and anchor-list spacing, and improved small-screen alignment.
 - Increased spacing below the homepage hero submark for clearer separation from the heading block.
