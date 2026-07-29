@@ -159,10 +159,6 @@
   color: var(--color-text);
 }
 
-.card--sage-solid .card__text {
-  color: var(--color-muted-text);
-}
-
 .card__title {
   font-size: var(--text-md);
   margin: 0;
@@ -178,7 +174,7 @@
 
 .card__text {
   flex: 1;
-  color: var(--color-muted-text);
+  color: var(--color-text);
   margin: 0;
 }
 
@@ -208,11 +204,6 @@ a.card:hover {
 .cta-band h2,
 .cta-band h3 {
   color: var(--color-text);
-}
-
-.cta-band p {
-  color: var(--color-muted-text);
-  margin-top: var(--space-md);
 }
 
 .cta-band .btn--secondary:hover {
