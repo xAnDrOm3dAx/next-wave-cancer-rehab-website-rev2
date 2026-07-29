@@ -85,16 +85,19 @@
 .content-image {
   display: block;
   width: 100%;
-  max-width: 18rem;
   margin: 0 auto;
   height: auto;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-card);
+
+  @media (min-width: 30rem) {
+    max-width: 30rem;
+  }
 }
 
 /* @media (max-width: 64rem) {
   .content-image {
-    max-width: clamp(16rem, 60vw, 18rem);
+    max-width: 30rem;
   }
 } */
 
