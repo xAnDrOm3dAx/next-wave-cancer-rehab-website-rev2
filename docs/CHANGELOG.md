@@ -11,6 +11,8 @@ All notable implementation work completed so far is summarised here.
 
 ### Added
 
+- Added Google Analytics tracking across every page so the practice can understand how the website is used.
+- Added site-wide SEO foundations: canonical URLs, Open Graph and Twitter meta tags on every page, homepage Organization schema markup, a sitemap and robots.txt, and a shared social preview image (`og-image.png`), with the thank-you and Terms & Conditions pages marked noindex so they stay out of search results.
 - Added a clinic plinth photograph of Megan and placed it on the About page in place of the earlier portrait crop, giving visitors a clearer sense of the clinical care setting.
 - Added WebP photography assets for Megan's portrait and telehealth consultation, an Exercise Rehabilitation clinic photo, and additional clinic imagery for the library, and placed the portrait, telehealth, and treadmill images on the Home, About, Your Next Steps, and Services pages.
 - Added a shared `.content-image` style for portraits and content photos, replacing the older page-specific portrait placeholder markup with consistent sizing, rounded corners, and shadow treatment.
@@ -55,6 +57,9 @@ All notable implementation work completed so far is summarised here.
 
 ### Changed
 
+- Updated the Privacy Policy Analytics and Cookies section to disclose Google Analytics use, describe what data may be collected, and explain how visitors can opt out, replacing the previous statement that analytics were not in use.
+- Applied a consistent sand background to all homepage service cards and added a subtle sage underline beneath each card title for clearer visual hierarchy in the Services snapshot.
+- Allowed content images to display wider on larger screens by raising the shared content-image max width, so portraits and clinic photos read more clearly beside copy.
 - Switched the homepage hero submark from PNG to SVG and removed unused image and icon assets from the library so only media used by the live pages remains.
 - Widened the content column relative to media in split layouts on larger screens, and adjusted spacing after split blocks so following paragraphs and disclosures keep consistent breathing room.
 - Restructured Breast Cancer Rehabilitation, Exercise Rehabilitation, Physical Activity Guidance, and Functional Assessment on the Services page into split content/media sections with clinic photography beside the copy, helping visitors scan each service alongside a visual of the care setting.
@@ -146,6 +151,7 @@ All notable implementation work completed so far is summarised here.
 
 ### Fixed
 
+- Corrected an extra closing div on the Privacy Policy page that left the Analytics section with invalid nesting.
 - Updated Services page image alt text so each description matches the photograph shown, improving accuracy for assistive technology.
 - Updated the return-to-top button so it hides when the footer enters view, preventing overlap with footer content while keeping the existing scroll-threshold behaviour.
 - Fixed footer wave overlapping content on short pages such as the thank-you confirmation page by removing the wave's negative top margin, which had previously pulled the decoration up into the page above and required per-page clearance workarounds.
