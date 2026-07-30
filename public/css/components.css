@@ -164,14 +164,6 @@
   margin: 0;
 }
 
-#services .card__title::after {
-  content: "";
-  display: block;
-  height: 1px;
-  margin-top: var(--space-xs);
-  background-color: var(--color-primary-sage);
-}
-
 .card__text {
   flex: 1;
   color: var(--color-text);
@@ -182,12 +174,14 @@ a.card {
   color: inherit;
   text-decoration: none;
   border-color: transparent;
+  border-left: 2px solid var(--color-primary-sage);
   box-shadow: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 a.card:hover {
   border-color: transparent;
+  border-left: 2px solid var(--color-primary-dark);
   box-shadow: 0 0 0 1px var(--color-border-strong), var(--shadow-card-hover);
 }
 
