@@ -525,11 +525,12 @@ html {
   display: flex;
   flex-direction: column;
   gap: var(--space-xs);
+  color: var(--color-surface-warm);
 }
 
-.site-footer__copyright p {
+/* .site-footer__copyright p {
   margin: 0;
-}
+} test */
 
 .site-footer__abn {
   text-align: center;
@@ -546,7 +547,6 @@ html {
   align-items: center;
   min-height: 2.25rem;
   font-size: var(--text-xs);
-  color: rgba(251, 248, 243, 0.75);
   text-decoration: none;
 }
 
