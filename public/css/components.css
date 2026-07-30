@@ -436,7 +436,6 @@ details[open]>.disclosure__summary::after {
 .disclosure__panel {
   padding-top: var(--space-sm);
   padding-bottom: var(--space-xl);
-  /* color: var(--color-muted-text); */
   line-height: var(--line-height-body);
 }
 
