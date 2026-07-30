@@ -474,12 +474,6 @@ html {
   }
 }
 
-.site-footer__tagline {
-  font-size: var(--text-sm);
-  color: rgba(251, 248, 243, 0.85);
-  max-width: 28ch;
-}
-
 .site-footer__heading {
   font-family: var(--font-body);
   font-size: var(--text-sm);
@@ -517,7 +511,6 @@ html {
   padding-top: var(--space-lg);
   border-top: 1px solid rgba(251, 248, 243, 0.2);
   font-size: var(--text-xs);
-  color: rgba(251, 248, 243, 0.75);
   text-align: center;
 }
 
@@ -527,10 +520,6 @@ html {
   gap: var(--space-xs);
   color: var(--color-surface-warm);
 }
-
-/* .site-footer__copyright p {
-  margin: 0;
-} test */
 
 .site-footer__abn {
   text-align: center;
