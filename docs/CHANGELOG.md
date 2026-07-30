@@ -57,6 +57,10 @@ All notable implementation work completed so far is summarised here.
 
 ### Changed
 
+- Updated the clinic photography WebP assets used across Home, About, Your Next Steps, and Services (Megan portrait, plinth, and telehealth photos, plus breast plinth, treadmill, swiss ball, and tandem images), reducing file sizes for faster page loads.
+- Simplified footer copyright and ABN text colouring onto the copyright block and removed unused footer tagline styles left over after the tagline was replaced by the logo.
+- Replaced the sage underline under homepage service card titles with a sage left border on linked cards that darkens on hover, giving a clearer interactive cue.
+- Switched card body text to the primary text colour instead of muted grey, and removed related muted overrides on sage-solid cards and CTA band paragraphs, so card and band copy reads with fuller contrast.
 - Updated the Privacy Policy Analytics and Cookies section to disclose Google Analytics use, describe what data may be collected, and explain how visitors can opt out, replacing the previous statement that analytics were not in use.
 - Applied a consistent sand background to all homepage service cards and added a subtle sage underline beneath each card title for clearer visual hierarchy in the Services snapshot.
 - Allowed content images to display wider on larger screens by raising the shared content-image max width, so portraits and clinic photos read more clearly beside copy.
@@ -153,7 +157,7 @@ All notable implementation work completed so far is summarised here.
 
 ### Fixed
 
-- Corrected an extra closing div on the Privacy Policy page that left the Analytics section with invalid nesting.
+- Restored a missing closing div on the Privacy Policy page so the Website and Online Privacy container closes correctly around the Analytics section.
 - Updated Services page image alt text so each description matches the photograph shown, improving accuracy for assistive technology.
 - Updated the return-to-top button so it hides when the footer enters view, preventing overlap with footer content while keeping the existing scroll-threshold behaviour.
 - Fixed footer wave overlapping content on short pages such as the thank-you confirmation page by removing the wave's negative top margin, which had previously pulled the decoration up into the page above and required per-page clearance workarounds.
