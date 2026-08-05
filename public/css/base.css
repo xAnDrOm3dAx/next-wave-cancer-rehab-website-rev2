@@ -133,9 +133,10 @@ img {
   background-color: var(--color-surface-sage);
 }
 
-.btn--primary,
-.btn--secondary {
-  @media (max-width: 48rem) {
+@media (max-width: 48rem) {
+
+  .btn--primary,
+  .btn--secondary {
     width: 100%;
   }
 }
