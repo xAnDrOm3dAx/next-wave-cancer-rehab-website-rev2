@@ -181,6 +181,90 @@ a.card:hover {
   box-shadow: 0 0 0 1px var(--color-border-strong), var(--shadow-card-hover);
 }
 
+/* Service list — editorial link rows (homepage services snapshot) */
+
+.service-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.service-list>li {
+  display: flex;
+}
+
+@media (min-width: 48rem) {
+  .service-list {
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--space-2xl);
+  }
+}
+
+.service-list__link {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: var(--space-md);
+  min-height: 2.75rem;
+  padding: var(--space-lg) var(--space-sm);
+  border-top: 1px solid var(--color-border);
+  color: inherit;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.service-list__heading-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+  min-width: 0;
+}
+
+.service-list__title {
+  font-size: var(--text-md);
+  font-weight: 600;
+  margin: 0;
+}
+
+.service-list__text {
+  font-size: var(--text-sm);
+  color: var(--color-muted-text);
+}
+
+.service-list__link::after {
+  content: "";
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M7.5 5l5 5-5 5' stroke='%233F665C' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: transform 0.2s ease;
+}
+
+.service-list__link:hover {
+  background-color: var(--color-surface-sage);
+  text-decoration: none;
+}
+
+.service-list__link:hover .service-list__title {
+  color: var(--color-primary-dark);
+}
+
+.service-list__link:hover::after {
+  transform: translateX(0.25rem);
+}
+
+.service-list__link:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: -2px;
+}
+
 /* CTA band */
 
 .cta-band {
