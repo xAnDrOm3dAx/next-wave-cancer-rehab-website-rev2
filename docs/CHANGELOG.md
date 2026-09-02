@@ -57,6 +57,8 @@ All notable implementation work completed so far is summarised here.
 
 ### Changed
 
+- Rebuilt the homepage Services snapshot as a semantic list (`.service-list`) instead of a grid of linked cards: each of the eight services is now a full-width link row with a title, description, and trailing chevron, laid out single-column on small screens and two-column from 48rem, with a sage hover tint and a visible keyboard focus outline. Keeps the same services and deep links while giving the section proper list semantics and simpler markup. A follow-up dropped the list's closing bottom border so only the between-row rules remain.
+- Removed card styles left unused after that change — the `a.card` / `a.card:hover` link-card rules and the `.card--stack-left` and `.card--sand` modifiers — none of which match any markup on the live site.
 - Updated the clinic photography WebP assets used across Home, About, Your Next Steps, and Services (Megan portrait, plinth, and telehealth photos, plus breast plinth, treadmill, swiss ball, and tandem images), reducing file sizes for faster page loads.
 - Simplified footer copyright and ABN text colouring onto the copyright block and removed unused footer tagline styles left over after the tagline was replaced by the logo.
 - Replaced the sage underline under homepage service card titles with a sage left border on linked cards that darkens on hover, giving a clearer interactive cue.
