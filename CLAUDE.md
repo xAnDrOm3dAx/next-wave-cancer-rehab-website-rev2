@@ -1,0 +1,68 @@
+# CLAUDE.md
+
+Guidance for Claude Code when working in this repo.
+
+## Spacing and Typography
+
+Applies to `public/css/**/*.css` and `*.html`.
+
+### Heading margins (global rules in `base.css`)
+
+| Element | `margin-bottom` | Notes |
+|---------|-----------------|-------|
+| `h1` | `--space-xl` | Page heroes only |
+| `h2` | `--space-xl` | Section titles |
+| `h3` | `--space-lg` | Subsection titles |
+| `h4` | `--space-sm` | Also `--space-lg` `margin-top` when following body copy |
+
+- Do **not** add `margin-top` on the first element after a heading to fake heading spacing — let the heading's `margin-bottom` handle it (e.g. `.text-subheading`, `.section-intro__lead`).
+- `.section__header` uses `margin-bottom: var(--space-xl)` for the intro block as a whole.
+
+### Exceptions (override global heading margin when needed)
+
+- `.site-footer__heading` — compact footer nav labels (`margin-bottom: var(--space-md)`).
+- `.card__title`, `.disclosure__summary h3` — `margin: 0` (compact card/accordion labels).
+- `.career-narrative-block__heading` — smaller in-block label (`margin-bottom: var(--space-xs)`).
+
+### Section vs subsection spacing
+
+- **Between sections**: `.section { padding-block: var(--space-section) }` — do not duplicate with heading margins.
+- **Within a section**: use the shared `.subsection` pattern (border-top + padding-top + margin-top) for visual dividers. Use `.subsection--divider` when a single subsection needs a divider after other content (e.g. Locations within Contact). Stacked subsections use `.subsection + .subsection` automatically.
+
+### Lead paragraphs
+
+- `.section-intro__lead` and `.text-subheading` style typography only — no top margin. Spacing comes from the preceding `h1` or `h2`.
+- Use `.section__header` when a heading and lead paragraph form a single intro block that needs extra space before the next content.
+- `.page-hero__lead` uses `margin-top: var(--space-lg)` to separate hero body copy from the tagline above it.
+- Use `.list-lead` for emphasised text that introduces a list.
+
+### Disclosure accordions
+
+- `.disclosure` has no default top margin — spacing comes from the element above it.
+- After `.section__header` or a bare `h2`, rely on that element's `margin-bottom` (`--space-xl`).
+- When a disclosure follows body paragraphs, `p + .disclosure` adds `--space-xl` separation.
+
+### Spacing scale
+
+Use design tokens only: `--space-md` (1rem), `--space-lg` (1.5rem), `--space-xl` (2rem), `--space-2xl` (3rem), `--space-section` (clamp 3–5.5rem).
+
+### Type scale
+
+Use `--text-xs` through `--text-3xl` from `variables.css`. Do not add one-off `font-size` values.
+
+| Token | Typical use |
+|---|---|
+| `--text-3xl` | `h1` |
+| `--text-2xl` | `h2` |
+| `--text-xl` | Default `h3` |
+| `--text-lg` | `h4`, `.quals-group__heading`, pullquotes |
+| `--text-md` | `.card__title`, leads, `.text-subheading` |
+| `--text-base` | Body copy, form inputs |
+| `--text-sm` | Buttons, nav, eyebrows, footer labels |
+| `--text-xs` | Badges, footer legal |
+
+Some `h3` elements use a smaller size via class — reuse an existing token rather than adding overrides.
+
+#### Eyebrows
+
+`.page-hero__eyebrow` and `.section-intro__eyebrow` both use `--text-sm` with uppercase and letter-spacing.
