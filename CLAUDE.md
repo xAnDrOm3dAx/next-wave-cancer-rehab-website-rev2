@@ -2,6 +2,16 @@
 
 Guidance for Claude Code when working in this repo.
 
+## Public Copy Constraints
+
+Applies to `*.html` content and any copy drafted for this site. Full detail in `docs/Build_Rules.md`.
+
+This is an Australian regulated healthcare context (AHPRA). Do not use the word "specialist" in public copy unless that title is formally held and legally appropriate. Avoid: specialist, best, cure, guarantee, eliminate, miracle, beat cancer, fight cancer, cancer warrior, life-changing results, no risk, prevent (unless medically and legally appropriate).
+
+Prefer careful claim language: may help, can support, aims to, may reduce, where appropriate, in collaboration with your medical team, depending on your treatment, symptoms, and goals.
+
+Do not add or publish testimonials — advertising compliance review is required first.
+
 ## Spacing and Typography
 
 Applies to `public/css/**/*.css` and `*.html`.
