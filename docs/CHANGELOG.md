@@ -1,8 +1,10 @@
 # Changelog
 
-All notable implementation work completed so far is summarised here.
+All notable implementation work up to October 2026 is summarised here.
 
-## Unreleased
+> **Frozen.** This file is no longer updated. Git history is the record of changes from October 2026 onward.
+
+## Up to October 2026 (frozen)
 
 ### Completed
 
@@ -24,7 +26,6 @@ All notable implementation work completed so far is summarised here.
 - Added a thank you confirmation page for enquiry and referral submissions, giving visitors a clear next step, response-time expectation, and urgent-care guidance after forms are sent.
 - Added hidden form source and page-load fields to the Contact and Referrers forms so submissions can identify where they came from and support spam timing checks.
 - Added client-side validation and visible error messaging to the Contact and Referrers forms, helping visitors fix missing or incorrectly formatted fields before sending an enquiry or referral.
-- Added a revised website header logo asset (`primary-logo-website-header-rev1.svg`) with updated artwork for clearer, proportionally scaled branding in the site header.
 - Added a dedicated website header logo asset (`primary-logo-website-header-rev1.svg`) and applied it on the homepage for a sharper, proportionally scaled brand mark in the site header.
 - Added `Document.svg` to the image library as a logo asset for future use (later removed when unused).
 - Added icon and subheading styling to the Your Next Steps rehabilitation-stage disclosure summaries, so each stage's expandable section has a clearer visual heading at a glance.
@@ -53,7 +54,7 @@ All notable implementation work completed so far is summarised here.
 - Added a `.site-nav__link--cta` / `.mobile-nav__link--cta` pill-button treatment, applied to the Referrers navigation link (renamed to "Refer a Patient") across the desktop nav, mobile nav, and footer on every page.
 - Added an in-page anchor link back to the Referral Form from the Referrers page hero.
 - Added `input[type="date"]` styling to `base.css` so date fields match the width of other form controls.
-- Added a project-level Cursor rule (`.cursor/rules/spacing-typography.mdc`, mirrored in `docs/spacing-typography.mdc`) documenting section-heading spacing and typography conventions for future edits.
+- Added a project-level Cursor rule (`.cursor/rules/spacing-typography.mdc`, later folded into `CLAUDE.md`) documenting section-heading spacing and typography conventions for future edits.
 
 ### Changed
 
