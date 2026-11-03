@@ -337,6 +337,10 @@ p+.callout {
   animation: notice-dialog-in 0.25s ease;
 }
 
+.notice-dialog:focus {
+  outline: none;
+}
+
 .notice-dialog::backdrop {
   background-color: rgba(36, 51, 47, 0.45);
 }

@@ -78,6 +78,7 @@
   dialog.className = "notice-dialog";
   dialog.setAttribute("aria-labelledby", "phone-notice-title");
   dialog.setAttribute("aria-describedby", "phone-notice-text");
+  dialog.setAttribute("tabindex", "-1");
   dialog.innerHTML =
     '<div class="notice-dialog__panel">' +
     '<h2 id="phone-notice-title" class="notice-dialog__title">A note about my phone number</h2>' +
@@ -88,7 +89,7 @@
     '<p id="phone-notice-text">Some of my earlier business cards were printed with an incorrect phone number. ' +
     "The number above is correct. I&#8217;m sorry to anyone who tried to reach me on the wrong number, " +
     "and I&#8217;d be glad to hear from you.</p>" +
-    '<button type="button" class="btn btn--primary notice-dialog__close" autofocus>Close</button>' +
+    '<button type="button" class="btn btn--primary notice-dialog__close">Close</button>' +
     "</div>";
   document.body.appendChild(dialog);
 
@@ -108,6 +109,9 @@
   });
 
   dialog.showModal();
+
+  /* Focus the dialog itself, so no link or button shows a focus ring until the visitor tabs */
+  dialog.focus();
 })();
 
 /* Career and Experience — sections stay expanded on desktop, collapse into an accordion on mobile */
