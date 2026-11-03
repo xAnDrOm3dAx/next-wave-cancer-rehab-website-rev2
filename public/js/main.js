@@ -50,6 +50,66 @@
   });
 })();
 
+/* Phone number notice — some business cards were printed with an incorrect number.
+   Shows once per browser session and stops automatically after 3 February 2027.
+   To remove early, delete this block and the "Notice dialog" section in components.css. */
+(function () {
+  var END_DATE = new Date("2027-02-04T00:00:00+10:00");
+  var STORAGE_KEY = "nwcr-phone-notice-seen";
+
+  if (new Date() >= END_DATE || typeof HTMLDialogElement !== "function") {
+    return;
+  }
+
+  if (window.location.pathname.indexOf("thank-you") !== -1) {
+    return;
+  }
+
+  try {
+    if (sessionStorage.getItem(STORAGE_KEY)) {
+      return;
+    }
+    sessionStorage.setItem(STORAGE_KEY, "1");
+  } catch (error) {
+    // Storage unavailable (e.g. private browsing) — show the notice anyway
+  }
+
+  var dialog = document.createElement("dialog");
+  dialog.className = "notice-dialog";
+  dialog.setAttribute("aria-labelledby", "phone-notice-title");
+  dialog.setAttribute("aria-describedby", "phone-notice-text");
+  dialog.innerHTML =
+    '<div class="notice-dialog__panel">' +
+    '<h2 id="phone-notice-title" class="notice-dialog__title">A note about my phone number</h2>' +
+    '<p class="notice-dialog__phone-row">' +
+    '<img src="public/icons/phone-green.svg" alt="" width="35" height="35" aria-hidden="true">' +
+    '<a class="notice-dialog__phone" href="tel:+61493007436">0493 007 436</a>' +
+    "</p>" +
+    '<p id="phone-notice-text">Some of my earlier business cards were printed with an incorrect phone number. ' +
+    "The number above is correct. I&#8217;m sorry to anyone who tried to reach me on the wrong number, " +
+    "and I&#8217;d be glad to hear from you.</p>" +
+    '<button type="button" class="btn btn--primary notice-dialog__close" autofocus>Close</button>' +
+    "</div>";
+  document.body.appendChild(dialog);
+
+  dialog.querySelector(".notice-dialog__close").addEventListener("click", function () {
+    dialog.close();
+  });
+
+  /* Clicking the dimmed backdrop also closes it (the panel fills the dialog, so only the backdrop targets it) */
+  dialog.addEventListener("click", function (event) {
+    if (event.target === dialog) {
+      dialog.close();
+    }
+  });
+
+  dialog.addEventListener("close", function () {
+    dialog.remove();
+  });
+
+  dialog.showModal();
+})();
+
 /* Career and Experience — sections stay expanded on desktop, collapse into an accordion on mobile */
 (function () {
   var items = document.querySelectorAll(".career-grid__left .disclosure__item");

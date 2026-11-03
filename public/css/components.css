@@ -321,6 +321,78 @@ p+.callout {
   margin-top: var(--space-xl);
 }
 
+/* Notice dialog — one-off site notice, added by main.js (native <dialog>) */
+
+.notice-dialog {
+  width: min(32rem, calc(100% - 2 * var(--space-md)));
+  max-width: none;
+  padding: 0;
+  margin: auto;
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border: 0;
+  border-left: 4px solid var(--color-primary-dark);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card-hover);
+  animation: notice-dialog-in 0.25s ease;
+}
+
+.notice-dialog::backdrop {
+  background-color: rgba(36, 51, 47, 0.45);
+}
+
+.notice-dialog__panel {
+  padding: var(--space-xl);
+}
+
+.notice-dialog__title {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-lg);
+}
+
+.notice-dialog__phone-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.notice-dialog__phone-row img {
+  flex-shrink: 0;
+}
+
+.notice-dialog__phone {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-link);
+}
+
+.notice-dialog__close {
+  margin-top: var(--space-lg);
+}
+
+@keyframes notice-dialog-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 40rem) {
+  .notice-dialog__panel {
+    padding: var(--space-lg);
+  }
+}
+
 /* Badge */
 
 .badge {
