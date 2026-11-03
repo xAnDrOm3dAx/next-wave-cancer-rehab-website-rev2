@@ -82,13 +82,13 @@
   dialog.innerHTML =
     '<div class="notice-dialog__panel">' +
     '<h2 id="phone-notice-title" class="notice-dialog__title">A note about my phone number</h2>' +
+    '<p id="phone-notice-text">Some of my earlier business cards were printed with an incorrect phone number. ' +
+    "The correct number is below. I&#8217;m sorry to anyone who tried to reach me on the wrong number, " +
+    "and I&#8217;d be glad to hear from you.</p>" +
     '<p class="notice-dialog__phone-row">' +
     '<img src="public/icons/phone-green.svg" alt="" width="35" height="35" aria-hidden="true">' +
     '<a class="notice-dialog__phone" href="tel:+61493007436">0493 007 436</a>' +
     "</p>" +
-    '<p id="phone-notice-text">Some of my earlier business cards were printed with an incorrect phone number. ' +
-    "The number above is correct. I&#8217;m sorry to anyone who tried to reach me on the wrong number, " +
-    "and I&#8217;d be glad to hear from you.</p>" +
     '<button type="button" class="btn btn--primary notice-dialog__close">Close</button>' +
     "</div>";
   document.body.appendChild(dialog);
