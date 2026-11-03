@@ -365,10 +365,6 @@ p+.callout {
   display: inline-flex;
   align-items: center;
   min-height: 2.75rem;
-  font-family: var(--font-heading);
-  font-size: var(--text-lg);
-  font-weight: 600;
-  color: var(--color-link);
 }
 
 .notice-dialog__close {
